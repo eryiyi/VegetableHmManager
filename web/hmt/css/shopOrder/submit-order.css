@@ -1,0 +1,555 @@
+﻿@charset "utf-8";
+
+.titlebar {
+    line-height: 34px;
+    height: 34px;
+    overflow: hidden;
+    border-bottom: #ccc solid 2px;
+    font-size: 16px;
+    /*font-family:'微软雅黑';*/
+    color: #333;
+    /*font-weight:bold;*/
+}
+
+/*收货人信息*/
+.consignee-info {
+    height: 216px;
+    margin-top: 10px;
+}
+
+.consignee-info h3 {
+    height: 24px;
+    overflow: hidden;
+    line-height: 24px;
+}
+
+.consignee-info h3 strong {
+    float: left;
+    display: inline;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.consignee-info h3 a {
+    float: right;
+    display: inline;
+    color: #f47a11;
+}
+
+.consignee-list {
+    height: 142px;
+    overflow: hidden;
+    margin-top: 20px;
+}
+
+.consignee-list .consignee-left, .consignee-list .consignee-right {
+    float: left;
+    display: inline;
+    width: 45px;
+    margin-top: 58px;
+    cursor: pointer;
+}
+
+.consignee-list .consignee-right {
+    text-align: right;
+}
+
+.consignee-list .consignee-scroll {
+    float: left;
+    display: inline;
+    width: 910px;
+    overflow: hidden;
+}
+
+.consignee-list .consignee-scroll .demo {
+    width: 920px;
+    overflow: hidden;
+}
+
+.consignee-list .consignee-scroll .list {
+    float: left;
+    display: inline;
+    margin-right: 10px;
+    width: 218px;
+    height: 140px;
+    overflow: hidden;
+    border: #cccccc solid 1px;
+    cursor: pointer;
+}
+
+.consignee-list .consignee-scroll .cur {
+    width: 216px;
+    height: 138px;
+    border: #f47a11 solid 2px;
+    background: url(../../images/order/consignee-cur-ico.png) 204px 126px no-repeat;
+}
+
+.consignee-list .consignee-scroll .list h4 {
+    width: 180px;
+    margin: 8px auto 0 auto;
+    overflow: hidden;
+    height: 38px;
+    line-height: 38px;
+    font-size: 14px;
+}
+
+.consignee-list .consignee-scroll .list p {
+    width: 180px;
+    margin: 0 auto 0 auto;
+    line-height: 18px;
+    height: 54px;
+    overflow: hidden;
+}
+
+.consignee-list .consignee-scroll .list .operation {
+    padding-top: 10px;
+    line-height: 18px;
+    text-align: right;
+    padding-right: 10px;
+}
+
+.consignee-list .consignee-scroll .list .operation a:hover {
+    color: #f47a11;
+}
+
+.consignee-list .consignee-scroll .add a {
+    display: block;
+    width: 218px;
+    height: 140px;
+    overflow: hidden;
+}
+
+.consignee-list .consignee-scroll .add .add-ico {
+    display: block;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.consignee-list .consignee-scroll .add .add-txt {
+    display: block;
+    text-align: center;
+    line-height: 38px;
+}
+
+/*支付方式*/
+.pay-type {
+    height: 88px;
+}
+
+.pay-type h3 {
+    height: 24px;
+    overflow: hidden;
+    line-height: 24px;
+}
+
+.pay-type h3 strong {
+    float: left;
+    display: inline;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.pay-type h3 a {
+    float: right;
+    display: inline;
+    color: #f47a11;
+}
+
+.pay-list {
+    height: 30px;
+    overflow: hidden;
+    margin: 12px 0 0 40px;
+}
+
+.pay-list .list {
+    width: 96px;
+    height: 28px;
+    overflow: hidden;
+    float: left;
+    display: inline;
+    margin-right: 10px;
+    border: #cccccc solid 1px;
+    cursor: pointer;
+    text-align: center;
+    line-height: 28px;
+}
+
+.pay-list .cur {
+    width: 94px;
+    height: 26px;
+    overflow: hidden;
+    border: #f47a11 solid 2px;
+    line-height: 26px;
+    background: url(../../images/order/consignee-cur-ico.png) 82px 14px no-repeat;
+}
+
+/*物流说明*/
+.logistic {
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+.logistic h3 {
+    height: 24px;
+    overflow: hidden;
+    line-height: 24px;
+}
+
+.logistic h3 strong {
+    float: left;
+    display: inline;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.logistic h3 a {
+    float: right;
+    display: inline;
+    color: #f47a11;
+}
+
+.logistic-msg {
+    margin-top: 10px;
+    overflow: hidden;
+    border: #ccc solid 1px;
+    line-height: 24px;
+    padding: 17px 40px 7px 40px;
+    color: #000;
+}
+
+.logistic-msg .logistic-msg-list {
+    width: 459px;
+    overflow: hidden;
+    height: 72px;
+    float: left;
+    display: inline;
+    padding-bottom: 10px;
+}
+
+.logistic-msg .logistic-msg-list .logistic-msg-list-t {
+    float: left;
+    display: inline;
+    width: 59px;
+    font-weight: bold;
+}
+
+.logistic-msg .logistic-msg-list .logistic-msg-list-c {
+    float: left;
+    display: inline;
+    width: 400px;
+}
+
+/*商品清单*/
+.order {
+}
+
+.order h3 {
+    height: 24px;
+    overflow: hidden;
+    line-height: 24px;
+}
+
+.order h3 strong {
+    float: left;
+    display: inline;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.order h3 a {
+    float: right;
+    display: inline;
+    color: #f47a11;
+}
+
+.order li {
+    float: left;
+    display: inline;
+}
+
+.order li.l1 {
+    width: 470px;
+}
+
+.order li.l2 {
+    width: 240px;
+}
+
+.order li.l3 {
+    width: 160px;
+}
+
+.order li.l4 {
+    width: 128px;
+}
+
+.proTitle {
+    height: 35px;
+    line-height: 35px;
+    overflow: hidden;
+    background-color: #f9f9f9;
+    border-bottom: #e5e5e5 solid 1px;
+}
+
+.proTitle li {
+    text-align: center;
+}
+
+.proTitle li.l1 span {
+    float: left;
+    display: inline;
+}
+
+.proTitle li.l1 span.order-id {
+    font-weight: bold;
+    width: 75px;
+}
+
+.order-list {
+    clear: both;
+    overflow: hidden;
+}
+
+.order-list .comp-name {
+    height: 24px;
+    line-height: 24px;
+    overflow: hidden;
+    padding: 17px 0 7px 14px;
+    font-size: 14px;
+    border-bottom: #ccc solid 1px;
+}
+
+.order-list .comp-name img {
+    float: left;
+    display: block;
+    margin: 5px 5px 0;
+}
+
+.order-list .comp-name span {
+    float: left;
+}
+
+.order-list .comp-name img.mt_8 {
+    margin-top: 2px;
+}
+
+.order-list .pro-list {
+    height: 80px;
+    overflow: hidden;
+    border: #ccc solid 1px;
+    border-top: 0;
+    padding: 20px 0;
+    background-color: #fcfcfc;
+}
+
+.order-list .pro-list .l1, .order-list .pro-list .l2, .order-list .pro-list .l3, .order-list .pro-list .l4 {
+    height: 120px;
+    overflow: hidden;
+}
+
+.order-list .pro-list .l1 em {
+    float: left;
+    display: inline;
+    width: 80px;
+    height: 80px;
+    overflow: hidden;
+    margin: 0 0 0 20px;
+}
+
+.order-list .pro-list .l1 p {
+    float: left;
+    display: inline;
+    width: 340px;
+    line-height: 20px;
+    height: 60px;
+    overflow: hidden;
+    margin: 0 0 0 10px;
+}
+
+.order-list .pro-list .l1 span {
+    float: left;
+    display: inline;
+    width: 340px;
+    overflow: hidden;
+    margin: 0 0 0 20px;
+}
+
+.order-list .pro-list .l2 {
+    text-align: center;
+    font-size: 14px;
+}
+
+.order-list .pro-list .l3 {
+
+}
+
+.order-list .pro-list .l3 span {
+    float: left;
+    display: inline;
+    cursor: pointer;
+}
+
+.order-list .pro-list .l3 .num-reduction {
+    width: 24px;
+    height: 24px;
+    overflow: hidden;
+    background-color: #f9f9f9;
+    border: #e5e5e5 solid 1px;
+    text-align: center;
+    line-height: 24px;
+    margin-left: 35px;
+}
+
+.order-list .pro-list .l3 .num-reduction:hover {
+    background-color: #f47a11;
+}
+
+.order-list .pro-list .l3 .num-add {
+    width: 24px;
+    height: 24px;
+    overflow: hidden;
+    border: #e5e5e5 solid 1px;
+    text-align: center;
+    line-height: 24px;
+    background-color: #f9f9f9;
+}
+
+.order-list .pro-list .l3 .num-add:hover {
+    background-color: #f47a11;
+}
+
+.order-list .pro-list .l3 .num-msg {
+    clear: both;
+    text-align: center;
+    line-height: 30px;
+    color: #F00;
+}
+
+.order-list .pro-list .l3 .num-chat {
+    float: left;
+    display: inline;
+    width: 37px;
+    height: 24px;
+    overflow: hidden;
+    border: #e5e5e5 solid 1px;
+    border-left: 0;
+    border-right: 0;
+    text-align: center;
+    line-height: 24px;
+}
+
+.order-list .pro-list .l4 {
+    text-align: center;
+    font-size: 14px;
+    color: #f47a11;
+}
+
+.order-list .guess {
+    padding-top: 25px;
+    padding-bottom: 40px;
+    clear: both;
+    overflow: hidden;
+}
+
+.order-list .guess span {
+    float: left;
+    display: inline;
+}
+
+.order-list .guess span.txt {
+    line-height: 26px;
+    width: 60px;
+    overflow: hidden;
+}
+
+.order-list .guess span.input {
+    width: 500px;
+}
+
+.order-list .guess span.input .msg {
+    width: 265px;
+    height: 24px;
+    overflow: hidden;
+    line-height: 24px;
+    border: #e5e5e5 solid 1px;
+    padding: 0 5px;
+    color: #999;
+}
+
+.order-list .guess span.input .cur {
+    width: 400px;
+    height: 72px;
+    color: #000;
+}
+
+.settlement {
+    height: 57px;
+    clear: both;
+    padding-bottom: 40px;
+}
+
+.settlement .confirmation {
+    float: right;
+    height: 57px;
+    width: 150px;
+    overflow: hidden;
+    background-color: #f47a11;
+    line-height: 57px;
+    text-align: center;
+    color: #FFF;
+    font-size: 20px;
+}
+
+.settlement .confirmation:hover {
+    background-color: #ff4200;
+    text-decoration: none;
+}
+
+.settlement .backcart {
+    height: 56px;
+    float: left;
+    display: inline;
+    width: 100px;
+    overflow: hidden;
+
+    background-color: #eae9e7;
+    border-bottom: #dbdbdb solid 1px;
+    text-align: right;
+    line-height: 56px;
+}
+
+.settlement .backcart a {
+    color: #f47a11;
+}
+
+.settlement .txt {
+    height: 56px;
+    float: left;
+    display: inline;
+    width: 750px;
+    overflow: hidden;
+    background-color: #eae9e7;
+    border-bottom: #dbdbdb solid 1px;
+    text-align: right;
+    line-height: 56px;
+}
+
+.settlement .txt .total-number, .settlement .txt .com-num {
+    color: #f47a11;
+}
+
+.settlement .txt .total-number {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.settlement .txt .total-price {
+    color: #f47a11;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+
+
+
+

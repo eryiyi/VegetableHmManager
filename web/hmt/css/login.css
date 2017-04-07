@@ -1,0 +1,268 @@
+﻿@charset "utf-8";
+/* CSS Document */
+
+.main {
+    margin-top: 15px;
+    margin-bottom: 50px;
+    overflow: hidden;
+}
+
+.login-ad {
+    float: left;
+}
+
+.login-form {
+    float: right;
+    width: 330px;
+    height: auto;
+    border: #e5e5e5 solid 1px;
+    border-top: #f49a11 solid 2px;
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
+
+.login-form a.regin, .login-form a.forget-word {
+    color: #F47A11;
+}
+
+.login-form h1 {
+    line-height: 45px;
+    height: 45px;
+    overflow: hidden;
+    font-size: 18px;
+}
+
+.login-msg {
+    line-height: 18px;
+    height: 36px;
+}
+
+.login-msg span {
+    color: #ff4200;
+}
+
+.login-form .usertxt {
+    line-height: 28px;
+    height: 28px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.login-form input {
+    padding: 0;
+}
+
+.login-form .userinput {
+}
+
+.login-form .userinput input {
+    width: 265px;
+    height: 32px;
+    border: 0px;
+    line-height: 32px;
+
+}
+
+.login-form .passwordtxt {
+    line-height: 24px;
+    height: 24px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.login-form .passwordinput {
+    width: 300px;
+    height: 32px;
+    background: url(../images/common/login-password.png) right top no-repeat;
+    padding-left: 5px;
+    border: #ccc solid 1px;
+    overflow: hidden;
+}
+
+.login-form .passwordinput input {
+    width: 265px;
+    height: 32px;
+    border: 0px;
+    line-height: 32px;
+}
+
+.login-form .codetxt {
+    line-height: 24px;
+    height: 24px;
+    margin-top: 6px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.login-form .codeinput {
+    height: 34px;
+    overflow: hidden;
+}
+
+.login-form .codeinput input {
+    width: 98px;
+    height: 32px;
+    border: #ccc solid 1px;
+    padding-left: 5px;
+    float: left;
+    display: inline;
+}
+
+.login-form .codeinput .verify {
+    float: left;
+    display: inline;
+    width: 60px;
+    height: 30px;
+    margin: 2px 5px 0 5px;
+}
+
+.login-form .codeinput span {
+    float: left;
+    display: inline;
+    line-height: 34px;
+    margin-left: 5px;
+}
+
+.login-form .codeinput span a {
+    color: #009436;
+}
+
+.login-form .forget {
+    height: 40px;
+    overflow: hidden;
+    clear: both;
+}
+
+.login-form .forget a {
+    color: #f67812;
+}
+
+.login-form .forget em {
+    width: 14px;
+    height: 14px;
+    overflow: hidden;
+    border: #ccc solid 1px;
+    float: left;
+    display: inline;
+    cursor: pointer;
+    margin-top: 12px;
+}
+
+.login-form .forget em.cur {
+    background: url(../images/myhn/common/checked-bg.png) no-repeat;
+}
+
+.login-form .forget span {
+    float: left;
+    display: inline;
+    line-height: 40px;
+    margin-left: 5px;
+}
+
+.login-form .forget a {
+    float: right;
+    display: inline;
+    line-height: 48px;
+    margin-right: 22px;
+}
+
+.login-form .regin {
+    float: right;
+    margin-right: 22px;
+}
+
+.login-form .userloginbut {
+    width: 307px;
+    display: block;
+    height: 34px;
+    line-height: 34px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.login-form .login-qq {
+    width: 307px;
+}
+
+.login-form .login-qq .login-g {
+    float: left;
+    line-height: 24px;
+    margin: 15px 15px 0;
+}
+
+.login-form .login-qq .login-g b {
+    color: #ddd;
+}
+
+.login-form .login-qq .login-h {
+    line-height: 24px;
+    margin: 15px auto 25px auto;
+    width: 130px;
+}
+
+.login-form .login-qq .login-h a {
+    margin: 0 10px;
+}
+
+.login-form .login-qq span {
+    float: left;
+    line-height: 45px;
+}
+
+.login-form .login-qq .qqico {
+    float: left;
+    margin: 15px 0 0 5px;
+}
+
+.login-form .login-qq .regin {
+    line-height: 45px;
+    float: right;
+}
+
+/*- error -*/
+.reg-hint {
+    width: 250px;
+    height: 24px;
+    line-height: 24px;
+    margin-left: 1px;
+    margin-right: 22px;
+    float: right;
+    font-weight: normal;
+    font-size: 12px;
+    text-align: right;
+}
+
+.reg-hint i {
+    margin: 11px 6px 0 0;
+}
+
+.reg-ico-1 {
+    background: url(../images/common/correct.png) no-repeat;
+    width: 15px;
+    height: 15px;
+    float: left;
+}
+
+.reg-ico-2 {
+    background: url(../images/common/error.png) no-repeat;
+    width: 15px;
+    height: 15px;
+    float: left;
+}
+
+.login-form .userinput input::-webkit-input-placeholder {
+    color: #ABAEAE;
+}
+
+.login-form .userinput input:-moz-placeholder {
+    color: #ABAEAE;
+}
+
+.login-form .userinput input::-moz-placeholder {
+    　color: #ABAEAE;
+}
+
+.login-form .userinput input:-ms-input-placeholder {
+    color: #ABAEAE;
+}

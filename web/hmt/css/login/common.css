@@ -1,0 +1,115 @@
+﻿@charset "utf-8";
+
+/*--------------------------------------------------
+ *@名称:		common.css
+ *@作者:		Huangpu
+ *@版本:		1.0
+ *@描述:		site level common style
+ *			站点全局样式，可根据项目具体需求修改
+--------------------------------------------------*/
+
+body {
+    font: 12px/1.5 "\5FAE\8F6F\96C5\9ED1", "\5B8B\4F53", Verdana, Arial, Helvetica, sans-serif;
+    background: #fff;
+    color: #333;
+}
+
+a:link, a:visited {
+    text-decoration: none;
+}
+
+a:hover, a:active, a:focus {
+    text-decoration: underline;
+}
+
+.wrap-1190 {
+    width: 1190px;
+    margin: 0 auto;
+}
+
+.wrap-1000 {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+/*按钮公用样式及其悬浮效果样式*/
+a.but {
+    color: #fff;
+    text-align: center;
+    background-color: #f47a11;
+    border-radius: 3px;
+}
+
+a.but:hover {
+    background-color: #ff4200;
+    text-decoration: none;
+}
+
+/*logobar 顶部LOGO部分*/
+.logobar {
+    height: 119px;
+    background-color: #FFF;
+    overflow: hidden;
+}
+
+.logobar .logo {
+    margin: 37px 0 0 2px;
+    float: left;
+    display: inline;
+}
+
+.logobar .logo-txt {
+    height: 51px;
+    overflow: hidden;
+    float: left;
+    display: inline;
+    line-height: 51px;
+    margin: 37px 0 0 20px;
+    /*border-left:#7f7f7f solid 1px;*/
+    font-size: 24px;
+    font-family: "微软雅黑";
+    padding-left: 17px;
+}
+
+.logobar .logo-customer {
+    float: right;
+    margin-top: 28px;
+    width: 510px;
+}
+
+.logobar .logo-customer_02 {
+    margin-top: 5px;
+}
+
+.logobar .logo-customer_02 span {
+    margin-bottom: 0px !important;
+}
+
+.logobar .logo-customer a {
+    width: 60px;
+    height: 22px;
+    line-height: 22px;
+    float: right;
+}
+
+.logobar .logo-customer span {
+    float: right;
+    margin-right: 5px;
+    line-height: 22px;
+    height: 22px;
+    /*background:url(../images/common/icon-iphone.png) right center no-repeat;*/
+    padding-left: 25px;
+    margin-bottom: 40px;
+}
+
+
+
+
+
+
+
+
+
+
+
+

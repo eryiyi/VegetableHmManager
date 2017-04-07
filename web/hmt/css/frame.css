@@ -1,0 +1,241 @@
+﻿body {
+    background-color: #ffffff;
+}
+
+/*- main -*/
+.main {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+/*- frame-menu -*/
+.frame-menu {
+    float: left;
+    width: 193px;
+    border: #dddddd solid 1px;
+}
+
+.frame-menu .title {
+    height: 45px;
+    background-color: #1faa50;
+    line-height: 45px;
+    text-align: center;
+    font-size: 16px;
+    color: #ffffff;
+}
+
+.frame-menu ul.jump-menu {
+    padding: 15px 0 5px 0;
+}
+
+.frame-menu ul.jump-menu li {
+    height: 33px;
+    width: 167px;
+    overflow: hidden;
+    margin: 0 auto 10px auto;
+    border: #dddddd solid 1px;
+    text-align: center;
+    line-height: 33px;
+    font-size: 14px;
+}
+
+.frame-menu ul.jump-menu li a {
+    display: block;
+    width: 167px;
+    height: 33px;
+    overflow: hidden;
+    text-decoration: none;
+    color: #333333;
+    text-align: center;
+}
+
+.frame-menu ul.jump-menu li a:hover {
+    background-color: #1faa50;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.frame-menu ul.menu-list li h2 {
+    height: 38px;
+    border-top: #dddddd solid 1px;
+    border-bottom: #dddddd solid 1px;
+}
+
+.frame-menu ul.menu-list li h2 em {
+    float: left;
+    width: 20px;
+    height: 20px;
+    overflow: hidden;
+    margin: 9px 0 0 15px;
+    padding: 0;
+}
+
+.frame-menu ul.menu-list li h2 em img {
+    float: left;
+    width: 20px;
+    height: 20px;
+}
+
+.frame-menu ul.menu-list li h2 span {
+    float: left;
+    height: 20px;
+    overflow: hidden;
+    margin: 9px 0 0 5px;
+    line-height: 20px;
+    font-size: 14px;
+    color: #1faa50;
+}
+
+.frame-menu ul.menu-list li dl {
+    padding: 5px 0;
+}
+
+.frame-menu ul.menu-list li dl dd {
+    height: 28px;
+    line-height: 28px;
+    overflow: hidden;
+}
+
+.frame-menu ul.menu-list li dl dd a {
+    display: block;
+    height: 28px;
+    overflow: hidden;
+    color: #333333;
+    text-decoration: none;
+    padding-left: 40px;
+}
+
+.frame-menu ul.menu-list li dl dd a:hover {
+    color: #1faa50;
+    text-decoration: none;
+}
+
+.frame-menu ul.menu-list li dl dd.cur {
+    height: 32px;
+    line-height: 32px;
+}
+
+.frame-menu ul.menu-list li dl dd.cur a {
+    height: 32px;
+    color: #ffffff;
+    background-color: #1faa50;
+}
+
+/*- frame-container -*/
+.frame-container {
+    float: right;
+    width: 980px;
+    overflow: hidden;
+}
+
+/*- frame-title -*/
+.frame-title {
+    height: 20px;
+    line-height: 20px;
+    overflow: hidden;
+    border-left: #1faa50 solid 4px;
+    padding-left: 10px;
+    font-size: 16px;
+    color: #333333;
+}
+
+/*myhn_page*/
+.myhn_page {
+    width: 980px;
+    height: 37px;
+    clear: both;
+    overflow: hidden;
+    text-align: right;
+    margin: 0px auto;
+    padding: 30px 0px;
+}
+
+.myhn_page .page-bottom {
+    display: inline-block;
+    zoom: 1;
+    vertical-align: middle;
+    *display: inline;
+}
+
+.myhn_page .page-bottom a {
+    float: left;
+    height: 35px;
+    line-height: 35px;
+    padding: 0 15px;
+    margin: 0px 6px;
+    text-align: center;
+    vertical-align: middle;
+    white-space: nowrap;
+    font-size: 14px;
+    border: 1px #dddddd solid;
+    border-radius: 2px 2px;
+    text-indent: 0px;
+}
+
+.myhn_page .page-bottom span {
+    height: 35px;
+    float: left;
+    line-height: 35px;
+    padding: 0px 15px;
+    text-indent: 0px;
+    border: 1px #dddddd solid;
+}
+
+.myhn_page a:hover {
+    background: #f47a11;
+    color: #FFF;
+    text-decoration: none;
+}
+
+.myhn_page .page-op {
+    display: inline-block;
+    zoom: 1;
+    vertical-align: middle;
+    *display: inline;
+}
+
+.myhn_page .page-op span {
+    float: left;
+    line-height: 35px;
+}
+
+.myhn_page .page_but1hover {
+    background: #f47a11;
+    color: #FFF;
+    text-decoration: none;
+}
+
+.myhn_page .page_but2 {
+    width: 40px;
+    height: 28px;
+    display: inline-block;
+    line-height: 28px;
+    text-align: center;
+    padding: 0 3px;
+    border-radius: 2px;
+    text-indent: 0px;
+    border: #dddddd solid 1px;
+    margin-top: 2px;
+    outline: none;
+    margin-left: 6px;
+}
+
+.myhn_page .page_but2:hover {
+    background: #f47a11;
+    color: #fff;
+}
+
+.myhn_page .page_input {
+    float: left;
+    width: 40px;
+    height: 28px;
+    display: inline-block;
+    border: 1px #dddddd solid;
+    border-radius: 2px;
+    text-align: center;
+    vertical-align: middle;
+    padding: 0px;
+    margin-top: 2px;
+    outline: none;
+}

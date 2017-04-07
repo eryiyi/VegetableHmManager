@@ -1,0 +1,152 @@
+/*- common -*/
+body {
+    font: 12px "Microsoft YaHei", Tahoma, Arial, \5FAE\8F6F\96C5\9ED1, \5B8B\4F53 !important;
+    line-height: 1.5;
+    background: #fff;
+    color: #333;
+    min-width: 1200px;
+}
+
+.wrap {
+    width: 1190px;
+    margin: 0 auto;
+}
+
+.f_18 {
+    font-size: 18px;
+}
+
+.f_14 {
+    font-size: 14px;
+}
+
+/*- header -*/
+.header {
+    height: 70px;
+    background-color: #1faa50 !important;
+}
+
+.header .logo {
+    float: left;
+    margin-top: 17px;
+}
+
+.header .webname {
+    float: left;
+    margin: 17px 0 0 10px;
+    width: 165px;
+    height: 38px;
+    border-left: 1px #ffffff solid;
+    padding-left: 10px;
+    color: #ffffff;
+}
+
+.header .webname h2 {
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.header .webname span {
+    font-size: 10px;
+    line-height: 16px;
+}
+
+.header .myshop {
+    float: left;
+    margin-top: 24px;
+    height: 30px;
+    width: 625px;
+    overflow: hidden;
+}
+
+.header .myshop .text {
+    float: left;
+    line-height: 30px;
+    font-size: 18px;
+    color: #ffffff;
+}
+
+.header .myshop .url {
+    float: left;
+    line-height: 30px;
+    font-size: 16px;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.header .myshop .url:hover {
+    color: #f47a11;
+    text-decoration: underline;
+}
+
+.header .myshop .ewm-ico {
+    float: left;
+    margin: 6px;
+    cursor: pointer;
+}
+
+.header .myshop .ewm-ico .ewm {
+    width: 100px;
+    height: 107px;
+    position: absolute;
+    z-index: 500;
+    display: none;
+    margin-left: -41px;
+    margin-top: 18px;
+    background: url("../../../images/personal/home/ewm-bg.png") center top no-repeat;
+}
+
+.header .myshop .ewm-ico .ewm .ewm-img,
+.header .myshop .ewm-ico .ewm em {
+    display: block;
+    padding: 10px;
+    width: 90px;
+    height: 90px;
+    overflow: hidden;
+    margin-top: 7px;
+    background-color: #ffffff;
+}
+
+.header .myshop .ewm-ico:hover .ewm {
+    display: block;
+}
+
+.header .bdshare {
+    float: left;
+    margin: 0 0 0 18px;
+}
+
+.header .bdshare .text {
+    float: left;
+    color: #ffffff;
+    font-size: 14px;
+    line-height: 30px;
+}
+
+.header .bdshare .bdsharebuttonbox {
+    float: left;
+    width: 100px;
+}
+
+.header .to-hnuser {
+    float: right;
+    margin: 20px 34px 0 0;
+}
+
+.header .to-hnuser a {
+    display: block;
+    width: 135px;
+    height: 32px;
+    overflow: hidden;
+    background-color: white;
+    border-radius: 2px;
+    line-height: 32px;
+    text-align: center;
+    font-size: 16px;
+    color: #f47a11;
+    text-decoration: none;
+}
+
+.w_100 {
+    width: 100px;
+}

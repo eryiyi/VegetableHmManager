@@ -1,0 +1,1712 @@
+﻿/*- body -*/
+body {
+    /*background-color: #eceef3 !important;*/
+}
+
+/*- main -*/
+.main {
+    margin-top: 20px;
+    background: url("../../images/main-bg.png") right top repeat-y;
+    overflow: hidden;
+}
+
+.mains {
+    float: left;
+    width: 985px;
+}
+
+/*- mainL -*/
+.mainL {
+    float: left;
+    width: 270px;
+}
+
+/*- info -*/
+.info {
+    border: #dddddd solid 1px;
+    margin-bottom: 10px;
+}
+
+.info .userinfo {
+    height: 66px;
+    border-bottom: #dddddd solid 1px;
+    background-color: #f5f5f5;
+}
+
+.info .userinfo em {
+    float: left;
+    width: 50px;
+    height: 50px;
+    overflow: hidden;
+    border: #dddddd solid 1px;
+    border-radius: 26px;
+    margin: 7px 0 0 12px;
+    cursor: pointer;
+}
+
+.info .userinfo em img {
+    float: left;
+    width: 50px;
+    height: 50px;
+}
+
+.info .userinfo .text {
+    float: left;
+    margin: 0 0 0 7px;
+    width: 195px;
+    overflow: hidden;
+}
+
+.info .userinfo .text .name {
+    height: 20px;
+    overflow: hidden;
+    margin-top: 12px;
+}
+
+.info .userinfo .text .name strong {
+    float: left;
+    max-width: 140px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    line-height: 20px;
+    font-size: 14px;
+    font-weight: normal;
+}
+
+.info .userinfo .text .name a {
+    float: left;
+    width: 49px;
+    height: 19px;
+    overflow: hidden;
+    margin-left: 5px;
+}
+
+.info .userinfo .text .message {
+    height: 20px;
+    overflow: hidden;
+    margin-top: 6px;
+}
+
+.info .userinfo .text .message .txt {
+    float: left;
+    line-height: 16px;
+    font-size: 12px;
+    font-weight: normal;
+    color: #333333;
+    text-decoration: none;
+    margin-top: 2px;
+}
+
+.info .userinfo .text .message .txt:hover {
+    color: #f47a11;
+    text-decoration: none;
+}
+
+.info .userinfo .text .message .msg-mark {
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    margin-left: 1px;
+    padding-left: 6px;
+    overflow: hidden;
+    vertical-align: -5px;
+    color: #fff;
+    text-align: center;
+    letter-spacing: -1px;
+    background: url(../../images/common-top-head.png) no-repeat left center;
+    background-position: 0 -33px;
+    text-decoration: none;
+}
+
+.info .userinfo .text .message .msg-mark em {
+    vertical-align: baseline;
+    width: auto !important;
+    height: auto !important;
+    border: 0;
+    margin: 0;
+}
+
+.info .userinfo .text .message .msg-mark sup {
+    position: relative;
+    top: -5px;
+    vertical-align: baseline;
+}
+
+.info .userstate {
+    height: 36px;
+    overflow: hidden;
+    background-color: #ffffff;
+    border-bottom: #dddddd solid 1px;
+}
+
+.info .userstate strong {
+    float: left;
+    padding: 8px 0 0 12px;
+    line-height: 20px;
+    font-weight: normal;
+}
+
+.info .userstate span {
+    float: left;
+    padding: 9px 0 0 5px;
+}
+
+.info .userstate span img {
+    float: left;
+    margin-left: 3px;
+}
+
+.info .userbind {
+    height: 100px;
+    background-color: #ffffff;
+    overflow: hidden;
+}
+
+.info .userbind.userbind-buy {
+    height: 135px;
+}
+
+.info .userbind ul {
+    padding: 12px 0 0 6px;
+}
+
+.info .userbind.userbind-buy ul {
+    padding: 14px 0 0 10px;
+    width: 276px;
+}
+
+.info .userbind ul li {
+    float: left;
+    width: 64px;
+}
+
+.info .userbind.userbind-buy ul li {
+    margin-right: 28px;
+}
+
+.info .userbind ul li em,
+.info .userbind ul li em a {
+    display: block;
+    width: 50px;
+    height: 50px;
+    overflow: hidden;
+    margin: auto;
+}
+
+.info .userbind.userbind-buy ul li em,
+.info .userbind.userbind-buy ul li em a {
+    width: 58px;
+    height: 58px;
+}
+
+.info .userbind ul li.account em {
+    background: url("../../../images/personal/home/bind-1-1.png") no-repeat;
+}
+
+.info .userbind ul li.account.isbind em {
+    background: url("../../../images/personal/home/bind-1-3.png") no-repeat;
+}
+
+.info .userbind ul li.account em:hover {
+    background: url("../../../images/personal/home/bind-1-2.png") no-repeat;
+}
+
+.info .userbind ul li.phone em {
+    background: url("../../../images/personal/home/bind-2-1.png") no-repeat;
+}
+
+.info .userbind ul li.phone.isbind em {
+    background: url("../../../images/personal/home/bind-2-3.png") no-repeat;
+}
+
+.info .userbind ul li.phone em:hover {
+    background: url("../../../images/personal/home/bind-2-2.png") no-repeat;
+}
+
+.info .userbind.userbind-buy ul li.phone em {
+    background: url("../../images/bind-6-1.png") no-repeat;
+}
+
+.info .userbind.userbind-buy ul li.phone.isbind em {
+    background: url("../../images/bind-6-3.png") no-repeat;
+}
+
+.info .userbind.userbind-buy ul li.phone em:hover {
+    background: url("../../images/bind-6-2.png") no-repeat;
+}
+
+.info .userbind ul li.email em {
+    background: url("../../images/bind-3-1.png") no-repeat;
+}
+
+.info .userbind ul li.email.isbind em {
+    background: url("../../images/bind-3-3.png") no-repeat;
+}
+
+.info .userbind ul li.email em:hover {
+    background: url("../../images/bind-3-2.png") no-repeat;
+}
+
+.info .userbind.userbind-buy ul li.email em {
+    background: url("../../images/bind-7-1.png") no-repeat;
+}
+
+.info .userbind.userbind-buy ul li.email.isbind em {
+    background: url("../../images/bind-7-3.png") no-repeat;
+}
+
+.info .userbind.userbind-buy ul li.email em:hover {
+    background: url("../../images/bind-7-2.png") no-repeat;
+}
+
+.info .userbind ul li.password em {
+    background: url("../../images/bind-4-1.png") no-repeat;
+}
+
+.info .userbind ul li.password em:hover {
+    background: url("../../images/bind-4-2.png") no-repeat;
+}
+
+.info .userbind.userbind-buy ul li.password em {
+    background: url("../../images/bind-5-1.png") no-repeat;
+}
+
+.info .userbind.userbind-buy ul li.password em:hover {
+    background: url("../../images/bind-5-2.png") no-repeat;
+}
+
+.info .userbind ul li span {
+    display: block;
+    height: 30px;
+    line-height: 30px;
+    overflow: hidden;
+    text-align: center;
+    color: #333333;
+}
+
+.info .userbind ul li a {
+    color: #333333;
+    text-decoration: none;
+}
+
+.info .userbind ul li a:hover {
+    color: #f47a11;
+    text-decoration: none;
+}
+
+.info .userbind .login-time {
+    clear: both;
+    height: 28px;
+    line-height: 28px;
+    overflow: hidden;
+    color: #999999;
+    padding-left: 16px;
+}
+
+/*- server -*/
+.server {
+    border: #dddddd solid 1px;
+    background-color: #ffffff;
+    margin-bottom: 10px;
+}
+
+.server .title {
+    height: 38px;
+    overflow: hidden;
+    background-color: #f5f5f5;
+}
+
+.server .title strong {
+    float: left;
+    padding-left: 12px;
+    font-size: 14px;
+    line-height: 38px;
+    font-weight: normal;
+}
+
+.server .title a {
+    float: right;
+    padding-right: 10px;
+    color: #f47a11;
+    text-decoration: none;
+    line-height: 38px;
+}
+
+.server .title a:hover {
+    text-decoration: underline;
+}
+
+.server ul {
+    width: 248px;
+    padding: 6px 10px;
+}
+
+.server ul li {
+    height: 56px;
+    border-top: #ddd dashed 1px;
+}
+
+.server ul li.noline {
+    border-top: 0;
+}
+
+.server ul li h2 {
+    float: left;
+    width: 180px;
+    padding: 10px 0 0 6px;
+    overflow: hidden;
+}
+
+.server ul li h2 strong,
+.server ul li h2 span {
+    display: block;
+    height: 18px;
+    line-height: 18px;
+    font-weight: normal;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.server ul li h2 span {
+    color: #999999;
+}
+
+.server ul li p {
+    float: right;
+    width: 58px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    color: #f47a11;
+    border-radius: 3px;
+    border: #f47a11 solid 1px;
+    margin: 10px 0 0 0;
+    text-decoration: none;
+}
+
+.server ul li p a {
+    display: block;
+    width: 58px;
+    height: 30px;
+    color: #f47a11;
+    text-decoration: none;
+}
+
+.server ul li p a:hover {
+    color: #ffffff;
+    background-color: #f47a11;
+    text-decoration: none;
+}
+
+.server ul li p.disable {
+    border: #cccccc solid 1px;
+    background-color: #cccccc;
+    color: #999999;
+}
+
+.server ul li a.disable:hover {
+    color: #999999;
+    background-color: #cccccc;
+}
+
+/*- left-side -*/
+.left-side {
+    height: 95px;
+    background-color: #ffffff;
+    border: #dddddd solid 1px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.left-side a {
+    text-decoration: none;
+}
+
+.left-side a:hover, .left-side a:active, .left-side a:focus {
+    color: #f57a11;
+    text-decoration: none;
+}
+
+.left-side h2 {
+    padding: 23px 0 0 78px;
+    height: 26px;
+    line-height: 26px;
+    overflow: hidden;
+    font-size: 16px;
+    color: #333333;
+}
+
+.left-side p {
+    padding: 0 0 0 78px;
+    height: 22px;
+    line-height: 22px;
+    overflow: hidden;
+    font-size: 14px;
+    color: #999;
+}
+
+.left-side p .number {
+    color: #f47a11;
+}
+
+.left-side .mm {
+    padding-top: 8px;
+    height: 22px;
+    line-height: 22px;
+    overflow: hidden;
+    color: #999999;
+}
+
+.left-side .mm .mml {
+    float: left;
+    padding-left: 10px;
+}
+
+.left-side .mm .mmr {
+    float: right;
+    padding-right: 20px;
+}
+
+.left-side .mm .number {
+    color: #666666;
+}
+
+.left-side-1 {
+    background: #ffffff url("../../../images/personal/home/left-side-1-bg.png") 16px 21px no-repeat;
+}
+
+.left-side-1:hover {
+    border: #66ccee solid 1px;
+}
+
+.left-side-2 {
+    background: #ffffff url("../../../images/personal/home/left-side-2-bg.png") 16px 10px no-repeat;
+}
+
+.left-side-2:hover {
+    border: #f37110 solid 1px;
+}
+
+.left-side-2 h2 {
+    padding-top: 16px;
+}
+
+.left-side-3 {
+    background: #ffffff url("../../images/left-side-3-bg.png") 16px 21px no-repeat;
+}
+
+.left-side-3:hover {
+    border: #34be82 solid 1px;
+}
+
+.left-side-4 {
+    background: #ffffff url("../../images/left-side-4-bg.png") 16px 21px no-repeat;
+}
+
+.left-side-4:hover {
+    border: #71d0ef solid 1px;
+}
+
+.ad-1 {
+    width: 270px;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+/*- mainC -*/
+.mainC {
+    float: left;
+    width: 700px;
+    margin-left: 15px;
+}
+
+/*- visit -*/
+.visit {
+    height: 355px;
+    background-color: #ffffff;
+    margin-bottom: 10px;
+}
+
+.visit .title {
+    padding: 10px 20px 0 20px;
+    height: 38px;
+    line-height: 38px;
+}
+
+.visit .title h2 {
+    font-size: 18px;
+    float: left;
+}
+
+.visit .title h2 span {
+    color: #f47a11;
+}
+
+.visit .title p {
+    font-size: 14px;
+    float: right;
+}
+
+.visit .con {
+    margin-top: 10px;
+    padding: 0 15px;
+    height: 190px;
+
+    position: relative;
+    overflow: hidden;
+}
+
+.visit .con #visit {
+    height: 190px;
+    overflow: hidden;
+}
+
+.visit .data {
+    margin-top: 12px;
+    border-top: #dddddd solid 1px;
+}
+
+.visit .data ul {
+    padding-left: 5px;
+}
+
+.visit .data li {
+    float: left;
+    width: 210px;
+    height: 56px;
+    overflow: hidden;
+    margin: 20px 0 0 15px;
+    background-color: #f5f5f5;
+    position: relative;
+}
+
+.visit .data li a {
+    display: block;
+    width: 210px;
+    height: 56px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.visit .data li em {
+    float: left;
+    width: 64px;
+    height: 56px;
+}
+
+.visit .data li em.shop,
+.visit .data li em.free {
+    background: #3db4f8 url('../../../images/personal/home/visit-shop.png') center no-repeat;
+}
+
+.visit .data li em.product {
+    background: #25b577 url('../../../images/personal/home/visit-product.png') center no-repeat;
+}
+
+.visit .data li em.supply {
+    background: #f4756e url('../../../images/personal/home/visit-supply.png') center no-repeat;
+}
+
+.visit .data li .number {
+    float: left;
+    line-height: 30px;
+    height: 30px;
+    overflow: hidden;
+    font-size: 18px;
+    font-weight: bold;
+    color: #f47a11;
+    margin-left: 15px;
+    width: 100px;
+}
+
+.visit .data li .txt {
+    float: left;
+    line-height: 26px;
+    height: 26px;
+    overflow: hidden;
+    font-size: 14px;
+    color: #333333;
+    margin-left: 15px;
+    width: 100px;
+}
+
+.visit .data li .change {
+    position: absolute;
+    left: 170px;
+    top: 6px;
+    height: 20px;
+    overflow: hidden;
+    width: 40px;
+    text-indent: 14px;
+    line-height: 20px;
+    color: #333333;
+}
+
+.visit .data li .change.rise {
+    background: url("../../../images/personal/home/rise.png") left center no-repeat;
+}
+
+.visit .data li .change.reduce {
+    background: url("../../../images/personal/home/reduce.png") left center no-repeat;
+}
+
+/*- module -*/
+.module {
+    overflow: hidden;
+    width: 710px;
+}
+
+.modules {
+    float: left;
+    background-color: #ffffff;
+    margin: 0 10px 10px 0;
+    overflow: hidden;
+}
+
+/*- modu-cpxd -*/
+.modu-cpxd {
+    width: 345px;
+    height: 202px;
+}
+
+.modu-cpxd .title {
+    height: 42px;
+    line-height: 42px;
+    overflow: hidden;
+    color: #333333;
+    border-top: #24b576 solid 2px;
+    border-bottom: #dddddd solid 1px;
+    background-color: #ffffff;
+}
+
+.modu-cpxd .title h2 {
+    float: left;
+    padding-left: 20px;
+    font-size: 16px;
+}
+
+.modu-cpxd .box,
+.modu-cpxd .box a {
+    display: block;
+    height: 157px;
+    text-decoration: none;
+}
+
+.modu-cpxd .box a:hover {
+    background-color: #fafafa;
+}
+
+.modu-cpxd .box h3 {
+    padding-top: 20px;
+    font-size: 16px;
+    color: #666666;
+    height: 26px;
+    line-height: 26px;
+    text-align: center;
+}
+
+.modu-cpxd .box p {
+    margin: 20px 0 0 110px;
+    height: 51px;
+    line-height: 51px;
+    overflow: hidden;
+    background: url("../../../images/personal/home/modu-3.png") no-repeat;
+    padding-left: 70px;
+    font-size: 48px;
+    color: #f47a11;
+}
+
+.modu-cpxd .box a:hover p {
+    background: url("../../../images/personal/home/modu-3-click.png") no-repeat;
+}
+
+/*- modu-cgbj -*/
+.modu-cgbj {
+    width: 345px;
+    height: 202px;
+}
+
+.modu-cgbj .title {
+    height: 42px;
+    line-height: 42px;
+    overflow: hidden;
+    color: #333333;
+    border-top: #54b6df solid 2px;
+    border-bottom: #dddddd solid 1px;
+    background-color: #ffffff;
+}
+
+.modu-cgbj .title h2 {
+    float: left;
+    padding-left: 20px;
+    font-size: 16px;
+}
+
+.modu-cgbj .box,
+.modu-cgbj .box a {
+    display: block;
+    height: 157px;
+    text-decoration: none;
+}
+
+.modu-cgbj .box a:hover {
+    background-color: #fafafa;
+}
+
+.modu-cgbj .box h3 {
+    padding-top: 20px;
+    font-size: 16px;
+    color: #666666;
+    height: 26px;
+    line-height: 26px;
+    text-align: center;
+}
+
+.modu-cgbj .box p {
+    margin: 20px 0 0 110px;
+    height: 51px;
+    line-height: 51px;
+    overflow: hidden;
+    background: url("../../../images/personal/home/modu-2.png") no-repeat;
+    padding-left: 70px;
+    font-size: 48px;
+    color: #f47a11;
+}
+
+.modu-cgbj .box a:hover p {
+    background: url("../../../images/personal/home/modu-2-click.png") no-repeat;
+}
+
+/*- modu-wdcg -*/
+.modu-wdcg {
+    width: 30%;
+    margin-right: 3.33%;
+    height: 202px;
+}
+
+.modu-wdcg .title {
+    height: 42px;
+    line-height: 42px;
+    overflow: hidden;
+    color: #ffffff;
+    border-top: #54b6df solid 2px;
+    border-bottom: #54b6df solid 1px;
+    background-color: #54b6df;
+}
+
+.modu-wdcg .title h2 {
+    float: left;
+    padding-left: 20px;
+    font-size: 16px;
+}
+
+.modu-wdcg .box,
+.modu-wdcg .box a {
+    display: block;
+    height: 157px;
+    text-decoration: none;
+}
+
+.modu-wdcg .box a:hover {
+    background-color: #fafafa;
+}
+
+.modu-wdcg .box h3 {
+    padding-top: 20px;
+    font-size: 16px;
+    color: #666666;
+    height: 26px;
+    line-height: 26px;
+    text-align: center;
+}
+
+.modu-wdcg .box p {
+    margin: 20px auto;
+    height: 51px;
+    width: 51px;
+    overflow: hidden;
+    background: url("../../images/modu-3.png") no-repeat;
+}
+
+.modu-wdcg .box a:hover p {
+    background: url("../../images/modu-3-click.png") no-repeat;
+}
+
+.modu-syyh {
+    width: 30%;
+    margin-right: 3.33%;
+    height: 202px;
+}
+
+.modu-syyh .title {
+    height: 42px;
+    line-height: 42px;
+    overflow: hidden;
+    color: #ffffff;
+    border-top: #54b6df solid 2px;
+    border-bottom: #54b6df solid 1px;
+    background-color: #54b6df;
+}
+
+.modu-syyh .title h2 {
+    float: left;
+    padding-left: 20px;
+    font-size: 16px;
+}
+
+.modu-syyh .box,
+.modu-syyh .box a {
+    display: block;
+    height: 157px;
+    text-decoration: none;
+}
+
+.modu-syyh .box a:hover {
+    background-color: #fafafa;
+}
+
+.modu-syyh .box h3 {
+    padding-top: 20px;
+    font-size: 16px;
+    color: #666666;
+    height: 26px;
+    line-height: 26px;
+    text-align: center;
+}
+
+.modu-syyh .box p {
+    margin: 20px auto;
+    height: 51px;
+    width: 51px;
+    overflow: hidden;
+    background: url("../../images/tree_user_bank.png") no-repeat;
+    background-size: contain;
+}
+
+.modu-syyh .box a:hover p {
+    background: url("../../images/tree_user_bank_p.png") no-repeat;
+    background-size: contain;
+}
+
+/*- modu-wdxd -*/
+.modu-wdxd {
+    width: 30%;
+    margin-right: 3.33%;
+    height: 202px;
+}
+
+.modu-wdxd .title {
+    height: 42px;
+    line-height: 42px;
+    overflow: hidden;
+    color: #ffffff;
+    border-top: #24b576 solid 2px;
+    border-bottom: #24b576 solid 1px;
+    background-color: #24b576;
+}
+
+.modu-wdxd .title h2 {
+    float: left;
+    padding-left: 20px;
+    font-size: 16px;
+}
+
+.modu-wdxd .box,
+.modu-wdxd .box a {
+    display: block;
+    height: 157px;
+    text-decoration: none;
+}
+
+.modu-wdxd .box a:hover {
+    background-color: #fafafa;
+}
+
+.modu-wdxd .box h3 {
+    padding-top: 20px;
+    font-size: 16px;
+    color: #666666;
+    height: 26px;
+    line-height: 26px;
+    text-align: center;
+}
+
+.modu-wdxd .box p {
+    margin: 20px auto;
+    height: 51px;
+    width: 51px;
+    overflow: hidden;
+    background: url("../../images/modu-2.png") no-repeat;
+}
+
+.modu-wdxd .box a:hover p {
+    background: url("../../images/modu-2-click.png") no-repeat;
+}
+
+/*- modu-jygl -*/
+.modu-jygl {
+    width: 700px;
+    height: 178px;
+}
+
+.modu-jygl .title {
+    height: 42px;
+    line-height: 42px;
+    overflow: hidden;
+    color: #333333;
+    border-top: #9f8fbd solid 2px;
+    border-bottom: #dddddd solid 1px;
+    background-color: #ffffff;
+}
+
+.modu-jygl .title h2 {
+    float: left;
+    padding-left: 20px;
+    font-size: 16px;
+}
+
+.modu-jygl .title a {
+    float: right;
+    padding-right: 15px;
+    color: #333333;
+    text-decoration: none;
+}
+
+.modu-jygl .title a:hover {
+    color: #f47a11;
+    text-decoration: underline;
+}
+
+.modu-jygl .box {
+    padding-top: 20px;
+}
+
+.modu-jygl .box .w672 {
+    width: 672px;
+    margin: auto;
+}
+
+.modu-jygl .box .w594 {
+    width: 594px;
+    margin: auto;
+}
+
+.modu-jygl .box li {
+    float: left;
+}
+
+.modu-jygl .box li.link {
+    width: 78px;
+    overflow: hidden;
+}
+
+.modu-jygl .box li.link a.number1 {
+    display: block;
+    width: 62px;
+    height: 62px;
+    margin: auto;
+    overflow: hidden;
+    line-height: 62px;
+    text-align: center;
+    cursor: pointer;
+    font-size: 18px;
+    color: #f47a11;
+    text-decoration: none;
+    background: url("../../images/tree_user_nearby.png") no-repeat;
+}
+
+.modu-jygl .box li.link a.number2 {
+    display: block;
+    width: 62px;
+    height: 62px;
+    margin: auto;
+    overflow: hidden;
+    line-height: 62px;
+    text-align: center;
+    cursor: pointer;
+    font-size: 18px;
+    color: #f47a11;
+    text-decoration: none;
+    background: url("../../images/tree_user_crs.png") no-repeat;
+}
+
+.modu-jygl .box li.link a.number3 {
+    display: block;
+    width: 62px;
+    height: 62px;
+    margin: auto;
+    overflow: hidden;
+    line-height: 62px;
+    text-align: center;
+    cursor: pointer;
+    font-size: 18px;
+    color: #f47a11;
+    text-decoration: none;
+    background: url("../../images/tree_user_weixin.png") no-repeat;
+}
+
+.modu-jygl .box li.link a.number1:hover {
+    color: #ffffff;
+    text-decoration: none;
+    background: url("../../images/tree_user_nearby_p.png") no-repeat;
+}
+
+.modu-jygl .box li.link a.number2:hover {
+    color: #ffffff;
+    text-decoration: none;
+    background: url("../../images/tree_user_crs_p.png") no-repeat;
+}
+
+.modu-jygl .box li.link a.number3:hover {
+    color: #ffffff;
+    text-decoration: none;
+    background: url("../../images/tree_user_weixin_p.png") no-repeat;
+}
+
+.modu-jygl .box li.link p {
+    display: block;
+    margin-top: 10px;
+    line-height: 18px;
+    color: #333333;
+    text-decoration: none;
+    text-align: center;
+}
+
+.modu-jygl .box li.link p img,
+.modu-jygl .box li.link p span {
+    vertical-align: middle;
+    margin: 0 1px;
+}
+
+.modu-jygl .box li.line {
+    height: 62px;
+    background: url("../../images/jygl-line.png") center repeat-x;
+}
+
+.modu-jygl .box li.w120 {
+    width: 120px;
+}
+
+.modu-jygl .box li.w180 {
+    width: 180px;
+}
+
+.modu-jygl .box li.line span {
+    display: block;
+    height: 11px;
+    width: 26px;
+    margin: 27px auto 0 auto;
+    background: url("../../images/jygl-line-quan.png") center repeat-x;
+}
+
+/*- modu-manager -*/
+.modu-manager {
+    height: 52px;
+    width: 700px;
+    border-bottom: #c9cbcf solid 3px;
+}
+
+.modu-manager a {
+    display: block;
+    height: 52px;
+    width: 700px;
+    background: url("../../images/manager.png") 290px center no-repeat;
+    text-indent: 320px;
+    text-decoration: none;
+    line-height: 52px;
+    font-size: 18px;
+    color: #666666;
+}
+
+/*- ad-2 -*/
+.ad-2 {
+    clear: both;
+    width: 985px;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+/*- browseb-record -*/
+.browseb-record {
+    height: 270px;
+    overflow: hidden;
+    margin-bottom: 10px;
+    background-color: #ffffff;
+    border-top: #25ac55 solid 2px;
+    clear: both;
+}
+
+.browseb-record .title {
+    height: 40px;
+    background-color: #f9f9f9;
+    line-height: 40px;
+    padding-left: 17px;
+    font-size: 18px;
+    color: #000000;
+}
+
+.browseb-record .norecord {
+    line-height: 220px;
+    text-align: center;
+    font-size: 18px;
+    color: #999999;
+}
+
+.picScroll-left {
+    overflow: hidden;
+    position: relative;
+    width: 985px;
+    height: 230px;
+}
+
+.picScroll-left .hd .prev {
+    position: absolute;
+    width: 27px;
+    height: 49px;
+    overflow: hidden;
+    cursor: pointer;
+    top: 76px;
+    left: 18px;
+}
+
+.picScroll-left .hd .next {
+    position: absolute;
+    width: 27px;
+    height: 49px;
+    overflow: hidden;
+    cursor: pointer;
+    top: 76px;
+    left: 941px;
+}
+
+.picScroll-left .bd {
+    width: 885px;
+    margin: 15px auto 0 auto;
+}
+
+.picScroll-left .bd ul {
+    overflow: hidden;
+    zoom: 1;
+}
+
+.picScroll-left .bd ul li {
+    float: left;
+    _display: inline;
+    overflow: hidden;
+    width: 145px;
+    margin: 0 16px;
+}
+
+.picScroll-left .bd ul li .pic {
+    width: 145px;
+    height: 145px;
+    text-align: center;
+}
+
+.picScroll-left .bd ul li .pic img {
+    width: 145px;
+    height: 145px;
+    display: block;
+}
+
+.picScroll-left .bd ul li .txt {
+    line-height: 22px;
+    height: 22px;
+    padding-top: 8px;
+    font-size: 12px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.picScroll-left .bd ul li .txt a {
+    color: #333333;
+    text-decoration: none;
+}
+
+.picScroll-left .bd ul li .txt a:hover {
+    color: #f47a11;
+    text-decoration: underline;
+}
+
+.picScroll-left .bd ul li .price {
+    line-height: 22px;
+    height: 22px;
+    font-size: 18px;
+    color: #ff0000;
+    text-align: center;
+    font-family: 'Arial';
+}
+
+/*- mainR -*/
+.mainR {
+    float: right;
+    width: 190px;
+}
+
+/*- plug -*/
+.mainR .plug {
+    border-top: #ddddde solid 1px;
+}
+
+.mainR .plug h2 {
+    height: 30px;
+    line-height: 30px;
+    font-size: 18px;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.mainR .plug ul {
+    padding-top: 6px;
+    overflow: hidden;
+}
+
+.mainR .plug ul li {
+    float: left;
+    width: 80px;
+    height: 90px;
+    overflow: hidden;
+    margin: 0 0 10px 10px;
+}
+
+.mainR .plug ul li a {
+    display: block;
+    width: 80px;
+    height: 90px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.mainR .plug ul li a:hover {
+    background-color: #f1f1f1;
+}
+
+.mainR .plug ul li .del-bg {
+    position: absolute;
+    z-index: 1;
+    width: 80px;
+    height: 90px;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    background-color: #ffffff;
+}
+
+.mainR .plug ul li .del {
+    position: absolute;
+    z-index: 2;
+    margin: 3px 0 0 53px;
+    cursor: pointer;
+}
+
+.mainR .plug ul li em {
+    width: 56px;
+    height: 56px;
+    overflow: hidden;
+    display: block;
+    margin: 6px 12px;
+}
+
+.mainR .plug ul li span {
+    display: block;
+    height: 20px;
+    line-height: 20px;
+    font-size: 14px;
+    text-align: center;
+    color: #333333;
+}
+
+.mainR .plug ul li a:hover,
+.mainR .plug ul li a:focus,
+.mainR .plug ul li a:active {
+    color: #333333;
+    text-decoration: none;
+}
+
+.mainR .plug ul li.add:hover {
+    background-color: #ffffff;
+}
+
+.mainR .plug ul li.add em {
+    background: url("../../../images/personal/home/plug-add.png") no-repeat;
+}
+
+.mainR .plug ul li.add:hover em {
+    background: url("../../../images/personal/home/plug-add-hover.png") no-repeat;
+}
+
+.mainR .plug .plug-manager {
+    display: block;
+    width: 150px;
+    height: 35px;
+    margin: 30px auto 30px auto;
+    border-radius: 4px;
+    border: #f47a11 solid 1px;
+    line-height: 35px;
+    text-align: center;
+    font-size: 14px;
+    color: #f47a11;
+    cursor: pointer;
+}
+
+.mainR .plug .plug-manager:hover {
+    background-color: #f47a11;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.mainR .plug .plug-manager:focus
+.mainR .plug .plug-manager:active {
+    color: #f47a11;
+    text-decoration: none;
+}
+
+/*- customer -*/
+.mainR .customer {
+    width: 190px;
+}
+
+.mainR .customer .btn,
+.mainR .customer .btn:focus,
+.mainR .customer .btn:visited {
+    width: 78px;
+    height: 26px;
+    overflow: hidden;
+    float: left;
+    margin: 0 0 0 10px;
+    border: #f47a11 solid 1px;
+    background-color: #ffffff;
+    border-radius: 14px;
+    text-align: center;
+    line-height: 26px;
+    color: #f47a11;
+    text-decoration: none;
+}
+
+.mainR .customer .btn:hover,
+.mainR .customer .btn:active {
+    background-color: #f47a11;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.mainR .customer .btn.old,
+.mainR .customer .btn.old:focus,
+.mainR .customer .btn.old:visited {
+    border: #dddddd solid 1px;
+    color: #333333;
+    text-decoration: none;
+}
+
+.mainR .customer .btn.old:hover,
+.mainR .customer .btn.old:active {
+    background-color: #f47a11;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.mainR .customer .btn-qq {
+    display: block;
+    clear: both;
+    height: 20px;
+    line-height: 20px;
+    overflow: hidden;
+    text-align: center;
+    padding-top: 62px;
+    background: url("../../images/qq.png") center 18px no-repeat;
+    color: #38adff;
+}
+
+.mainR .customer .btn-qq:hover,
+.mainR .customer .btn-qq:focus,
+.mainR .customer .btn-qq:active {
+    color: #38adff;
+    text-decoration: none;
+}
+
+.mainR .customer .tel {
+    padding-top: 20px;
+    padding-bottom: 2px;
+    width: 165px;
+    margin: auto;
+    padding-left: 10px;
+    border-bottom: #eeeeee solid 1px;
+}
+
+.mainR .customer .tel h3 {
+    font-size: 14px;
+    line-height: 18px;
+    color: #333333;
+}
+
+.mainR .customer .tel span {
+    font-size: 18px;
+    line-height: 26px;
+    color: #f47a11;
+}
+
+.mainR .customer .mail {
+    padding-top: 8px;
+    padding-bottom: 20px;
+    width: 165px;
+    margin: auto;
+    padding-left: 10px;
+}
+
+.mainR .customer .mail h3 {
+    font-size: 14px;
+    line-height: 18px;
+    color: #333333;
+}
+
+.mainR .customer .mail span {
+    font-size: 12px;
+    line-height: 18px;
+    color: #333333;
+}
+
+.mainR .customer .buy-ad {
+    display: block;
+    width: 150px;
+    height: 35px;
+    margin: 0px auto 20px auto;
+    border-radius: 4px;
+    border: #f47a11 solid 1px;
+    background-color: #f47a11;
+    color: #ffffff;
+    line-height: 35px;
+    text-align: center;
+    font-size: 14px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.mainR .customer .buy-ad:hover {
+    background-color: #ff4200;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+/*- popup -*/
+.plug-del-popup {
+
+}
+
+.plug-del-popup h3 {
+    height: 100px;
+    line-height: 100px;
+    font-size: 16px;
+    text-align: center;
+}
+
+.plug-del-popup a {
+    float: left;
+    width: 98px;
+    height: 30px;
+    border-radius: 3px;
+    border: #f47a11 solid 1px;
+    background-color: #ffffff;
+    color: #f47a11;
+    font-size: 14px;
+    text-align: center;
+    line-height: 30px;
+    text-decoration: none;
+    margin-left: 50px;
+    cursor: pointer;
+}
+
+.plug-del-popup a:hover {
+    color: #ffffff;
+    background-color: #f47a11;
+}
+
+.popup-plug-add,
+.popup-modu-add {
+    display: none;
+}
+
+.popup-plug-add .screen,
+.popup-modu-add .screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000000;
+    z-index: 9999;
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+}
+
+.popup-plug-add .popup,
+.popup-modu-add .popup {
+    width: 572px;
+    position: fixed;
+    z-index: 10000;
+    left: 50%;
+    top: 50%;
+    margin-left: -286px;
+}
+
+.popup-plug-add .popup .bg-t,
+.popup-modu-add .popup .bg-t {
+    height: 10px;
+    overflow: hidden;
+    background: url("../../../images/personal/home/popup-bg-top.png") center no-repeat;
+}
+
+.popup-plug-add .popup .bg-f,
+.popup-modu-add .popup .bg-f {
+    height: 10px;
+    overflow: hidden;
+    background: url("../../../images/personal/home/popup-bg-bottom.png") center no-repeat;
+}
+
+.popup-plug-add .popup .bg-c,
+.popup-modu-add .popup .bg-c {
+    overflow: hidden;
+    padding: 0 9px;
+    background: url("../../../images/personal/home/popup-bg-center.png") center repeat-y;
+}
+
+.popup-plug-add .popup .title,
+.popup-modu-add .popup .title {
+    height: 36px;
+    background: url("../../../images/personal/home/popup-bg-title.png") center no-repeat;
+}
+
+.popup-plug-add .popup .title span,
+.popup-modu-add .popup .title span {
+    float: right;
+    margin: 13px 10px 0 0;
+    cursor: pointer;
+}
+
+.popup-plug-add .popup .title span img,
+.popup-modu-add .popup .title span img {
+    float: left;
+}
+
+.popup-plug-add .popup .title h2,
+.popup-modu-add .popup .title h2 {
+    float: left;
+    line-height: 36px;
+    color: #ffffff;
+    font-size: 14px;
+    padding-left: 15px;
+}
+
+.popup-plug-add .popup .box,
+.popup-modu-add .popup .box {
+    border-bottom: #dddddd solid 1px;
+    background-color: #ffffff;
+}
+
+.popup-plug-add .popup .box ul,
+.popup-modu-add .popup .box ul {
+    min-height: 270px;
+    clear: both;
+    padding: 10px;
+    overflow: hidden;
+}
+
+.popup-plug-add .popup .box li,
+.popup-modu-add .popup .box li {
+    float: left;
+    width: 76px;
+    height: 90px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.popup-plug-add .popup .box li:hover,
+.popup-modu-add .popup .box li:hover {
+    background-color: #f1f1f1;
+}
+
+.popup-plug-add .popup .box li em,
+.popup-modu-add .popup .box li em {
+    display: block;
+    margin: 5px auto 0 auto;
+    width: 56px;
+    height: 56px;
+}
+
+.popup-plug-add .popup .box li em img,
+.popup-modu-add .popup .box li em img {
+    float: left;
+}
+
+.popup-plug-add .popup .box li span,
+.popup-modu-add .popup .box li span {
+    display: block;
+    height: 24px;
+    line-height: 24px;
+    text-align: center;
+    padding-top: 5px;
+}
+
+.popup-plug-add .popup .box .tip,
+.popup-modu-add .popup .box .tip {
+    clear: both;
+    font-size: 14px;
+    color: #999999;
+    height: 24px;
+    line-height: 24px;
+    text-align: center;
+}
+
+.popup-plug-add .popup .box .tip1,
+.popup-modu-add .popup .box .tip1 {
+    clear: both;
+    font-size: 18px;
+    color: #999999;
+    height: 270px;
+    line-height: 270px;
+    text-align: center;
+}
+
+.sada {
+    width: 347px;
+    margin: 25px auto 0 auto;
+}
+
+.sada input {
+    padding: 0px 5px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    width: 225px;
+    float: left;
+    height: 40px;
+    outline: none;
+}
+
+.sada button {
+    background: #f47a11;
+    cursor: pointer;
+    color: #fff;
+    border: 1px solid #ddd;
+    border-left: 0;
+    border-radius: 3px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    padding: 0px 10px;
+    width: 110px;
+    font-weight: bold;
+    height: 42px;
+    overflow: hidden;
+    outline: none;
+    font-size: 12px;
+    font-family: "\5FAE\8F6F\96C5\9ED1", "\5B8B\4F53";
+}
+
+.fx-w h2 a {
+    font-size: 24px;
+}

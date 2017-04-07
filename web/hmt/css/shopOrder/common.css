@@ -1,0 +1,130 @@
+﻿@charset "utf-8";
+
+body {
+    font: 12px/1.5 "\5FAE\8F6F\96C5\9ED1", "\5B8B\4F53", Verdana, Arial, Helvetica, sans-serif;
+    background: #fff;
+    color: #333;
+}
+
+a:link, a:visited {
+    text-decoration: none;
+}
+
+a:hover, a:active, a:focus {
+    text-decoration: underline;
+}
+
+.wrap-1000 {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+/*重置topbar宽度*/
+.topbar {
+    width: 1000px;
+}
+
+/*按钮公用样式及其悬浮效果样式*/
+a.but {
+    color: #fff;
+    text-align: center;
+    background-color: #f47a11;
+    border-radius: 3px;
+}
+
+a.but:hover {
+    background-color: #ff4200;
+    text-decoration: none;
+}
+
+/*logobar 顶部LOGO部分*/
+.logobar {
+    height: 119px;
+    background-color: #FFF;
+    overflow: hidden;
+}
+
+.logobar .logo {
+    margin: 37px 0 0 2px;
+    float: left;
+    display: inline;
+}
+
+.logobar .logo-txt {
+    height: 51px;
+    overflow: hidden;
+    float: left;
+    display: inline;
+    line-height: 51px;
+    margin: 37px 0 0 20px;
+    border-left: #7f7f7f solid 1px;
+    font-size: 24px;
+    font-family: "微软雅黑";
+    padding-left: 17px;
+}
+
+.logobar .logo-state {
+    float: right;
+    display: inline;
+    margin-top: 36px;
+    height: 46px;
+    overflow: hidden;
+    margin-right: -50px;
+    width: 580px;
+}
+
+.logobar .logo-state .list {
+    float: right;
+    display: inline;
+    width: 116px;
+    overflow: hidden;
+}
+
+.logobar .logo-state h3 {
+    line-height: 28px;
+    overflow: hidden;
+    height: 28px;
+    text-align: center;
+}
+
+.logobar .logo-state .state3 h3 {
+    font-weight: bold;
+}
+
+.logobar .logo-state span {
+    float: left;
+    display: inline;
+    width: 58px;
+    height: 18px;
+    overflow: hidden;
+}
+
+.logobar .logo-state span.bg1 {
+    background: url(../../images/zt_line-bg-1.png) center center repeat-x;
+}
+
+.logobar .logo-state span.bg2 {
+    background: url(../../images/order/zt_line-bg-2.png) center center repeat-x;
+}
+
+.logobar .logo-state strong {
+    width: 18px;
+    height: 18px;
+    overflow: hidden;
+    position: absolute;
+    margin-left: 50px;
+    margin-top: 28px;
+}
+
+.logobar .logo-state .state1 strong {
+    background: url(../../images/zt-ico-1.png) no-repeat;
+}
+
+.logobar .logo-state .state2 strong {
+    background: url(../../images/zt-ico-2.png) no-repeat;
+}
+
+.logobar .logo-state .state3 strong {
+    background: url(../../images/zt-ico-3.png) no-repeat;
+}
+

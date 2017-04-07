@@ -1,0 +1,541 @@
+﻿@charset "utf-8";
+/* CSS Document */
+
+.main {
+}
+
+/*左侧*/
+.sides {
+    float: left;
+    display: inline;
+    width: 210px;
+}
+
+.sidebar {
+}
+
+.sidebar h2 {
+    line-height: 36px;
+    height: 36px;
+    overflow: hidden;
+    color: #fff;
+    font-size: 16px;
+    font-family: "微软雅黑";
+    G font-weight: bold;
+    background-color: #c5dba7;
+    border-left: 0;
+}
+
+.sidebar h2 span {
+    color: #666;
+    font-size: 14px;
+    font-family: "Arial";
+    font-weight: normal;
+}
+
+.sidebar h2 strong {
+    float: left;
+    width: 143px;
+    height: 36px;
+    text-indent: 38px;
+    background: url(../../images/sidebar-tbg-1.jpg) no-repeat;
+}
+
+/*.sidebar-long h2 strong{
+	width:216px;
+	text-indent:42px;
+	background:url(../../../images/shop/pre-temp1/sidebar-tbg-2.jpg) no-repeat;
+	letter-spacing:3px;
+}*/
+.sidebar h2 .more {
+    float: right;
+    color: #333;
+    font-size: 12px;
+    font-weight: normal;
+    line-height: 20px;
+    margin-top: 13px;
+    padding-right: 10px;
+}
+
+.sidebar .line {
+    height: 0px;
+    overflow: hidden;
+    background: url(../../../images/shop/temp1/side-bg.png) repeat-x;
+}
+
+.sidebar .container {
+    overflow: hidden;
+    border: #e5e5e5 solid 1px;
+    border-top: 0px;
+    min-height: 50px;
+    width: auto !important;
+    min-width: 200px !important;
+}
+
+/*供应商相册*/
+.photo {
+}
+
+.photo .container {
+    padding-top: 20px;
+    height: 354px;
+    overflow: hidden;
+}
+
+.tabs {
+    width: 208px;
+    height: 354px;
+    overflow: hidden;
+
+}
+
+.tabs .demo1, .tabs .demo2 {
+    /*float:left;
+    display:inline;
+    width:3000px;*/
+}
+
+.photo .lists {
+    width: 208px;
+    overflow: hidden;
+}
+
+.photo .list {
+    height: 177px;
+    overflow: hidden;
+}
+
+.photo .list em {
+    width: 158px;
+    height: 122px;
+    overflow: hidden;
+    margin: auto;
+    display: block;
+    border: #e5e5e5 solid 1px;
+}
+
+.photo .list img {
+    display: block;
+    width: 146px;
+    height: 110px;
+    overflow: hidden;
+    margin: 6px;
+}
+
+.photo .list span {
+    line-height: 20px;
+    display: block;
+    width: 160px;
+    height: 20px;
+    padding-top: 5px;
+    font-size: 14px;
+    color: #ff4400;
+    font-family: Arial;
+    margin: auto;
+    text-indent: 5px;
+}
+
+.photo .list h3 {
+    line-height: 35px;
+    width: 160px;
+    height: 22px;
+    font-family: '微软雅黑';
+    margin: auto;
+    text-indent: 2px;
+    text-align: center;
+}
+
+.photo .list h3 a {
+    color: #000;
+}
+
+.photo .list h3 a:hover {
+    color: #f47a11;
+}
+
+/*右侧*/
+.dp_right {
+    width: 962px;
+    float: right;
+}
+
+.about em {
+    width: 240px;
+    height: 180px;
+    border: #e5e5e5 solid 1px;
+    float: left;
+    display: inline;
+    margin: 15px 0 15px 20px;
+}
+
+.about .txt {
+    float: left;
+    display: inline;
+    width: 650px;
+    margin: 15px 0 0 20px;
+}
+
+.about .txt h3 {
+    line-height: 24px;
+    height: 24px;
+    overflow: hidden;
+    font-size: 16px;
+    font-family: "微软雅黑";
+    color: #3a7900;
+}
+
+.about .txt p {
+    line-height: 24px;
+    padding-top: 10px;
+    height: 144px;
+    overflow: hidden;
+    font-size: 12px;
+    text-indent: 2em;
+}
+
+/*最新产品*/
+.newproduct .container {
+    border: 0;
+}
+
+.newproduct ul {
+    padding-top: 15px;
+    width: 990px;
+}
+
+.newproduct li {
+    float: left;
+    display: inline;
+    width: 228px;
+    overflow: hidden;
+    height: 318px;
+    margin: 0 16px 20px 0;
+}
+
+.newproduct li em {
+    width: 226px;
+    height: 226px;
+    border: #e5e5e5 solid 1px;
+    background-color: #FFF;
+    display: table;
+    text-align: center;
+    font-size: 0;
+    *display: block; /* for IE6/7 */
+    *layout-grid-line: 100%;
+}
+
+.newproduct li em a {
+    display: table-cell;
+    vertical-align: middle;
+    *display: inline; /* for IE6/7 */
+    *writing-mode: tb-rl; /* for IE6/7 */
+    *text-align: center;
+    *height: 100%;
+}
+
+.newproduct li:hover em {
+    border: #c5dba7 solid 1px;
+}
+
+.newproduct li em img {
+    max-width: 226px;
+    max-height: 226px;
+    /*height:173px;*/
+    vertical-align: middle;
+    margin: 0;
+}
+
+.newproduct li .txt {
+    height: 90px;
+    background-color: #e5e5e5;
+}
+
+.newproduct li:hover .txt {
+    background-color: #c5dba7;
+}
+
+.newproduct li h3 {
+    line-height: 24px;
+    height: 72px;
+    padding: 5px 10px 0 10px;
+    font-size: 12px;
+    font-family: "微软雅黑";
+}
+
+.newproduct .price {
+    height: 24px;
+    padding: 7px 0 0 10px;
+}
+
+.newproduct .price span {
+    float: left;
+    display: inline;
+    font-size: 18px;
+    color: #ff4400;
+    font-family: Arial;
+    padding-left: 3px;
+}
+
+.newproduct .price a {
+    float: right;
+    display: inline;
+    width: 81px;
+    height: 24px;
+    line-height: 24px;
+    font-family: "微软雅黑";
+    background-color: #e71504;
+    margin-right: 10px;
+}
+
+/*供应商相册*/
+.recommend {
+    width: 962px;
+}
+
+.recommend .container {
+    height: 400px;
+}
+
+.recommend .big-pic {
+    float: left;
+    display: inline;
+    width: 400px;
+    height: 400px;
+    overflow: hidden;
+    border-right: #e5e5e5 solid 1px;
+}
+
+.recommend .big-pic li {
+    width: 400px;
+    height: 400px;
+    overflow: hidden;
+    display: table;
+    text-align: center;
+    font-size: 0;
+    *display: block; /* for IE6/7 */
+    *layout-grid-line: 100%;
+}
+
+.recommend .big-pic a {
+    display: table-cell;
+    vertical-align: middle;
+    *display: inline; /* for IE6/7 */
+    *writing-mode: tb-rl; /* for IE6/7 */
+    *text-align: center;
+    *height: 100%;
+}
+
+.recommend .big-pic img {
+    /*max-width:400px;
+    max-height:400px;*/
+    width: 400px;
+    height: 400px;
+    vertical-align: middle;
+}
+
+.recommend .pro-msg {
+    width: 342px;
+    float: left;
+    display: inline;
+}
+
+.recommend .pro-msg h3 {
+    line-height: 74px;
+    height: 74px;
+    overflow: hidden;
+    text-indent: 50px;
+    font-size: 22px;
+    font-family: '微软雅黑';
+    padding-top: 100px;
+}
+
+.recommend .pro-msg .price {
+    height: 56px;
+    overflow: hidden;
+    background: #6ea522 url(../../../images/shop/pre-temp1/price-bg.png) right center no-repeat;
+    font-size: 15px;
+    text-indent: 65px;
+    color: #FFF;
+}
+
+.recommend .pro-msg .price span {
+    font-size: 27px;
+    font-weight: normal;
+    font-family: Impact;
+}
+
+.recommend .pro-msg .price span strong {
+    font-size: 39px;
+    font-family: Impact;
+    font-weight: normal;
+}
+
+.recommend .pro-msg .but {
+    padding: 34px 0 0 44px;
+}
+
+.recommend .pro-msg .but a {
+    float: left;
+    display: inline;
+    width: 110px;
+    height: 30px;
+    overflow: hidden;
+    margin-right: 20px;
+    color: #FFF;
+    text-align: center;
+    line-height: 30px;
+}
+
+.recommend .pro-msg .but a.card-buy {
+    background-color: #e71504;
+}
+
+.recommend .pro-msg .but a.card-join {
+    background-color: #6ea522;
+}
+
+.recommend .pro-list {
+    width: 154px;
+    float: right;
+    display: inline;
+    height: 410px;
+    background-color: #c5dba7;
+}
+
+.recommend .pro-list .but-top {
+    width: 31px;
+    height: 15px;
+    overflow: hidden;
+    margin: 12px auto 0 auto;
+    cursor: pointer;
+}
+
+.recommend .pro-list .con-box {
+    width: 104px;
+    margin: 12px auto 0 auto;
+    height: 320px;
+    overflow: hidden;
+}
+
+.recommend .pro-list .but-bottom {
+    width: 31px;
+    height: 15px;
+    overflow: hidden;
+    margin: 12px auto 0 auto;
+    cursor: pointer;
+}
+
+.recommend .pro-list li {
+    width: 102px;
+    height: 76px;
+    overflow: hidden;
+    border: #e5e5e5 solid 1px;
+    background-color: #FFF;
+    margin-bottom: 4px;
+    display: table;
+    text-align: center;
+    font-size: 0;
+    *display: block; /* for IE6/7 */
+    *layout-grid-line: 100%;
+}
+
+.recommend .pro-list li a {
+    display: table-cell;
+    vertical-align: middle;
+    *display: inline; /* for IE6/7 */
+    *writing-mode: tb-rl; /* for IE6/7 */
+    *text-align: center;
+    *height: 100%;
+}
+
+.recommend .pro-list li img {
+    /*max-width:102px;
+    max-height:102px;*/
+    width: 102px;
+    height: 102px;
+    vertical-align: middle;
+}
+
+.recommend .pro-list li.cur {
+    border: #6ea522 solid 1px;
+}
+
+.recommend .pro-list li img {
+    width: 102px;
+    height: 76px;
+}
+
+/*内页样式*/
+.shop_nav {
+    background: #6ea522 url();
+}
+
+.shop_nav ul li a:hover {
+    background: #3a7900;
+}
+
+.shop_nav ul li .cur {
+    background: #3a7900;
+}
+
+.dp_left .dp_left1 .dp_gystitle, .dp_left .dp_left2 .dp_gystitle, .dp_left .dp_left3 .dp_gystitle, .dp_left .dp_left4 .dp_gystitle {
+    line-height: 36px;
+    height: 36px;
+    overflow: hidden;
+    color: #fff;
+    font-size: 16px;
+    font-family: "微软雅黑";
+    font-weight: bold;
+    text-indent: 38px;
+    background: #c5dba7 url(../../../images/shop/pre-temp1/sidebar-tbg-1.jpg) no-repeat;
+    border-top: 0px;
+}
+
+.dp_right .dp_right_title1, .dp_righta .dp_right_title1 {
+    line-height: 36px;
+    height: 36px;
+    overflow: hidden;
+    color: #fff;
+    font-size: 16px;
+    font-family: "微软雅黑";
+    font-weight: bold;
+    background: #c5dba7 url(../../images/sidebar-tbg-1.jpg) no-repeat;
+    letter-spacing: 0;
+    text-indent: 38px;
+    border-left: 0px;
+    float: none;
+}
+
+#pur_home_3 .jiju .nTab .TabTitle {
+    line-height: 36px;
+    height: 36px;
+    background: #c5dba7 url(../../../images/shop/pre-temp1/sidebar-tbg-1.jpg) no-repeat;
+    border-left: 0;
+    position: relative;
+    color: #fff;
+    font-weight: bold;
+    font-family: "微软雅黑";
+    text-indent: 38px;
+}
+
+#pur_home_3 .jiju .nTab .TabTitle h1 {
+    float: left;
+    height: 36px;
+    top: 0;
+    font-size: 16px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

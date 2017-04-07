@@ -1,0 +1,500 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC
+        "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.liangxunwang.unimanager.dao.EmpDao">
+    <resultMap id="emp" type="com.liangxunwang.unimanager.model.Emp">
+        <id column="mm_emp_id" property="mm_emp_id"/>
+        <result column="mm_emp_mobile" property="mm_emp_mobile"/>
+        <result column="mm_emp_nickname" property="mm_emp_nickname"/>
+        <result column="mm_emp_card" property="mm_emp_card"/>
+        <result column="mm_emp_cover" property="mm_emp_cover"/>
+        <result column="mm_emp_password" property="mm_emp_password"/>
+        <result column="mm_emp_type" property="mm_emp_type"/>
+        <result column="mm_emp_company" property="mm_emp_company"/>
+        <result column="mm_emp_company_pic" property="mm_emp_company_pic"/>
+        <result column="mm_emp_company_type" property="mm_emp_company_type"/>
+        <result column="mm_emp_company_address" property="mm_emp_company_address"/>
+        <result column="mm_emp_company_detail" property="mm_emp_company_detail"/>
+        <result column="mm_emp_company_url" property="mm_emp_company_url"/>
+        <result column="mm_emp_provinceId" property="mm_emp_provinceId"/>
+        <result column="mm_emp_cityId" property="mm_emp_cityId"/>
+        <result column="mm_emp_countryId" property="mm_emp_countryId"/>
+        <result column="mm_emp_regtime" property="mm_emp_regtime"/>
+        <result column="mm_emp_endtime" property="mm_emp_endtime"/>
+        <result column="mm_level_id" property="mm_level_id"/>
+        <result column="mm_emp_beizhu" property="mm_emp_beizhu"/>
+        <result column="mm_emp_msg_num" property="mm_emp_msg_num"/>
+        <result column="is_login" property="is_login"/>
+        <result column="is_fabugongying" property="is_fabugongying"/>
+        <result column="is_fabuqiugou" property="is_fabuqiugou"/>
+        <result column="is_fabuqiugou_see" property="is_fabuqiugou_see"/>
+        <result column="is_fabugongying_see" property="is_fabugongying_see"/>
+        <result column="is_see_all" property="is_see_all"/>
+        <result column="is_use" property="is_use"/>
+        <result column="is_pic" property="is_pic"/>
+        <result column="is_chengxin" property="is_chengxin"/>
+        <result column="is_miaomu" property="is_miaomu"/>
+        <result column="lat" property="lat"/>
+        <result column="lng" property="lng"/>
+        <result column="ischeck" property="ischeck"/>
+        <result column="is_upate_profile" property="is_upate_profile"/>
+        <result column="userId" property="userId"/>
+        <result column="channelId" property="channelId"/>
+        <result column="deviceType" property="deviceType"/>
+        <result column="lat_company" property="lat_company"/>
+        <result column="lng_company" property="lng_company"/>
+        <result column="ad_pic" property="ad_pic"/>
+        <result column="is_cover" property="is_cover"/>
+        <result column="is_video" property="is_video"/>
+        <result column="is_special" property="is_special"/>
+    </resultMap>
+    <resultMap id="emp_vo" type="com.liangxunwang.unimanager.mvc.vo.EmpVO">
+        <id column="mm_emp_id" property="mm_emp_id"/>
+        <result column="mm_emp_mobile" property="mm_emp_mobile"/>
+        <result column="mm_emp_nickname" property="mm_emp_nickname"/>
+        <result column="mm_emp_cover" property="mm_emp_cover"/>
+        <result column="mm_emp_password" property="mm_emp_password"/>
+        <result column="mm_emp_card" property="mm_emp_card"/>
+        <result column="mm_emp_type" property="mm_emp_type"/>
+        <result column="mm_emp_company" property="mm_emp_company"/>
+        <result column="mm_emp_company_pic" property="mm_emp_company_pic"/>
+        <result column="mm_emp_company_type" property="mm_emp_company_type"/>
+        <result column="mm_emp_company_address" property="mm_emp_company_address"/>
+        <result column="mm_emp_company_detail" property="mm_emp_company_detail"/>
+        <result column="mm_emp_company_url" property="mm_emp_company_url"/>
+        <result column="mm_emp_provinceId" property="mm_emp_provinceId"/>
+        <result column="mm_emp_cityId" property="mm_emp_cityId"/>
+        <result column="mm_emp_countryId" property="mm_emp_countryId"/>
+        <result column="mm_emp_regtime" property="mm_emp_regtime"/>
+        <result column="mm_emp_endtime" property="mm_emp_endtime"/>
+        <result column="mm_level_id" property="mm_level_id"/>
+        <result column="mm_emp_beizhu" property="mm_emp_beizhu"/>
+        <result column="mm_emp_msg_num" property="mm_emp_msg_num"/>
+        <result column="is_login" property="is_login"/>
+        <result column="is_fabugongying" property="is_fabugongying"/>
+        <result column="is_fabuqiugou" property="is_fabuqiugou"/>
+        <result column="is_fabuqiugou_see" property="is_fabuqiugou_see"/>
+        <result column="is_fabugongying_see" property="is_fabugongying_see"/>
+        <result column="is_see_all" property="is_see_all"/>
+        <result column="is_use" property="is_use"/>
+        <result column="is_pic" property="is_pic"/>
+        <result column="is_chengxin" property="is_chengxin"/>
+        <result column="is_miaomu" property="is_miaomu"/>
+        <result column="lat" property="lat"/>
+        <result column="lng" property="lng"/>
+        <result column="ischeck" property="ischeck"/>
+        <result column="is_upate_profile" property="is_upate_profile"/>
+        <result column="userId" property="userId"/>
+        <result column="channelId" property="channelId"/>
+        <result column="deviceType" property="deviceType"/>
+        <result column="lat_company" property="lat_company"/>
+        <result column="lng_company" property="lng_company"/>
+        <result column="ad_pic" property="ad_pic"/>
+        <result column="is_cover" property="is_cover"/>
+        <result column="is_video" property="is_video"/>
+        <result column="is_special" property="is_special"/>
+
+        <result column="levelName" property="levelName"/>
+        <result column="mm_level_num" property="mm_level_num"/>
+        <result column="provinceName" property="provinceName"/>
+        <result column="cityName" property="cityName"/>
+        <result column="areaName" property="areaName"/>
+        <result column="countLoginNum" property="countLoginNum"/>
+    </resultMap>
+
+    <select id="listMemberByName" resultMap="emp_vo">
+        SELECT sn.* ,lev.mm_level_name as levelName,lev.mm_level_num as mm_level_num, hatp.province as provinceName, hatc.city as cityName, hata.area as areaName  from mm_emp sn
+        LEFT JOIN mm_level lev ON sn.mm_level_id=lev.mm_level_id
+        LEFT JOIN hat_province hatp ON sn.mm_emp_provinceId=hatp.provinceID
+        LEFT JOIN hat_city hatc ON sn.mm_emp_cityId=hatc.cityID
+        LEFT JOIN hat_area hata ON sn.mm_emp_countryId=hata.areaID
+        WHERE 1=1 AND sn.mm_emp_nickname is not NULL
+        <if test="mm_emp_type != null and mm_emp_type != ''">
+        AND sn.mm_emp_type = #{mm_emp_type}
+        </if>
+        <if test="is_special != null and is_special != ''">
+            AND sn.is_special = #{is_special}
+        </if>
+        <if test="mm_emp_company_type != null and mm_emp_company_type != ''">
+        AND sn.mm_emp_company_type = #{mm_emp_company_type}
+        </if>
+        <if test="mm_level_id != null and mm_level_id != ''">
+        AND sn.mm_level_id = #{mm_level_id}
+        </if>
+        <if test="ischeck != null and ischeck != ''">
+        AND sn.ischeck = #{ischeck}
+        </if>
+        <if test="mm_emp_provinceId != null and mm_emp_provinceId != ''">
+            AND sn.mm_emp_provinceId = #{mm_emp_provinceId}
+        </if>
+        <if test="mm_emp_cityId != null and mm_emp_cityId != ''">
+            AND sn.mm_emp_cityId = #{mm_emp_cityId}
+        </if>
+        <if test="mm_emp_countryId != null and mm_emp_countryId != ''">
+            AND sn.mm_emp_countryId = #{mm_emp_countryId}
+        </if>
+        <if test="mm_emp_regtime != null and mm_emp_regtime != ''">
+            AND sn.mm_emp_regtime = #{mm_emp_regtime}
+        </if>
+        <if test="keyword != null and keyword != ''">
+            AND  (sn.mm_emp_mobile like CONCAT('%',#{keyword},'%') OR sn.mm_emp_nickname like CONCAT('%',#{keyword},'%') OR  sn.mm_emp_company like CONCAT('%',#{keyword},'%'))
+        </if>
+        <if test="start != null and start != ''">
+            AND sn.mm_emp_endtime &gt;= #{start}
+        </if>
+        <if test="end != null and end != ''">
+            AND sn.mm_emp_endtime &lt;= #{end}
+        </if>
+        ORDER BY sn.mm_emp_regtime DESC  limit #{index},#{size}
+    </select>
+
+    <select id="count" resultType="Long">
+        SELECT count(sn.mm_emp_id) FROM mm_emp sn
+        LEFT JOIN mm_level lev ON sn.mm_level_id=lev.mm_level_id
+        LEFT JOIN hat_province hatp ON sn.mm_emp_provinceId=hatp.provinceID
+        LEFT JOIN hat_city hatc ON sn.mm_emp_cityId=hatc.cityID
+        LEFT JOIN hat_area hata ON sn.mm_emp_countryId=hata.areaID
+        WHERE 1=1 AND sn.mm_emp_nickname is not NULL
+        <if test="mm_emp_type != null and mm_emp_type != ''">
+            AND sn.mm_emp_type = #{mm_emp_type}
+        </if>
+        <if test="mm_emp_company_type != null and mm_emp_company_type != ''">
+            AND sn.mm_emp_company_type = #{mm_emp_company_type}
+        </if>
+        <if test="mm_level_id != null and mm_level_id != ''">
+            AND sn.mm_level_id = #{mm_level_id}
+        </if>
+        <if test="ischeck != null and ischeck != ''">
+            AND sn.ischeck = #{ischeck}
+        </if>
+
+        <if test="mm_emp_provinceId != null and mm_emp_provinceId != ''">
+            AND sn.mm_emp_provinceId = #{mm_emp_provinceId}
+        </if>
+        <if test="mm_emp_cityId != null and mm_emp_cityId != ''">
+            AND sn.mm_emp_cityId = #{mm_emp_cityId}
+        </if>
+        <if test="mm_emp_countryId != null and mm_emp_countryId != ''">
+            AND sn.mm_emp_countryId = #{mm_emp_countryId}
+        </if>
+
+        <if test="mm_emp_regtime != null and mm_emp_regtime != ''">
+            AND sn.mm_emp_regtime = #{mm_emp_regtime}
+        </if>
+
+        <if test="keyword != null and keyword != ''">
+            AND  (sn.mm_emp_mobile like CONCAT('%',#{keyword},'%') OR sn.mm_emp_nickname like CONCAT('%',#{keyword},'%') OR  sn.mm_emp_company like CONCAT('%',#{keyword},'%'))
+        </if>
+        <if test="start != null and start != ''">
+            AND sn.mm_emp_endtime &gt;= #{start}
+        </if>
+        <if test="end != null and end != ''">
+            AND sn.mm_emp_endtime &lt;= #{end}
+        </if>
+    </select>
+
+    <select id="countDay" resultType="Long">
+        SELECT count(sn.mm_emp_id) FROM mm_emp sn
+        WHERE 1=1 AND sn.mm_emp_nickname is not NULL
+        <if test="mm_emp_regtime != null and mm_emp_regtime != ''">
+            AND sn.mm_emp_regtime  like CONCAT('%',#{mm_emp_regtime},'%')
+        </if>
+    </select>
+
+    <update id="update" parameterType="com.liangxunwang.unimanager.model.Emp">
+        UPDATE mm_emp SET mm_emp_nickname=#{mm_emp_nickname},
+        mm_emp_mobile=#{mm_emp_mobile},
+        mm_emp_card=#{mm_emp_card},
+        mm_emp_type=#{mm_emp_type},
+        mm_emp_company=#{mm_emp_company},
+        mm_emp_company_type=#{mm_emp_company_type},
+        mm_emp_company_address=#{mm_emp_company_address},
+        mm_emp_company_detail=#{mm_emp_company_detail},
+        mm_emp_company_url=#{mm_emp_company_url},
+        mm_emp_provinceId=#{mm_emp_provinceId},
+        mm_emp_cityId=#{mm_emp_cityId},
+        mm_emp_countryId=#{mm_emp_countryId},
+        mm_emp_regtime=#{mm_emp_regtime},
+        mm_emp_endtime=#{mm_emp_endtime},
+        mm_level_id=#{mm_level_id},
+        mm_emp_beizhu=#{mm_emp_beizhu},
+        mm_emp_msg_num=#{mm_emp_msg_num},
+        is_login=#{is_login},
+        is_fabugongying=#{is_fabugongying},
+        is_fabuqiugou=#{is_fabuqiugou},
+        is_fabugongying_see=#{is_fabugongying_see},
+        is_fabuqiugou_see=#{is_fabuqiugou_see},
+        is_see_all=#{is_see_all},
+        is_pic=#{is_pic},
+        is_chengxin=#{is_chengxin},
+        is_miaomu=#{is_miaomu},
+        is_use=#{is_use},
+        lat=#{lat},
+        lng=#{lng},
+        mm_msg_length=#{mm_msg_length},
+        lat_company=#{lat_company},
+        lng_company=#{lng_company},
+        is_cover=#{is_cover},
+        is_special=#{is_special},
+        is_video=#{is_video},
+        ischeck=#{ischeck}
+        WHERE mm_emp_id=#{mm_emp_id}
+    </update>
+
+    <select id="findById" resultMap="emp_vo" parameterType="String">
+         SELECT sn.* ,lev.mm_level_name as levelName,lev.mm_level_num as mm_level_num, hatp.province as provinceName,
+         hatc.city as cityName, hata.area as areaName  from mm_emp sn
+        LEFT JOIN mm_level lev ON sn.mm_level_id=lev.mm_level_id
+        LEFT JOIN hat_province hatp ON sn.mm_emp_provinceId=hatp.provinceID
+        LEFT JOIN hat_city hatc ON sn.mm_emp_cityId=hatc.cityID
+        LEFT JOIN hat_area hata ON sn.mm_emp_countryId=hata.areaID
+        WHERE sn.mm_emp_id=#{mm_emp_id}
+    </select>
+
+    <select id="findByMobile" parameterType="String" resultMap="emp_vo">
+        SELECT sn.* ,lev.mm_level_name as levelName,lev.mm_level_num as mm_level_num, hatp.province as provinceName, hatc.city as cityName, hata.area as areaName  from mm_emp sn
+        LEFT JOIN mm_level lev ON sn.mm_level_id=lev.mm_level_id
+        LEFT JOIN hat_province hatp ON sn.mm_emp_provinceId=hatp.provinceID
+        LEFT JOIN hat_city hatc ON sn.mm_emp_cityId=hatc.cityID
+        LEFT JOIN hat_area hata ON sn.mm_emp_countryId=hata.areaID
+        WHERE sn.mm_emp_mobile=#{mm_emp_mobile}
+    </select>
+    <select id="findByCard" parameterType="String" resultMap="emp_vo">
+        SELECT sn.* ,lev.mm_level_name as levelName,lev.mm_level_num as mm_level_num, hatp.province as provinceName, hatc.city as cityName, hata.area as areaName  from mm_emp sn
+        LEFT JOIN mm_level lev ON sn.mm_level_id=lev.mm_level_id
+        LEFT JOIN hat_province hatp ON sn.mm_emp_provinceId=hatp.provinceID
+        LEFT JOIN hat_city hatc ON sn.mm_emp_cityId=hatc.cityID
+        LEFT JOIN hat_area hata ON sn.mm_emp_countryId=hata.areaID
+        WHERE sn.mm_emp_card=#{mm_emp_card}
+    </select>
+
+    <insert id="save" parameterType="com.liangxunwang.unimanager.model.Emp">
+        INSERT INTO mm_emp(mm_emp_cover,mm_emp_company_pic,mm_emp_company_url,mm_emp_id, mm_emp_mobile, mm_emp_nickname,mm_emp_card, mm_emp_password, mm_emp_type, mm_emp_company, mm_emp_company_type, mm_emp_company_address, mm_emp_company_detail, mm_emp_provinceId, mm_emp_cityId, mm_emp_countryId, mm_emp_regtime, mm_emp_endtime, mm_level_id, mm_emp_beizhu, mm_emp_msg_num, is_login, is_fabugongying, is_fabuqiugou, is_fabuqiugou_see, is_fabugongying_see, is_see_all, is_use, is_pic, is_chengxin, is_miaomu, lat, lng, ischeck,is_upate_profile,mm_msg_length,lat_company,lng_company,is_video)
+        VALUES (#{mm_emp_cover,jdbcType=VARCHAR},#{mm_emp_company_pic,jdbcType=VARCHAR},#{mm_emp_company_url,jdbcType=VARCHAR},#{mm_emp_id}, #{mm_emp_mobile},#{mm_emp_nickname}, #{mm_emp_card,jdbcType=VARCHAR}, #{mm_emp_password},#{mm_emp_type},#{mm_emp_company,jdbcType=VARCHAR},#{mm_emp_company_type},#{mm_emp_company_address,jdbcType=VARCHAR},#{mm_emp_company_detail,jdbcType=VARCHAR},#{mm_emp_provinceId},#{mm_emp_cityId},#{mm_emp_countryId},#{mm_emp_regtime},#{mm_emp_endtime,jdbcType=VARCHAR},#{mm_level_id,jdbcType=VARCHAR},#{mm_emp_beizhu,jdbcType=VARCHAR},#{mm_emp_msg_num,jdbcType=VARCHAR},#{is_login},#{is_fabugongying},#{is_fabuqiugou},#{is_fabuqiugou_see},#{is_fabugongying_see},#{is_see_all},#{is_use},#{is_pic},#{is_chengxin},#{is_miaomu},#{lat},#{lng},#{ischeck},#{is_upate_profile},#{mm_msg_length,jdbcType=VARCHAR},#{lat_company,jdbcType=VARCHAR},#{lng_company,jdbcType=VARCHAR},#{is_video,jdbcType=VARCHAR})
+    </insert>
+
+    <insert id="saveList" parameterType="java.util.List">
+        INSERT INTO mm_emp(mm_emp_id,
+        mm_emp_mobile, mm_emp_nickname,mm_emp_password,mm_emp_cover,
+        mm_emp_type, mm_emp_company, mm_emp_company_type, mm_emp_company_url,mm_emp_company_address,
+        mm_emp_company_detail, mm_emp_provinceId, mm_emp_cityId, mm_emp_countryId,
+        mm_emp_regtime, mm_level_id, mm_emp_beizhu, mm_emp_msg_num,
+        is_login, is_fabugongying, is_fabuqiugou, is_fabuqiugou_see, is_fabugongying_see,
+        is_see_all, is_use, is_pic, is_chengxin, is_miaomu, ischeck)
+        VALUES
+        <foreach  collection="list" item="item" index="index" separator=",">
+            (#{item.mm_emp_id},
+            #{item.mm_emp_mobile},
+            #{item.mm_emp_nickname},
+            #{item.mm_emp_password},
+            #{item.mm_emp_cover},
+            #{item.mm_emp_type},
+            #{item.mm_emp_company,jdbcType=VARCHAR},
+            #{item.mm_emp_company_type,jdbcType=VARCHAR},
+            #{item.mm_emp_company_url,jdbcType=VARCHAR},
+            #{item.mm_emp_company_address,jdbcType=VARCHAR},
+            #{item.mm_emp_company_detail,jdbcType=VARCHAR},
+            #{item.mm_emp_provinceId},
+            #{item.mm_emp_cityId},
+            #{item.mm_emp_countryId},
+            #{item.mm_emp_regtime},
+            #{item.mm_level_id},
+            #{item.mm_emp_beizhu,jdbcType=VARCHAR},
+            #{item.mm_emp_msg_num},
+            #{item.is_login},
+            #{item.is_fabugongying},
+            #{item.is_fabuqiugou},
+            #{item.is_fabuqiugou_see},
+            #{item.is_fabugongying_see},
+            #{item.is_see_all},
+            #{item.is_use},
+            #{item.is_pic},
+            #{item.is_chengxin},
+            #{item.is_miaomu},
+            #{item.ischeck})
+        </foreach>
+    </insert>
+
+    <update id="updateLoacation" parameterType="com.liangxunwang.unimanager.model.Emp">
+        UPDATE mm_emp SET
+        lat=#{lat},
+        lng=#{lng}
+        WHERE mm_emp_id=#{mm_emp_id}
+    </update>
+
+    <update id="updatePwr" parameterType="com.liangxunwang.unimanager.model.Emp">
+        UPDATE mm_emp SET
+        mm_emp_password=#{mm_emp_password}
+        WHERE mm_emp_mobile=#{mm_emp_mobile}
+    </update>
+
+    <update id="updateCompanyLocation" parameterType="com.liangxunwang.unimanager.model.Emp">
+        UPDATE mm_emp SET
+        lat_company=#{lat_company},
+        lng_company=#{lng_company}
+        WHERE mm_emp_id=#{mm_emp_id}
+    </update>
+
+    <update id="updateCover" parameterType="com.liangxunwang.unimanager.model.Emp">
+        UPDATE mm_emp SET
+        mm_emp_cover=#{mm_emp_cover}
+        WHERE mm_emp_mobile=#{mm_emp_mobile}
+    </update>
+
+    <update id="updateAd" parameterType="com.liangxunwang.unimanager.model.Emp">
+        UPDATE mm_emp SET
+        ad_pic=#{ad_pic}
+        WHERE mm_emp_mobile=#{mm_emp_mobile}
+    </update>
+
+
+    <select id="listsLocation" resultMap="emp_vo">
+        SELECT sn.* ,lev.mm_level_name as levelName,lev.mm_level_num as mm_level_num, hatp.province as provinceName, hatc.city as cityName, hata.area as areaName  from mm_emp sn
+        LEFT JOIN mm_level lev ON sn.mm_level_id=lev.mm_level_id
+        LEFT JOIN hat_province hatp ON sn.mm_emp_provinceId=hatp.provinceID
+        LEFT JOIN hat_city hatc ON sn.mm_emp_cityId=hatc.cityID
+        LEFT JOIN hat_area hata ON sn.mm_emp_countryId=hata.areaID
+        WHERE 1=1 AND  sn.mm_emp_type = '0'
+        <if test="lat != null and lat != ''">
+            AND sn.lat_company > (#{lat}-1) AND   (#{lat} + 1) > sn.lat_company
+        </if>
+        <if test="lng != null and lng != ''">
+            AND sn.lng_company > (#{lng}-1) AND   (#{lng} + 1) > sn.lng_company
+        </if>
+
+        <if test="lat != null and lat != '' and lng != null and lng != ''">
+            order by ACOS(SIN((#{lat} * 3.1415) / 180 ) *SIN((lat_company * 3.1415) / 180 ) +COS((#{lat} * 3.1415) / 180 ) * COS((lat_company * 3.1415) / 180 ) *COS((#{lng}* 3.1415) / 180 - (lng_company * 3.1415) / 180 ) ) * 6380 asc
+        </if>
+
+        limit #{index},#{size}
+    </select>
+
+    <select id="countLocation" resultType="Long">
+        SELECT count(sn.mm_emp_id) FROM mm_emp sn
+        WHERE 1=1 AND  sn.mm_emp_type = '0'
+        <if test="lat != null and lat != ''">
+            AND sn.lat_company > (#{lat}-1) AND   (#{lat} + 1) > sn.lat_company
+        </if>
+        <if test="lng != null and lng != ''">
+            AND sn.lng_company > (#{lat}-1) AND   (#{lng} + 1) > sn.lng_company
+        </if>
+    </select>
+
+    <select id="findByMobileAndCard" resultMap="emp_vo">
+        SELECT sn.* ,lev.mm_level_name as levelName,lev.mm_level_num as mm_level_num, hatp.province as provinceName, hatc.city as cityName, hata.area as areaName  from mm_emp sn
+        LEFT JOIN mm_level lev ON sn.mm_level_id=lev.mm_level_id
+        LEFT JOIN hat_province hatp ON sn.mm_emp_provinceId=hatp.provinceID
+        LEFT JOIN hat_city hatc ON sn.mm_emp_cityId=hatc.cityID
+        LEFT JOIN hat_area hata ON sn.mm_emp_countryId=hata.areaID
+        WHERE 1=1
+        <if test="mm_emp_mobile != null and mm_emp_mobile != ''">
+            AND sn.mm_emp_mobile = #{mm_emp_mobile}
+        </if>
+        <if test="mm_emp_card != null and mm_emp_card != ''">
+            AND sn.mm_emp_card = #{mm_emp_card}
+        </if>
+        <if test="mm_emp_id != null and mm_emp_id != ''">
+            AND sn.mm_emp_id = #{mm_emp_id}
+        </if>
+    </select>
+
+
+    <update id="updateCheck">
+        UPDATE mm_emp SET
+        ischeck=#{ischeck}
+        WHERE mm_emp_id=#{mm_emp_id}
+    </update>
+
+    <update id="updateLogin">
+        UPDATE mm_emp SET
+        is_login=#{is_login}
+        WHERE mm_emp_id=#{mm_emp_id}
+    </update>
+
+    <update id="updateFabugy">
+        UPDATE mm_emp SET
+        is_fabugongying=#{is_fabugongying}
+        WHERE mm_emp_id=#{mm_emp_id}
+    </update>
+
+    <update id="updateFabuqg">
+        UPDATE mm_emp SET
+        is_fabuqiugou=#{is_fabuqiugou}
+        WHERE mm_emp_id=#{mm_emp_id}
+    </update>
+
+    <update id="updateProfileMember">
+        UPDATE mm_emp SET
+        mm_emp_card=#{mm_emp_card},
+        mm_emp_cover=#{mm_emp_cover},
+        mm_emp_company_pic=#{mm_emp_company_pic},
+        mm_emp_company=#{mm_emp_company},
+        mm_emp_company_address=#{mm_emp_company_address},
+        is_upate_profile=#{is_upate_profile}
+        WHERE mm_emp_id=#{mm_emp_id}
+    </update>
+
+    <update id="updateOverTime">
+        UPDATE mm_emp SET mm_level_id='358b1e94e2274685b0badf41e22b85c8' WHERE mm_emp_endtime &lt; #{nowTime}
+    </update>
+
+    <update id="deleteEmp">
+        delete lemp,lmsg from mm_emp lemp
+          inner JOIN mm_msg lmsg on lemp.mm_emp_id = lmsg.mm_emp_id
+        WHERE lemp.mm_emp_id=#{mm_emp_id}
+    </update>
+
+    <update id="updatePushId" parameterType="String">
+        UPDATE mm_emp set userId=#{userId}, channelId=#{channelId}, deviceType=#{type} WHERE mm_emp_id=#{id}
+    </update>
+
+    <update id="updateCoverByEmpId" parameterType="String">
+        UPDATE mm_emp set mm_emp_cover=#{mm_emp_cover} WHERE mm_emp_id=#{mm_emp_id}
+    </update>
+
+
+    <select id="listAllVipEndThree" resultMap="emp">
+        SELECT sn.*  from mm_emp sn
+        WHERE 1=1
+        <if test="start != null and start != ''">
+            AND sn.mm_emp_endtime &gt;= #{start}
+        </if>
+        <if test="end != null and end != ''">
+            AND sn.mm_emp_endtime &lt;= #{end}
+        </if>
+    </select>
+
+    <select id="listCountLoginNum" resultMap="emp_vo">
+        SELECT lemp.*,llogin.mm_emp_id ,count(*) as countLoginNum from mm_emp_login_num llogin
+        LEFT JOIN mm_emp lemp ON lemp.mm_emp_id=llogin.mm_emp_id
+        WHERE lemp.mm_emp_id is not NULL
+        <if test="mm_emp_provinceId != null and mm_emp_provinceId != ''">
+            AND lemp.mm_emp_provinceId = #{mm_emp_provinceId}
+        </if>
+        <if test="mm_emp_cityId != null and mm_emp_cityId != ''">
+            AND lemp.mm_emp_cityId = #{mm_emp_cityId}
+        </if>
+        <if test="mm_emp_countryId != null and mm_emp_countryId != ''">
+            AND lemp.mm_emp_countryId = #{mm_emp_countryId}
+        </if>
+
+        GROUP BY llogin.mm_emp_id order by countLoginNum DESC limit #{index},#{size}
+    </select>
+
+    <select id="countLoginNumOne" resultType="Long">
+        SELECT count(lemp.mm_emp_id) from mm_emp lemp
+        where lemp.mm_emp_id is not NULL
+        <if test="mm_emp_provinceId != null and mm_emp_provinceId != ''">
+            AND lemp.mm_emp_provinceId = #{mm_emp_provinceId}
+        </if>
+        <if test="mm_emp_cityId != null and mm_emp_cityId != ''">
+            AND lemp.mm_emp_cityId = #{mm_emp_cityId}
+        </if>
+        <if test="mm_emp_countryId != null and mm_emp_countryId != ''">
+            AND lemp.mm_emp_countryId = #{mm_emp_countryId}
+        </if>
+
+    </select>
+
+</mapper>

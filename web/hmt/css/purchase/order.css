@@ -1,0 +1,1064 @@
+﻿@charset "utf-8";
+/* CSS Document */
+
+.c999 {
+    color: #999;
+}
+
+.nav {
+    margin-bottom: 15px;
+}
+
+.content {
+    width: 980px;
+    float: right;
+}
+
+/*标题条*/
+.titlebar {
+    overflow: hidden;
+    border-left: #1faa50 solid 4px;
+}
+
+.titlebar .titlebar-name {
+    float: left;
+    display: inline;
+    height: 20px;
+    line-height: 20px;
+    padding-left: 10px;
+    font-size: 16px;
+}
+
+/*页面切换*/
+.page-tabs {
+    height: 32px;
+    margin: 24px 0 10px 0;
+    border-bottom: #e5e5e5 solid 2px;
+}
+
+.page-tabs li {
+    float: left;
+    display: inline;
+    height: 32px;
+    line-height: 32px;
+    padding: 0 10px;
+    margin-right: 10px;
+}
+
+.page-tabs li a {
+    text-decoration: none;
+}
+
+.page-tabs li.cur {
+    background-color: #f47a11;
+    color: #fff;
+}
+
+.page-tabs li.cur a {
+    color: #fff;
+}
+
+/*查询条件*/
+.query {
+    /*background-color:#f9f9f9;*/
+    overflow: hidden;
+    border: #e5e5e5 solid 1px;
+}
+
+.query .quert-input {
+    height: 100px;
+    width: 730px;
+    float: left;
+    display: inline;
+    border-right: #e5e5e5 solid 1px;
+}
+
+.query .quert-input ul {
+    padding: 17px 0 0 15px;
+}
+
+.query .quert-input ul li {
+    height: 38px;
+    overflow: hidden;
+}
+
+.query .quert-input span {
+    line-height: 27px;
+    float: left;
+    display: inline;
+    margin-right: 5px;
+}
+
+.query .quert-input input {
+    line-height: 25px;
+    float: left;
+    display: inline;
+    height: 25px;
+    border: #e5e5e5 solid 1px;
+    width: 140px;
+    overflow: hidden;
+    margin-right: 20px;
+    padding: 0 5px;
+}
+
+.query .quert-input select {
+    float: left;
+    display: inline;
+    margin-top: 3px;
+}
+
+.query .quert-input input.create-time-start {
+    width: 110px;
+    margin-right: 5px;
+}
+
+.query .quert-input input.create-time-end {
+    width: 120px;
+}
+
+.query .query-but {
+    width: 80px;
+    float: left;
+    display: inline;
+    margin-left: 35px;
+    margin-top: 17px;
+}
+
+.query .query-submit {
+    width: 80px;
+    height: 27px;
+    line-height: 27px;
+    display: block;
+    color: #fff;
+}
+
+.query .query-reset {
+    color: #fff;
+    line-height: 27px;
+    text-align: center;
+    display: block;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.query .query-reset:hover {
+    color: #fff;
+}
+
+.query .query-list {
+    height: 38px;
+    clear: both;
+    overflow: hidden;
+    background-color: #f5f5f5;
+}
+
+.query .query-list span, .query .query-list a {
+    float: left;
+    display: inline;
+    line-height: 38px;
+    color: #000;
+}
+
+.query .query-list span {
+    color: #666;
+    margin-left: 15px;
+}
+
+.query .query-list a {
+    margin-left: 40px;
+    height: 36px;
+}
+
+.query .query-list a:hover {
+    color: #f47a11;
+}
+
+.query .query-list a.cur {
+    color: #f47a11;
+    font-weight: bold;
+    border-bottom: #f47a11 solid 2px;
+}
+
+/*列表*/
+.list {
+    margin-top: 13px;
+    margin-bottom: 13px;
+}
+
+.list .list-title {
+    height: 35px;
+    line-height: 35px;
+    background-color: #f5f5f5;
+    border: #e5e5e5 solid 1px;
+}
+
+.list .list-title li {
+    float: left;
+    display: inline;
+    text-align: center;
+    font-weight: bold;
+}
+
+.list .list-title .l1 {
+    width: 298px;
+}
+
+.list .list-title .l2 {
+    width: 120px;
+}
+
+.list .list-title .l3 {
+    width: 90px;
+}
+
+.list .list-title .l4 {
+    width: 170px;
+}
+
+.list .list-title .l5 {
+    width: 150px;
+}
+
+.list .list-title .l6 {
+    width: 150px;
+}
+
+.list .all-select {
+    height: 20px;
+    line-height: 20px;
+    margin-top: 13px;
+}
+
+.list .all-select input {
+    float: left;
+    display: inline;
+    margin-left: 5px;
+    margin-top: 4px;
+}
+
+.list .all-select a {
+    float: left;
+    display: inline;
+    margin-left: 10px;
+    line-height: 20px;
+}
+
+.list .list-order {
+    margin-top: 13px;
+    width: 978px;
+    border: #e5e5e5 solid 1px;
+    overflow: hidden;
+    min-height: 100px;
+}
+
+.list .list-order:hover {
+    border: #eedfab solid 1px;
+}
+
+.list .list-order .total-price {
+    color: #f47a11;
+    line-height: 24px;
+    font-weight: bold;
+}
+
+.list .list-order ul.order-order {
+    height: 36px;
+    line-height: 36px;
+    overflow: hidden;
+    background-color: #f5f5f5;
+    padding-left: 5px;
+}
+
+.list .list-order:hover ul.order-order {
+    background-color: #fff8e1;
+}
+
+.list .list-order ul.order-order li {
+    float: left;
+    display: inline;
+}
+
+.list .list-order ul.order-order li.l0 {
+    width: 20px;
+}
+
+.list .list-order ul.order-order li.l1 {
+    width: 215px;
+}
+
+.list .list-order ul.order-order li.l2 {
+    width: 300px;
+}
+
+.list .list-order ul.order-order li.l3 {
+    width: 150px;
+}
+
+.list .list-order ul.order-order li.l4 {
+    width: 250px;
+    background: url(../../images/trade/ico-order-qq.png) 0 10px no-repeat;
+    text-indent: 20px;
+}
+
+.list .list-order ul.order-order li.l5 {
+    width: 38px;
+}
+
+.list .list-order ul.order-order li.l0 input {
+    margin-top: 10px;
+}
+
+.list .list-order ul.order-order li a:hover {
+    color: #f47a11;
+}
+
+.list .list-order .state span {
+    line-height: 24px;
+}
+
+.list .list-order .state .state-1 {
+    color: #f47a11;
+}
+
+.list .list-order .state .state-2 {
+    color: #666;
+}
+
+.list .list-order .state .state-3 {
+    color: #ccc;
+}
+
+.list .list-order .operation .but {
+    color: #fff;
+    display: block;
+    width: 80px;
+    height: 24px;
+    margin: 0px auto 5px auto;
+    line-height: 24px;
+    overflow: hidden;
+}
+
+.list .list-order .operation span {
+    line-height: 24px;
+}
+
+.list .list-order .operation span a:hover {
+    color: #f47a11;
+}
+
+.list .list-order .list-product {
+    height: 120px;
+    overflow: hidden;
+}
+
+.list .list-order .list-product li {
+    float: left;
+    display: inline;
+    height: 120px;
+    overflow: hidden;
+}
+
+.list .list-order .list-product .l1 {
+    width: 298px;
+}
+
+.list .list-order .list-product .l2 {
+    width: 120px;
+    line-height: 120px;
+    text-align: center;
+}
+
+.list .list-order .list-product .l3 {
+    width: 90px;
+    line-height: 120px;
+    text-align: center;
+}
+
+.list .list-order .list-product .l1 em {
+    float: left;
+    display: inline;
+    width: 80px;
+    height: 80px;
+    overflow: hidden;
+    border: #e5e5e5 solid 1px;
+    margin: 19px 0 0 19px;
+}
+
+.list .list-order .list-product .l1 h3 {
+    float: left;
+    display: inline;
+    width: 165px;
+    height: 60px;
+    line-height: 20px;
+    margin-left: 8px;
+    margin-top: 19px;
+    text-align: left;
+}
+
+.list .list-order .list-product .l1 span {
+    float: left;
+    display: inline;
+    width: 165px;
+    margin-left: 8px;
+    margin-top: 1px;
+    text-align: left;
+}
+
+/*详情页面CSS*/
+.crumbs-nav {
+    line-height: 38px;
+    height: 38px;
+    overflow: hidden;
+    border-top: #e5e5e5 solid 1px;
+}
+
+/*状态条*/
+.statebar {
+    margin-top: 13px;
+    height: 112px;
+    overflow: hidden;
+    margin: auto;
+}
+
+.statebar .list {
+    float: right;
+    display: inline;
+    width: 238px;
+    overflow: hidden;
+    margin: 0px;
+    padding: 0px;
+}
+
+.statebar h3 {
+    line-height: 36px;
+    overflow: hidden;
+    height: 36px;
+    text-align: center;
+}
+
+.statebar .state3 h3 {
+    font-weight: bold;
+}
+
+.statebar span {
+    float: left;
+    display: inline;
+    width: 119px;
+    height: 26px;
+    overflow: hidden;
+}
+
+.statebar span.bg1 {
+    background: url(../../images/zt_line-bg-1.png) center center repeat-x;
+}
+
+.statebar span.bg2 {
+    background: url(../../images/zt_line-bg-2.png) center center repeat-x;
+}
+
+.statebar strong {
+    width: 26px;
+    height: 26px;
+    line-height: 26px;
+    text-align: center;
+    color: #fff;
+    font-weight: normal;
+    overflow: hidden;
+    position: absolute;
+    margin-left: 106px;
+    margin-top: 36px;
+}
+
+.statebar .state1 strong {
+    background: url(../../images/zt-ico-1.png) no-repeat;
+}
+
+.statebar .state2 strong {
+    background: url(../../images/zt-ico-2.png) no-repeat;
+}
+
+.statebar .state3 strong {
+    background: url(../../images/zt-ico-3.png) no-repeat;
+}
+
+.statebar p {
+    line-height: 50px;
+    height: 50px;
+    overflow: hidden;
+    color: #999;
+    text-align: center;
+    clear: both;
+}
+
+.statebar-middle-01 {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.statebar-middle-02 {
+    width: 750px;
+    margin: 0 auto;
+}
+
+.statebar-middle-03 {
+    width: 500px;
+    margin: 0 auto;
+}
+
+/*订单状态*/
+.order-state {
+}
+
+.order-state h3 {
+    line-height: 34px;
+    height: 34px;
+}
+
+.order-state h3 strong {
+    font-size: 14px;
+    float: left;
+}
+
+.order-state h3 font {
+    /*color:#f47a11;*/
+}
+
+.order-state h3 span {
+    float: right;
+    color: #999;
+}
+
+.order-state h3 span font {
+    color: #f00;
+}
+
+.order-state .state-content {
+    border: #e5e5e5 solid 1px;
+    background-color: #fafafa;
+    padding: 20px 0 20px 60px;
+}
+
+.order-state .state-content p {
+    height: 26px;
+    line-height: 26px;
+    margin: 2px 0;
+}
+
+.order-state .state-content p.refund {
+    border-top: solid #ccc 1px;
+    margin-top: 10px;
+    margin-right: 60px;
+}
+
+.order-state .state-content p.refund-record {
+    color: #999;
+}
+
+.order-state .state-content .express {
+    height: 34px;
+    line-height: 34px;
+    margin: 2px 0;
+}
+
+.order-state .state-content span {
+    float: left;
+}
+
+.order-state .state-content a {
+    float: left;
+    color: #f47a11;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.order-state .state-content a:hover {
+    text-decoration: underline;
+}
+
+.order-state .state-content .but {
+    width: 80px;
+    height: 26px;
+    color: #fff;
+}
+
+.order-state .state-content .express .but {
+    margin-top: 4px;
+    line-height: 26px;
+}
+
+.order-state .state-content input {
+    float: left;
+    display: inline;
+    margin: 2px 10px;
+    padding: 0 5px;
+    height: 28px;
+    width: 180px;
+    line-height: 28px;
+    border: #e5e5e5 solid 1px;
+}
+
+.order-state .state-content .mandatory {
+    border: #F60C0C solid 1px;
+}
+
+.order-state .state-content .select {
+    float: left;
+    display: inline;
+}
+
+.order-state .state-content .select ul {
+    position: absolute;
+    width: 190px;
+    height: auto;
+    border: #e5e5e5 solid 1px;
+    border-top: 0;
+    margin: 24px 0 0 10px;
+    background-color: #FFF;
+}
+
+.order-state .state-content .select li {
+    height: 28px;
+    line-height: 28px;
+    cursor: pointer;
+    padding: 0 5px;
+    color: #999;
+}
+
+.order-state .state-content .select li:hover {
+    background-color: #f1f1f1;
+}
+
+.order-state .state-content .wait-sell_01 {
+    line-height: 60px;
+    height: 60px;
+    margin-right: 60px
+}
+
+.order-state .state-content .wait-sell {
+    line-height: 60px;
+    border-top: 1px solid #ccc;
+    height: 60px;
+    margin-right: 60px;
+}
+
+.order-state .state-content .wait-sell input {
+    width: 70px;
+    margin-top: 16px;
+    margin-right: 20px;
+}
+
+.order-state .state-content .ml_35 {
+    margin-left: 35px;
+}
+
+.order-state .state-content .ws01 {
+    margin-left: 35px;
+}
+
+.order-state .state-content .ws01 a {
+    float: right;
+}
+
+.order-state .state-content .ws02 span.fr {
+    float: right;
+}
+
+.order-state .state-content .ws02 span a {
+    float: right;
+}
+
+.order-state .state-content .ws02 a.but {
+    margin-top: 15px;
+    margin-left: 100px;
+    line-height: 26px;
+}
+
+.order-state .state-content .ws02 a.no {
+    background-color: #ccc;
+    text-decoration: none;
+}
+
+.order-state .state-content .ws03 {
+    margin-left: 35px;
+    height: auto;
+    padding-top: 16px;
+    padding-bottom: 15px;
+    line-height: 32px;
+    overflow: hidden;
+}
+
+/*2015-8-21*/
+.order-state .state-content .ws03 input {
+    margin-top: 0px;
+}
+
+/*2015-8-21*/
+.order-state .state-content .ws03 a {
+    float: right;
+}
+
+/*2015-8-21*/
+.order-state .state-content .ws03 .sell-msg {
+    clear: both;
+    padding-left: 60px;
+    line-height: 20px;
+}
+
+/*2015-8-21*/
+.order-state .state-content .change_a {
+    height: 120px;
+    float: left;
+    display: inline;
+    border: 1px solid #ccc;
+    margin-left: 50px;
+    margin-top: 10px;
+}
+
+/*2015-8-22*/
+.order-state .state-content .change_a h2 {
+    background-color: #f3f3f3;
+    height: 32px;
+    margin: 0;
+    border-bottom: 1px solid #ccc;
+    line-height: 32px;
+    padding-left: 15px;
+    color: #
+}
+
+.order-state .state-content .change_a input {
+    width: 70px;
+    height: 28px;
+    line-height: 28px;
+    border-radius: 3px;
+    float: none;
+}
+
+/*2015-8-21*/
+.order-state .state-content .change_b {
+    margin: 15px 10px 0 58px;
+}
+
+.order-state .state-content .change_c {
+    height: 26px;
+    line-height: 26px;
+    padding: 10px 0 10px 270px;
+    clear: both;
+}
+
+/*2015-8-21*/
+.order-state .state-content .change_c .c_sure {
+}
+
+.order-state .state-content .change_c .c_cancel {
+    margin-left: 10px;
+}
+
+a.an1, a.an2 {
+    width: 100px;
+    height: 26px;
+    display: block;
+    line-height: 26px;
+    background-color: #f47a11;
+    border-radius: 3px;
+    color: #fff;
+    text-align: center;
+    float: left;
+}
+
+a.ml_80 {
+    margin-left: 80px;
+    margin-top: 30px;
+}
+
+a.ml_10 {
+    margin-left: 10px;
+    margin-top: 30px;
+}
+
+.cc_p {
+    text-align: left;
+    margin-left: 20px;
+}
+
+/*订单详情*/
+.order-details {
+    padding-bottom: 50px;
+}
+
+.order-details h3 {
+    line-height: 34px;
+    height: 34px;
+}
+
+.order-details h3 strong {
+    font-size: 14px;
+    float: left;
+}
+
+.order-details h3 font {
+    color: #f47a11;
+}
+
+.order-details h3 span {
+    float: right;
+    color: #999;
+}
+
+.order-details h3 span font {
+    color: #f00;
+}
+
+.order-details .details-content {
+    border: #e5e5e5 solid 1px;
+    overflow: hidden;
+}
+
+.contact-info {
+    clear: both;
+}
+
+.consignee-info {
+    padding: 28px 0 35px 19px;
+    width: 580px;
+    float: left;
+    display: inline;
+}
+
+.consignee-info span, .consignee-info p {
+    float: left;
+    display: inline;
+    line-height: 30px;
+    height: 120px;
+}
+
+.consignee-info span {
+    font-weight: bold;
+    padding-right: 10px;
+}
+
+.seller-info {
+    padding: 28px 0 35px 0;
+    float: left;
+    display: inline;
+}
+
+.seller-info span, .seller-info p {
+    float: left;
+    display: inline;
+    line-height: 30px;
+    height: 120px;
+}
+
+.seller-info span {
+    font-weight: bold;
+    padding-right: 10px;
+}
+
+.seller-info p a {
+    color: #f47a11;
+}
+
+/*订单信息*/
+.order-info {
+    width: 1150px;
+    margin: auto;
+}
+
+.order-info .order-title {
+    clear: both;
+    height: 35px;
+    border: #e5e5e5 solid 1px;
+    background-color: #f5f5f5;
+}
+
+.order-info .order-title li {
+    float: left;
+    display: inline;
+    text-align: center;
+    line-height: 35px;
+}
+
+.order-info .order-title li.l1 {
+    width: 638px;
+}
+
+.order-info .order-title li.l2 {
+    width: 170px;
+}
+
+.order-info .order-title li.l3 {
+    width: 170px;
+}
+
+.order-info .order-title li.l4 {
+    width: 170px;
+}
+
+.order-info .order-msg {
+    height: 35px;
+    line-height: 35px;
+    padding-left: 30px;
+    border: #e5e5e5 solid 1px;
+    border-top: 0;
+}
+
+.order-info .order-product {
+    border: #e5e5e5 solid 1px;
+    border-top: 0;
+    overflow: hidden;
+}
+
+.order-info .order-product .prolist {
+    height: 120px;
+    overflow: hidden;
+}
+
+.order-info .order-product li {
+    float: left;
+    display: inline;
+    text-align: center;
+    line-height: 120px;
+}
+
+.order-info .order-product li.l1 {
+    width: 638px;
+    text-align: left;
+}
+
+.order-info .order-product li.l2 {
+    width: 170px;
+}
+
+.order-info .order-product li.l3 {
+    width: 170px;
+}
+
+.order-info .order-product li.l4 {
+    width: 170px;
+}
+
+.order-info .order-product li.l1 .em {
+    float: left;
+    display: inline;
+    margin: 34px 0 0 20px;
+    width: 50px;
+    height: 50px;
+    overflow: hidden;
+    border: #e5e5e5 solid 1px;
+}
+
+.order-info .order-product li.l1 .em a {
+    display: block;
+}
+
+.order-info .order-product li.l1 h3 {
+    float: left;
+    display: inline;
+    width: 500px;
+    line-height: 25px;
+    height: 50px;
+    overflow: hidden;
+    margin-top: 35px;
+    margin-left: 10px;
+}
+
+.order-info .order-product li.l1 h3 a:hover {
+    color: #f47a11;
+}
+
+.order-info .order-guess {
+    line-height: 24px;
+    padding: 10px;
+    float: left;
+    display: inline;
+    width: 500px;
+}
+
+.order-info .order-guess span {
+    float: left;
+    display: inline;
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+.order-info .order-guess p {
+    float: left;
+    display: inline;
+    width: 400px;
+}
+
+.order-info .order-total {
+    padding: 10px;
+    /*float:right;*/
+    width: 300px;
+    text-align: right;
+    line-height: 24px;
+    font-size: 14px;
+}
+
+.order-info .order-total span {
+    font-size: 18px;
+    font-weight: bold;
+    color: #f47a11;
+    display: inline-block;
+    width: 180px;
+    text-align: left;
+}
+
+.order-info .order-total span.order-total-small {
+    font-size: 14px;
+}
+
+/*我的蔬菜通服务*/
+.order-type {
+    margin-right: 100px;
+}
+
+.list-member .list-title .l1 {
+    width: 200px;
+}
+
+.list-member .list-title .l2 {
+    width: 120px;
+}
+
+.list-member .list-title .l3 {
+    width: 140px;
+}
+
+.list-member .list-title .l4 {
+    width: 170px;
+}
+
+.list-member .list-title .l5 {
+    width: 148px;
+}
+
+.list-member .list-title .l6 {
+    width: 100px;
+}
+
+.list-member .list-title .l7 {
+    width: 100px;
+}
+
+.list-member .list-order {
+    height: 100px;
+    padding: 10px 0;
+}
+
+.list-member .list-order a:hover {
+    color: #f47a11;
+}
+
+/*- 2015-07-29 -*/
+.order-state .state-content .change_msg {
+    padding: 0 10px 20px 97px;
+}
+
+/*2015-8-21*/
+.order-state .state-content .change_msg span {
+    color: #F00;
+}
+
+/*- //2015-07-29 -*/

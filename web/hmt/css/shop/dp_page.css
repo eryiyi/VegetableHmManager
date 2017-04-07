@@ -1,0 +1,94 @@
+﻿/* 
+ * 分页 主style
+ * 2014.8.7 cx
+ */
+
+.dp_page {
+    height: 37px;
+    clear: both;
+    overflow: hidden;
+    text-align: right;
+    text-indent: 0px;
+    padding: 24px 0px;
+}
+
+.dp_page .page-bottom {
+    display: inline-block;
+    zoom: 1;
+    vertical-align: middle;
+    *display: inline;
+}
+
+.dp_page .page-bottom a {
+    float: left;
+    height: 35px;
+    line-height: 35px;
+    margin-right: -1px;
+    padding: 0 15px;
+    color: #2953A6;
+    text-align: center;
+    vertical-align: middle;
+    white-space: nowrap;
+    font-size: 14px;
+    border: 1px #E2E6E9 solid;
+    border-radius: 1px 1px;
+}
+
+.dp_page .page-bottom a.last {
+    margin-right: 0px;
+}
+
+.dp_page span {
+    height: 35px;
+    float: left;
+    line-height: 35px;
+    padding: 0px 15px;
+}
+
+.dp_page a:hover {
+    text-decoration: underline;
+    background: #EFEFEF;
+}
+
+.dp_page .page-op {
+    display: inline-block;
+    zoom: 1;
+    vertical-align: middle;
+    *display: inline;
+}
+
+.dp_page .page-bottom a.but1hover {
+    text-decoration: underline;
+    background: #EFEFEF;
+}
+
+.dp_page .page-bottom a.noselect {
+    cursor: text;
+    color: #999999;
+    text-decoration: none;
+}
+
+.dp_page .page_but2 {
+    width: 35px;
+    height: 25px;
+    display: inline-block;
+    line-height: 25px;
+    padding: 3px;
+    background: #E8E8E8;
+    border-radius: 2px 2px;
+}
+
+.dp_page .page_but2:hover {
+    background: #CACACA;
+    color: #657C8A;
+}
+
+.page_input {
+    width: 40px;
+    height: 28px;
+    display: inline-block;
+    border: 1px #E2E6E9 solid;
+    border-radius: 2px 2px;
+    text-align: center;
+    vertical-align: middle;
+}

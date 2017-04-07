@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC
+        "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.liangxunwang.unimanager.dao.FuwuDao">
+    <resultMap id="fuwu" type="com.liangxunwang.unimanager.model.FuwuObj">
+        <id column="mm_fuwu_id" property="mm_fuwu_id"/>
+        <result column="mm_fuwu_nickname" property="mm_fuwu_nickname"/>
+        <result column="mm_fuwu_tel" property="mm_fuwu_tel"/>
+        <result column="mm_fuwu_content" property="mm_fuwu_content"/>
+        <result column="mm_fuwu_type" property="mm_fuwu_type"/>
+        <result column="dateline" property="dateline"/>
+        <result column="lat" property="lat"/>
+        <result column="lng" property="lng"/>
+        <result column="mm_fuwu_url" property="mm_fuwu_url"/>
+        <result column="provinceid" property="provinceid"/>
+        <result column="cityid" property="cityid"/>
+        <result column="countryid" property="countryid"/>
+        <result column="mm_fuwu_cover" property="mm_fuwu_cover"/>
+    </resultMap>
+
+    <resultMap id="fuwu_vo" type="com.liangxunwang.unimanager.mvc.vo.FuwuVO">
+        <id column="mm_fuwu_id" property="mm_fuwu_id"/>
+        <result column="mm_fuwu_nickname" property="mm_fuwu_nickname"/>
+        <result column="mm_fuwu_tel" property="mm_fuwu_tel"/>
+        <result column="mm_fuwu_content" property="mm_fuwu_content"/>
+        <result column="mm_fuwu_type" property="mm_fuwu_type"/>
+        <result column="dateline" property="dateline"/>
+        <result column="lat" property="lat"/>
+        <result column="lng" property="lng"/>
+        <result column="mm_fuwu_url" property="mm_fuwu_url"/>
+        <result column="provinceid" property="provinceid"/>
+        <result column="cityid" property="cityid"/>
+        <result column="countryid" property="countryid"/>
+        <result column="mm_fuwu_cover" property="mm_fuwu_cover"/>
+
+        <result column="provinceName" property="provinceName"/>
+        <result column="cityName" property="cityName"/>
+        <result column="areaName" property="areaName"/>
+
+    </resultMap>
+
+    <select id="lists" resultMap="fuwu_vo">
+        SELECT sn.*,hatp.province as provinceName, hatc.city as cityName, hata.area as areaName from mm_fuwu sn
+        LEFT JOIN hat_province hatp ON sn.provinceid=hatp.provinceID
+        LEFT JOIN hat_city hatc ON sn.cityid=hatc.cityID
+        LEFT JOIN hat_area hata ON sn.countryid=hata.areaID
+        WHERE  1=1
+        <if test="lat != null and lat != ''">
+            AND sn.lat > (#{lat}-1) AND   (#{lat} + 1) > sn.lat
+        </if>
+        <if test="lng != null and lng != ''">
+            AND sn.lng > (#{lat}-1) AND   (#{lng} + 1) > sn.lng
+        </if>
+
+        <if test="mm_fuwu_type != null and mm_fuwu_type != ''">
+            AND sn.mm_fuwu_type = #{mm_fuwu_type}
+        </if>
+        <if test="provinceid != null and provinceid != ''">
+            AND sn.provinceid = #{provinceid}
+        </if>
+        <if test="cityid != null and cityid != ''">
+            AND sn.cityid = #{cityid}
+        </if>
+        <if test="countryid != null and countryid != ''">
+            AND sn.countryid = #{countryid}
+        </if>
+        <if test="lat != null and lat != '' and lng != null and lng != ''">
+            order by ACOS(SIN((#{lat} * 3.1415) / 180 ) *SIN((lat * 3.1415) / 180 ) +COS((#{lat} * 3.1415) / 180 ) * COS((lat * 3.1415) / 180 ) *COS((#{lng}* 3.1415) / 180 - (lng * 3.1415) / 180 ) ) * 6380 asc
+        </if>
+
+        <!--<if test="lat != null and lat != '' and lng != null and lng != ''">-->
+            <!--order by-->
+            <!--ACOS(SIN((#{lat} * 3.1415) / 180 ) *SIN((sn.lat * 3.1415) / 180 ) +COS((#{lat} * 3.1415) / 180 ) * COS((sn.lat * 3.1415) / 180 ) *COS((#{lng} * 3.1415) / 180 - (sn.lng * 3.1415) / 180 ) ) * 6380-->
+            <!--ASC-->
+        <!--</if>-->
+
+        limit #{index},#{size}
+    </select>
+
+    <select id="count" resultType="Long">
+        SELECT count(sn.mm_fuwu_id) FROM mm_fuwu sn
+        WHERE  1=1
+        <if test="lat != null and lat != ''">
+            AND sn.lat > (#{lat}-1) AND   (#{lat} + 1) > sn.lat
+        </if>
+        <if test="lng != null and lng != ''">
+            AND sn.lng > (#{lat}-1) AND   (#{lng} + 1) > sn.lng
+        </if>
+
+        <if test="mm_fuwu_type != null and mm_fuwu_type != ''">
+            AND sn.mm_fuwu_type = #{mm_fuwu_type}
+        </if>
+        <if test="provinceid != null and provinceid != ''">
+            AND sn.provinceid = #{provinceid}
+        </if>
+        <if test="cityid != null and cityid != ''">
+            AND sn.cityid = #{cityid}
+        </if>
+        <if test="countryid != null and countryid != ''">
+            AND sn.countryid = #{countryid}
+        </if>
+        <!--<if test="lat != null and lat != '' and lng != null and lng != ''">-->
+            <!--order by-->
+            <!--ACOS(SIN((#{lat} * 3.1415) / 180 ) *SIN((sn.lat * 3.1415) / 180 ) +COS((#{lat} * 3.1415) / 180 ) * COS((sn.lat * 3.1415) / 180 ) *COS((#{lng} * 3.1415) / 180 - (sn.lng * 3.1415) / 180 ) ) * 6380-->
+            <!--ASC-->
+        <!--</if>-->
+    </select>
+
+    <insert id="save" parameterType="com.liangxunwang.unimanager.model.FuwuObj">
+        INSERT INTO mm_fuwu(mm_fuwu_id, mm_fuwu_nickname, mm_fuwu_tel, mm_fuwu_content, mm_fuwu_type,dateline,lat,lng,mm_fuwu_url, provinceid,cityid, countryid, mm_fuwu_cover)
+        VALUES (#{mm_fuwu_id}, #{mm_fuwu_nickname}, #{mm_fuwu_tel}, #{mm_fuwu_content,jdbcType=VARCHAR}, #{mm_fuwu_type}, #{dateline}, #{lat,jdbcType=VARCHAR}, #{lng,jdbcType=VARCHAR}, #{mm_fuwu_url,jdbcType=VARCHAR}, #{provinceid,jdbcType=VARCHAR}, #{cityid,jdbcType=VARCHAR}, #{countryid,jdbcType=VARCHAR}, #{mm_fuwu_cover,jdbcType=VARCHAR})
+    </insert>
+
+    <delete id="delete" parameterType="String">
+        DELETE FROM mm_fuwu where mm_fuwu_id = #{mm_fuwu_id}
+    </delete>
+
+    <select id="findById" parameterType="String" resultMap="fuwu_vo">
+        SELECT sn.*,hatp.province as provinceName, hatc.city as cityName, hata.area as areaName from mm_fuwu sn
+        LEFT JOIN hat_province hatp ON sn.provinceid=hatp.provinceID
+        LEFT JOIN hat_city hatc ON sn.cityid=hatc.cityID
+        LEFT JOIN hat_area hata ON sn.countryid=hata.areaID
+        where mm_fuwu_id=#{mm_fuwu_id}
+    </select>
+
+    <update id="update" parameterType="com.liangxunwang.unimanager.model.FuwuObj">
+        UPDATE mm_fuwu SET mm_fuwu_nickname=#{mm_fuwu_nickname}, mm_fuwu_tel=#{mm_fuwu_tel}, mm_fuwu_content=#{mm_fuwu_content}, mm_fuwu_type=#{mm_fuwu_type}, lat=#{lat}, lng=#{lng}, mm_fuwu_url=#{mm_fuwu_url}, provinceid=#{provinceid}, cityid=#{cityid}, countryid=#{countryid}, mm_fuwu_cover=#{mm_fuwu_cover}
+         WHERE mm_fuwu_id=#{mm_fuwu_id}
+    </update>
+</mapper>

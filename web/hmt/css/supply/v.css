@@ -1,0 +1,608 @@
+﻿@charset "utf-8";
+/* CSS Document */
+
+/*--------------------------------------------------
+ *@名称:		index.css
+ *@作者:		TangHailong
+ *@日期:		2015-8-17
+--------------------------------------------------*/
+a:active {
+    color: #f47a11;
+}
+
+a:hover {
+    color: #f47a11;
+}
+
+/*===addr===*/
+.seladdr {
+    margin-left: 25px;
+    width: 75px;
+    background: url(../images/search_product_r11_c21.jpg) no-repeat;
+    height: 20px;
+    margin-top: 2px;
+    position: relative;
+    z-index: 999;
+    cursor: pointer;
+    font-family: "微软雅黑";
+    font-size: 12px;
+}
+
+.seladdr * {
+    font-size: 12px;
+}
+
+.seladdr #txtarea {
+    background: none;
+    cursor: pointer;
+    font-family: "宋体";
+    font-size: 12px;
+    border: none;
+    border: 0;
+    width: 70px;
+    height: 20px;
+    line-height: 20px;
+    padding-left: 4px;
+}
+
+.seladdr .addr {
+    position: absolute;
+    background: #fff;
+    border: #d8d8d8 solid 1px;
+    width: 480px;
+    display: none;
+    *margin: 0px auto auto -76px;
+    padding-bottom: 8px;
+    top: 20px;
+    left: 0;
+}
+
+.seladdr .addr p {
+    border-bottom: #ddd dashed 1px;
+    margin: 8px;
+}
+
+.seladdr .addr p a {
+    padding: 7px;
+    display: inline-block;
+    width: 52px;
+}
+
+/*===container===*/
+.wrap-1190 {
+    width: 1190px;
+    margin: auto;
+}
+
+.wapper-w840 {
+    width: 840px;
+}
+
+.wapper-w1050 {
+    width: 1050px;
+}
+
+.wapper-w735 {
+    width: 735px;
+}
+
+.wapper-w945 {
+    width: 945px;
+}
+
+.container {
+}
+
+/*- info-details -*/
+.info-details {
+    float: left;
+    display: inline;
+    width: 956px;
+}
+
+/*- position -*/
+.position {
+    height: 24px;
+    color: #8d8d8d;
+    font-family: '微软雅黑';
+}
+
+.position a {
+    color: #333;
+}
+
+.position a:hover {
+    text-decoration: underline;
+}
+
+/*- details -*/
+.details {
+    overflow: hidden;
+    border: #ddd solid 1px;
+    font-family: '微软雅黑';
+    padding-bottom: 20px;
+}
+
+ul.details-title {
+    height: 38px;
+    line-height: 38px;
+    overflow: hidden;
+    border: #ddd solid 1px;
+    background-color: #fafafa;
+    padding: 0 15px;
+}
+
+.details-times {
+    float: left;
+    display: inline;
+}
+
+.details-clicks {
+    float: left;
+    display: inline;
+    margin-left: 50px;
+}
+
+.details-author {
+    float: left;
+    display: inline;
+    margin-left: 50px;
+}
+
+.details-author a {
+    color: #f47a11;
+}
+
+.details-author a:hover {
+    text-decoration: underline;
+}
+
+.details-certification {
+    float: left;
+    display: inline;
+    margin-left: 10px;
+    margin-top: 5px;
+}
+
+.details-audit {
+    float: right;
+    display: inline;
+}
+
+.details ul.details-content {
+    float: left;
+    display: inline;
+    margin: 20px 0 0 30px;
+    width: 540px;
+    overflow: hidden;
+    font-size: 14px;
+    color: #666;
+}
+
+.details ul.details-content li {
+    clear: both;
+    padding-bottom: 8px;
+    line-height: 24px;
+    overflow: hidden;
+}
+
+.details ul.details-content li strong {
+    float: left;
+    width: 70px;
+    height: 24px;
+    text-align: right;
+    font-weight: normal;
+    color: #333;
+}
+
+.details ul.details-content li p {
+    float: left;
+    width: 470px;
+}
+
+.details ul.details-content li.c1 p {
+    width: auto;
+}
+
+.details ul.details-content li.c1 .c1-name {
+    color: #000;
+    display: block;
+    float: none;
+    font-size: 30px;
+    padding-bottom: 15px;
+    padding-left: 26px;
+}
+
+.details ul.details-content li.c2 .c2-price {
+    color: #f47a11;
+    font-weight: bold;
+}
+
+.details .details-contact {
+    float: left;
+    margin: 80px 0 0 30px;
+    width: 330px;
+    height: 88px;
+    border: #fde5d1 solid 1px;
+    background-color: #fdf3eb;
+    position: relative;
+}
+
+.details .details-contact .tit {
+    position: absolute;
+    left: 0;
+    top: -24px;
+    font-size: 14px;
+    color: #666;
+}
+
+.details .details-contact ul {
+    float: left;
+    width: 190px;
+    margin: 14px 0 0 0;
+    height: 60px;
+}
+
+.details .details-contact ul li {
+    height: 30px;
+    line-height: 30px;
+    padding-left: 48px;
+    font-size: 16px;
+}
+
+.details .details-contact ul li.contact-name {
+    background: url(../images/ico-name.png) 15px center no-repeat;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.details .details-contact ul li.contact-tel {
+    background: url(../images/ico-tel.png) 14px center no-repeat;
+}
+
+.details .details-contact ul li.contact-tel a {
+    color: #f47a11;
+}
+
+.details .details-contact ul li.contact-tel a:hover {
+    text-decoration: underline;
+}
+
+.details .details-contact ul li.contact-tel img {
+    position: absolute;
+    float: left;
+}
+
+.details .details-contact .contact-but {
+    float: left;
+    margin-top: 25px;
+}
+
+.details .details-contact .contact-but a {
+    width: 122px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    font-size: 14px;
+    display: block;
+    overflow: hidden;
+    background-color: #f47a11;
+    color: #FFF;
+    border-radius: 4px;
+}
+
+.details .details-contact .contact-but a:hover {
+    background-color: #ff4200;
+    text-decoration: none;
+}
+
+.details .details-product {
+    clear: both;
+    padding-top: 10px;
+    padding-left: 30px;
+    font-size: 14px;
+    color: #666;
+}
+
+.details .details-product h2 {
+    float: left;
+    width: 70px;
+    height: 24px;
+    line-height: 24px;
+    text-align: right;
+    color: #333;
+}
+
+.details .details-product ul {
+    float: left;
+    display: inline;
+    width: 800px;
+}
+
+.details .details-product li {
+    float: left;
+    display: inline;
+    height: 24px;
+    line-height: 24px;
+    overflow: hidden;
+    margin-right: 30px;
+}
+
+.details .details-product li a {
+    color: #009534;
+}
+
+.details .details-product li a:hover {
+    text-decoration: underline;
+}
+
+/*- related -*/
+.related {
+    clear: both;
+    padding-top: 25px;
+    font-family: '微软雅黑';
+}
+
+.related .related-title {
+    height: 25px;
+    overflow: hidden;
+    border-bottom: #ddd solid 1px;
+    padding-bottom: 5px;
+}
+
+.related .related-title span {
+    position: absolute;
+    height: 24px;
+    float: left;
+    font-size: 16px;
+    color: #000;
+    background: url(../images/related-title-ico.gif) no-repeat left center;
+    padding-left: 30px;
+}
+
+.related ul {
+    padding-top: 1px;
+    border-left: 1px solid #e9e8e8;
+    border-right: 1px solid #e9e8e8;
+}
+
+.related .text-list {
+    position: relative;
+    z-index: 1;
+    height: 55px;
+    overflow: hidden;
+    border-bottom: #e0e0e0 dashed 1px;
+    border-left: #fff solid 1px;
+    border-right: #fff solid 1px;
+    clear: both;
+    cursor: pointer;
+}
+
+.related .text-list:hover {
+    background-color: #f8f8f8;
+}
+
+.related .text-list span {
+    float: left;
+    display: inline;
+    height: 55px;
+    line-height: 55px;
+    font-size: 14px;
+    font-family: '微软雅黑';
+}
+
+.related .text-list span.l1 {
+    width: 100px;
+    text-align: center;
+}
+
+.related .text-list span.l2 {
+    width: 205px;
+    text-indent: 30px;
+    padding-right: 5px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    text-align: center;
+}
+
+.related .text-list span.l2 i {
+    color: #8d8d8d;
+}
+
+.related .text-list span.l3 {
+    width: 160px;
+    text-align: center;
+    color: #f47a11;
+    font-weight: bold;
+    padding: 0 5px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.related .text-list span.l4 {
+    width: 155px;
+    text-align: center;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.related .text-list span.l5 {
+    width: 125px;
+    text-align: center;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.related .text-list span.l6 {
+    width: 65px;
+    text-align: center;
+}
+
+.related .text-list span.l6 img {
+    vertical-align: middle;
+}
+
+.related .text-list span.l7 {
+    width: 125px;
+    text-align: center;
+}
+
+.related .text-list a,
+.related .text-list a:hover {
+    color: #3e3e3e;
+}
+
+.related .text-list span.l1 em {
+    display: block;
+    width: 48px;
+    height: 20px;
+    overflow: hidden;
+    text-align: center;
+    line-height: 20px;
+    color: #FFF;
+    margin-left: 26px;
+    margin-top: 25px;
+    background-color: #f47a11;
+}
+
+.related .text-list span.l7 .text-list-view {
+    width: 82px;
+    height: 22px;
+    border: #ddd solid 1px;
+    display: block;
+    text-align: center;
+    line-height: 22px;
+    margin-top: 16px;
+    margin-left: 20px;
+    font-family: '微软雅黑';
+    text-decoration: none;
+    font-size: 12px;
+}
+
+.related .text-list span.l7 .text-list-view:hover {
+    border: #f47a11 solid 1px;
+    background-color: #f47a11;
+    color: #FFF;
+    text-decoration: none;
+}
+
+.related .text-list .mark {
+    background: #009534;
+    color: #fff;
+    padding: 3px 10px;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+}
+
+/*- sides -*/
+.sides {
+    float: right;
+    display: inline;
+    width: 216px;
+    overflow: hidden;
+    border-color: #fff;
+}
+
+.sides .ad2 {
+    width: 216px;
+    height: 353px;
+    overflow: hidden;
+}
+
+.sides .sides-hot {
+}
+
+.sides .sides-hot h2 {
+    height: 30px;
+    overflow: hidden;
+    line-height: 30px;
+    font-size: 14px;
+    font-family: '微软雅黑';
+    color: #000;
+    background: #f8f8f8;
+    border: 1px solid #ddd;
+    border-bottom: none;
+    margin: 0;
+    padding: 0 10px;
+}
+
+.sides .sides-hot ul {
+    border: #ddd solid 1px;
+    padding: 13px 9px 0 9px;
+}
+
+.sides .sides-hot ul li {
+    height: 20px;
+    line-height: 20px;
+    overflow: hidden;
+    margin-bottom: 9px;
+}
+
+.sides .sides-hot ul li em {
+    float: left;
+    display: inline;
+    width: 18px;
+    height: 18px;
+    overflow: hidden;
+    text-align: center;
+    line-height: 18px;
+    border: #ddd solid 1px;
+    font-size: 12px;
+    font-family: '微软雅黑';
+}
+
+.sides .sides-hot ul li em.hot {
+    background-color: #26a510;
+    border: #26a510 solid 1px;
+    color: #FFF;
+}
+
+.sides .sides-hot ul li h3 {
+    float: left;
+    display: inline;
+    text-indent: 8px;
+    font-family: '微软雅黑';
+    max-width: 80px;
+    height: 20px;
+    line-height: 20px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.sides .sides-hot ul li p {
+    float: right;
+    display: inline;
+    font-family: '微软雅黑';
+    max-width: 110px;
+    height: 20px;
+    line-height: 20px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+/*-.navbar-*/
+.navbar {
+    width: 1190px;
+    min-width: 1190px;
+}
+
+.navbar-home {
+    width: 100%;
+}
+
+/*.navbar-home li a, .navbar-home li a:visited, .navbar-home li a:hover {
+	padding:0 20px;
+	margin-left:20px;
+	margin-right:20px;
+}*/
+
+
+

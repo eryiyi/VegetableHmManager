@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<permissions id="ALL" name="所有权限">
+    <group id="ROLE_MANAGE" name="角色管理">
+        <permission id="LIST_ROLE" name="角色列表"/>
+        <permission id="ADD_ROLE" name="添加角色"/>
+    </group>
+    <group id="MANAGER_MANAGE" name="管理员">
+        <permission id="MANAGER_ADD_MANAGE" name="管理员列表"/>
+        <permission id="MANAGER_LIST_MANAGE" name="管理员列表"/>
+    </group>
+    <group id="EMPLOYEE_MANAGE" name="会员管理">
+        <permission id="REG_EMP" name="人工注册"/>
+        <permission id="LIST_EMPLOYEE_JY" name="经营户"/>
+        <permission id="LIST_EMPLOYEE_EMP" name="会员"/>
+        <permission id="LIST_EMPLOYEE_EMP_SPECIAL" name="特殊会员"/>
+    </group>
+    <group id="MESSAGE_MANAGE" name="信息管理">
+        <permission id="QIUGOU_MSG" name="求购信息"/>
+        <permission id="GONGYING_MSG" name="供应信息"/>
+    </group>
+    <group id="NOTICE_MANAGE" name="公告管理">
+        <permission id="ADD_NOTICE" name="添加公告"/>
+        <permission id="NOTICE_LIST" name="公告列表"/>
+    </group>
+    <group id="AREA_MANAGE" name="地区管理">
+        <permission id="PROVINCE_LIST" name="省份列表"/>
+        <permission id="CITY_LIST" name="城市列表"/>
+        <permission id="COUNTY_LIST" name="地区列表"/>
+    </group>
+    <group id="LOGO_MANAGE" name="日志管理">
+        <permission id="LOGO_LIST" name="查看全部日志"/>
+        <permission id="LOGO_MINE_LIST" name="查看自己日志"/>
+    </group>
+    <group id="REPORT_MANAGE" name="举报管理">
+        <permission id="REPORT_LIST" name="举报列表"/>
+    </group>
+    <group id="LEVEL_MANAGE" name="星级管理">
+        <permission id="ADD_LEVEL" name="添加星级"/>
+        <permission id="LEVEL_LIST" name="星级列表"/>
+    </group>
+    <group id="FEIYONG_MANAGE" name="会费管理">
+        <permission id="ADD_FEIYONG" name="会费添加"/>
+        <permission id="FEIYONG_LIST" name="会费列表"/>
+    </group>
+    <group id="ORDER_MANAGE" name="订单管理">
+        <permission id="ORDER_LIST" name="订单列表"/>
+    </group>
+    <group id="FUWU_MANAGE" name="服务管理">
+        <permission id="FUWU_LIST" name="服务列表"/>
+        <permission id="FUWU_ADD" name="添加服务"/>
+    </group>
+    <group id="ABOUT_US_MANAGE" name="关于我们">
+        <permission id="ABOUT_US_MANA" name="关于我们"/>
+    </group>
+    <group id="SUGGEST_MANAGE" name="意见反馈">
+        <permission id="SUGGEST_MANAGE" name="意见反馈"/>
+    </group>
+    <group id="TEL_MANAGE" name="客服电话">
+        <permission id="ADD_TEL_KEFU_MANAGE" name="添加客服"/>
+        <permission id="TEL_KEFU_MANAGE" name="客服列表"/>
+    </group>
+    <group id="AD_MANAGE" name="广告管理">
+        <permission id="ADD_AD_MANAGE" name="添加广告"/>
+        <permission id="AD_LISTMANAGE" name="广告列表"/>
+    </group>
+    <group id="SHENHE_MANAGE" name="审核方式">
+        <permission id="SHNEHE_TYPE_MANAGE" name="注册审核方式"/>
+        <permission id="SHNEHE_RECORD_MANAGE" name="信息审核方式"/>
+    </group>
+    <group id="WEIXIN_MANAGE" name="微信客服">
+        <permission id="ADD_WEIXIN_KEFU_MANAGE" name="添加微信"/>
+        <permission id="WEIXIN_KEFU_MANAGE" name="微信列表"/>
+    </group>
+    <group id="PAIHANG_MANAGE" name="金牌榜">
+        <permission id="PAIHANG_SHANGHU_MANAGE" name="金牌榜列表"/>
+    </group>
+    <group id="GUANZHU_MANAGE" name="关注管理">
+        <permission id="GUANZHU_LIST_MANAGE" name="关注列表"/>
+    </group>
+    <group id="VIP_END_TIME_MANAGE" name="提醒语句">
+        <permission id="VIP_END_TIME_NOTICE_MANA" name="提醒语句"/>
+    </group>
+    <group id="EMP_LOGIN_NUMBER_MANAGE" name="活跃度">
+        <permission id="EMP_LOGIN_NUMBER_MANA" name="活跃度"/>
+        <permission id="EMP_LOGIN_NUM_NUMBER_MANA" name="活跃度统计"/>
+    </group>
+    <group id="NEARBY_DISTANCE_MANAGE" name="附近距离">
+        <permission id="NEARBY_DISTANCE_MANA" name="附近距离"/>
+    </group>
+    <group id="MSG_KONGZHI_MANAGE" name="控制信息显示的天数">
+        <permission id="MSG_KONGZHI_MANA" name="控制信息显示的天数"/>
+    </group>
+    <group id="HOT_CITY_MANAGE" name="热门城市">
+        <permission id="HOT_CITY_ADD_MANA" name="添加热门城市"/>
+        <permission id="HOT_CITY_LIST_MANA" name="热门城市列表"/>
+    </group>
+    <group id="HOT_AREA_MANAGE" name="热门县区">
+        <permission id="HOT_AREA_ADD_MANA" name="添加热门县区"/>
+        <permission id="HOT_AREA_LIST_MANA" name="热门城市县区"/>
+    </group>
+    <group id="MAANGER_VERSION_CODE_MANAGER" name="版本管理">
+        <permission id="UPDATE_VERSION_CODE_MAANGER_AD_LIST" name="版本管理"/>
+    </group>
+</permissions>

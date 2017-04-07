@@ -1,0 +1,401 @@
+﻿@charset "utf-8";
+/* CSS Document */
+
+html, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+img {
+    vertical-align: bottom;
+}
+
+body {
+    font-size: 12px;
+    margin: 0px;
+    padding: 0px;
+    font-family: "微软雅黑";
+    min-width: 1190px;
+    background: #f2f2f2;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #c6c6c6;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:visited, a:active, a:focus {
+    text-decoration: none;
+}
+
+.wrap {
+    width: 1190px;
+    margin: auto;
+}
+
+/*banbar*/
+.banbar {
+    height: 897px;
+    overflow: hidden;
+    clear: both;
+}
+
+.banbar1 {
+    background: url(../images/banbar-1.png) center top;
+    height: 100px;
+    overflow: hidden;
+}
+
+.banbar2 {
+    background: url(../images/banbar-2.png) center top;
+    height: 100px;
+    overflow: hidden;
+}
+
+.banbar3 {
+    background: url(../images/banbar-3.png) center top;
+    height: 100px;
+    overflow: hidden;
+}
+
+.banbar4 {
+    background: url(../images/banbar-4.png) center top;
+    height: 100px;
+    overflow: hidden;
+}
+
+.banbar5 {
+    background: url(../images/banbar-5.png) center top;
+    height: 100px;
+    overflow: hidden;
+}
+
+.banbar6 {
+    background: url(../images/banbar-6.png) center top;
+    height: 100px;
+    overflow: hidden;
+}
+
+.banbar7 {
+    background: url(../images/banbar-7.png) center top;
+    height: 100px;
+    overflow: hidden;
+}
+
+.banbar8 {
+    background: url(../images/banbar-8.png) center top;
+    height: 100px;
+    overflow: hidden;
+}
+
+.banbar9 {
+    background: url(../images/banbar-9.png) center top;
+    height: 97px;
+    overflow: hidden;
+}
+
+.m1 {
+    width: 1001px;
+    margin: -659px auto 157px auto;
+    height: 502px;
+}
+
+.m1 p {
+    float: left;
+}
+
+.m1 p.p1 {
+    width: 251px;
+    height: 319px;
+    background: url(../images/m1-1.png) no-repeat;
+}
+
+.m1 p.p2 {
+    width: 370px;
+    height: 319px;
+    background: url(../images/m1-2.png) no-repeat;
+}
+
+.m1 p.p3 {
+    width: 380px;
+    height: 319px;
+    background: url(../images/m1-3.png) no-repeat;
+}
+
+.m1 p.p4 {
+    width: 497px;
+    height: 183px;
+    background: url(../images/m1-4.png) no-repeat;
+}
+
+.m1 p.p5 {
+    width: 504px;
+    height: 183px;
+    background: url(../images/m1-5.png) no-repeat;
+    padding: 0;
+}
+
+.m1 p a {
+    display: block;
+    text-decoration: none;
+}
+
+.m1 p.p2 a {
+    height: 319px;
+}
+
+.m1 p.p3 a {
+    height: 319px;
+}
+
+.m1 p.p4 a {
+    height: 183px;
+}
+
+.m1 p.p5 a {
+    height: 183px;
+}
+
+.m1 p strong {
+    display: block;
+    line-height: 32px;
+    font-size: 16px;
+    font-weight: normal;
+}
+
+.m1 p span {
+    display: block;
+    line-height: 24px;
+    color: #323232;
+    font-size: 14px;
+}
+
+.m1 p.p1 strong {
+    color: #008e2b;
+    padding: 228px 0 0 21px;
+    width: 220px;
+}
+
+.m1 p.p1 span {
+    padding: 0 0 0 21px;
+    width: 220px;
+}
+
+.m1 p.p2 strong {
+    color: #c18800;
+    padding: 21px 0 0 138px;
+    width: 220px;
+}
+
+.m1 p.p2 span {
+    padding: 0 0 0 138px;
+    width: 220px;
+}
+
+.m1 p.p3 strong {
+    color: #ff6c00;
+    padding: 229px 0 0 15px;
+    width: 212px;
+}
+
+.m1 p.p3 span {
+    padding: 0 0 0 15px;
+    width: 212px;
+}
+
+.m1 p.p5 strong {
+    color: #00a0a2;
+    padding: 5px 0 0 12px;
+    width: 100px;
+}
+
+.m1 p.p5 span {
+    padding: 0 0 0 12px;
+    width: 100px;
+}
+
+.m2 ul {
+    margin: 28px 0 28px 108px;
+    width: 1000px;
+    overflow: hidden;
+}
+
+.m2 ul li {
+    float: left;
+    width: 473px;
+    overflow: hidden;
+    height: 400px;
+    margin-right: 27px;
+    background-color: #feffec;
+}
+
+.m2 ul li a {
+    display: block;
+    text-decoration: none;
+}
+
+.m2 ul li em {
+    display: block;
+    text-align: center;
+    padding: 5px 0 5px 0;
+    background-color: #fff;
+}
+
+.m2 ul li .txt {
+    width: 459px;
+    height: 121px;
+    border: #e6ce97 solid 1px;
+    margin: 0 auto 0 auto;
+}
+
+.m2 ul li .txt h2 {
+    width: 100px;
+    height: 29px;
+    float: left;
+    line-height: 29px;
+    border: #ff7800 solid 1px;
+    text-align: center;
+    font-size: 20px;
+    color: #ff7800;
+    margin: 22px 0 0 30px;
+}
+
+.m2 ul li .txt h3 {
+    width: 88px;
+    height: 31px;
+    float: left;
+    line-height: 31px;
+    text-align: center;
+    font-size: 16px;
+    color: #fff;
+    margin: 22px 0 0 0;
+    background-color: #ff3000;
+}
+
+.m2 ul li .txt span {
+    display: block;
+    padding: 7px 0 0 30px;
+    clear: both;
+    font-size: 18px;
+    line-height: 30px;
+    color: #4c1d00;
+}
+
+.m2 ul li .txt p {
+    display: block;
+    padding: 0 0 0 30px;
+    font-size: 14px;
+    line-height: 24px;
+    color: #464646;
+}
+
+.m3 ul {
+    margin: 30px 0 40px 108px;
+    width: 990px;
+    overflow: hidden;
+}
+
+.m3 ul li {
+    float: left;
+    width: 314px;
+    overflow: hidden;
+    height: 400px;
+    margin-right: 16px;
+    background-color: #feffec;
+}
+
+.m3 ul li a {
+    display: block;
+    text-decoration: none;
+}
+
+.m3 ul li em {
+    display: block;
+    text-align: center;
+    padding: 5px 0 5px 0;
+    background-color: #fff;
+}
+
+.m3 ul li .txt {
+    width: 300px;
+    height: 121px;
+    border: #e6ce97 solid 1px;
+    margin: 0 auto 0 auto;
+}
+
+.m3 ul li .txt h2 {
+    width: 100px;
+    height: 29px;
+    float: left;
+    line-height: 29px;
+    border: #ff7800 solid 1px;
+    text-align: center;
+    font-size: 20px;
+    color: #ff7800;
+    margin: 18px 0 0 15px;
+}
+
+.m3 ul li .txt h3 {
+    width: 88px;
+    height: 31px;
+    float: left;
+    line-height: 31px;
+    text-align: center;
+    font-size: 16px;
+    color: #fff;
+    margin: 18px 0 0 0;
+    background-color: #ff3000;
+}
+
+.m3 ul li .txt span {
+    display: block;
+    padding: 5px 0 0 15px;
+    clear: both;
+    font-size: 16px;
+    line-height: 28px;
+    color: #4c1d00;
+}
+
+.m3 ul li .txt p {
+    display: block;
+    padding: 0 0 0 15px;
+    font-size: 12px;
+    line-height: 22px;
+    color: #464646;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

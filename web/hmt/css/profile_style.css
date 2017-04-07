@@ -1,0 +1,96 @@
+.brief-label {
+    font-size: 1rem;
+    color: #ADADAD;
+    line-height: 200%;
+}
+
+.brief-btn {
+    font-size: 1.3rem;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    width: 300px;
+    line-height: 200%;
+    color: #fff !important;
+    background-color: #0EBB4F;
+    text-align: center;
+    display: block;
+    margin: 20px auto;
+}
+
+.brief-btn:hover {
+    text-decoration: none !important;
+    color: #fff !important;
+}
+
+.brief-btn:active {
+    transform: translateY(2px);
+    background-color: #0ecc55;
+    text-decoration: none;
+}
+
+.brief-divider {
+    position: relative;
+    width: 95%;
+    margin: 30px auto;
+    height: 24px;
+
+}
+
+.brief-divider .brief-title {
+    z-index: 5;
+    top: 0;
+    left: 329px;
+    position: absolute;
+    background-color: #fff;
+    font-size: 16px;
+    line-height: 24px;
+    color: #9d9d9d;
+    text-align: center;
+    width: 250px;
+    margin: 0 auto;
+}
+
+.brief-divider .liner {
+    width: 100%;
+    height: 1px;
+    display: block;
+    border-bottom: 1px solid #9D9D9D;
+    position: absolute;
+    top: 12px;
+}
+
+.brief-btn-group {
+    width: 100%;
+    margin: 0 auto;
+
+}
+
+.brief-btn-group > a {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    line-height: 300%;
+    width: 50%;
+    float: left;
+    font-size: 1.5rem;
+    text-align: center;
+    display: block;
+
+}
+
+.brief-btn-group > a:hover {
+    background-color: #eeeeee;
+}
+
+.brief-btn-group > a.active {
+    color: #0ecc55;
+}
+
+.brief-recent {
+    width: 95%;
+}
+
+.pro-list {
+    border-top: 1px solid #e9e8e8;
+}

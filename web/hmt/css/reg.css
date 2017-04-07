@@ -1,0 +1,483 @@
+﻿/*	reg.css
+	Author:dew
+	Date:2015-11-18
+	Description:Framework reset and global style
+--------------------------------------------------------------------------------*/
+/*- header -*/
+
+.header {
+    width: 1190px;
+    margin: 0 auto;
+    height: 41px;
+    border-bottom: 1px solid #e5e5e5;
+    padding: 31px 0px 27px;
+}
+
+.header .links span {
+    border-right: 1px solid #999;
+    float: left;
+    padding-right: 28px;
+    margin-right: 28px;
+}
+
+.header .links span:last-child {
+    border: 0;
+    padding: 0;
+    margin: 0;
+}
+
+/*- // header -*/
+
+/*- reg-text-success -*/
+
+.reg-success {
+    width: 403px;
+    text-align: center;
+    margin: 89px auto 65px;
+}
+
+.login-success {
+    width: 350px;
+    margin: 60px auto 0 auto;
+}
+
+.reg-success i,
+.login-success i {
+    vertical-align: middle;
+    margin-right: 10px;
+    display: inline-block;
+    height: 35px;
+}
+
+.login-success i {
+    vertical-align: top;
+}
+
+.reg-success .text,
+.login-success .text {
+    display: inline-block;
+    font-size: 18px;
+    vertical-align: middle;
+}
+
+.reg-success .text p b,
+.login-success .text p b {
+    color: #FE0000;
+}
+
+.reg-success .text p.grey,
+.login-success .text p.grey {
+    font-size: 14px;
+    color: #999;
+}
+
+/*- reg-text-success -*/
+
+.success-box {
+    width: 735px;
+    margin: 0 auto;
+}
+
+.success-box .button {
+    font-size: 16px;
+    color: #666666;
+}
+
+.success-box .button .top a {
+    color: #f47a11;
+    margin-right: 10px;
+}
+
+.success-box .button .bottom input {
+    width: 123px;
+    height: 34px;
+    border: 0;
+    color: #fff;
+    font-size: 14px;
+    border-radius: 3px;
+    margin-right: 10px;
+    cursor: pointer;
+    text-indent: 20px;
+    line-height: 34px;
+}
+
+.success-box .button .bottom input:hover {
+    background-color: #ff3600;
+}
+
+.more-bottom {
+    margin: 25px auto 30px auto;
+    width: 400px;
+}
+
+.more-bottom a {
+    float: left;
+    color: #1faa50 !important;
+    font-size: 16px;
+}
+
+.more-bottom hr {
+    width: 1px;
+    border: 0;
+    border-left: 1px solid #e5e5e5;
+    float: left;
+    height: 16px;
+    margin: 4px 13px 0;
+}
+
+hr.hr-cont {
+    border: 0;
+    border-top: 1px solid #e5e5e5;
+    width: 1190px;
+    margin: 70px auto 0 auto;
+    /* background: #fff; */
+}
+
+/*- text-input -*/
+
+.text-input {
+    width: 491px;
+    margin: 30px auto 60px auto;
+}
+
+.text-input li {
+    margin-bottom: 25px;
+    position: relative;
+}
+
+.text-input li input.button-send {
+    width: 155px;
+    height: 36px;
+    border: 1px solid #ddd;
+    background: #fff;
+    vertical-align: -1px;
+    margin-left: 10px;
+    cursor: pointer;
+    color: #333;
+    border-radius: 3px;
+}
+
+.text-input li input.button-send:hover {
+    background: #f47a11;
+    color: #fff;
+    border: 1px solid #f47a11;
+}
+
+.text-input li input.button-send.hold,
+.text-input li input.button-send.hold:hover {
+    background: #c7f5cd;
+    border: 1px solid #ddd;
+    color: #333;
+}
+
+.text-input li input {
+    height: 36px;
+    margin-left: 15px;
+    display: block;
+    width: 100%;
+    line-height: 36px;
+    font-size: 14px;
+    vertical-align: middle;
+    float: left;
+    padding: 0 4px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.text-input li input.submit {
+    font-size: 16px;
+    color: #fff;
+    background: #f47a11;
+    height: 40px;
+    border: 0;
+    border-radius: 3px;
+    cursor: pointer;
+    width: 300px;
+    margin: 0 auto !important;
+    float: none;
+}
+
+.text-input li input.disabled {
+    background: #C7C7C7;
+    color: #FFF;
+}
+
+input.submit.disabled {
+}
+
+.text-input li input.code {
+    width: 78px;
+}
+
+.text-input li input.name {
+    width: 143px;
+    text-align: left;
+}
+
+.text-input li .passwordbox {
+    width: 153px;
+    margin-left: 15px;
+    border: 1px solid #ddd;
+    text-align: left;
+    float: left;
+}
+
+.text-input li .password-prompt {
+    width: 192px;
+    margin-left: 3px;
+    text-align: left;
+    font-size: 12px;
+    height: 26px;
+    line-height: 26px;
+    background-position: -11px -373px;
+    padding-left: 15px;
+    color: #f47a11;
+    position: absolute;
+    top: 5px;
+    right: -10px;
+    display: none;
+}
+
+.text-input li .password-prompt.hidden {
+    display: none;
+}
+
+.text-input li input.password {
+    position: relative;
+    width: 123px;
+    border: 0;
+    margin: 0;
+}
+
+.text-input li .button-password,
+#showPass {
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 2px;
+    margin-top: 9px;
+}
+
+.text-input li .button-password.hidden,
+#showPass.hidden {
+}
+
+.text-input li span,
+.text-input li .name {
+    width: 90px;
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 14px;
+    text-align: right;
+    color: #333;
+}
+
+.text-input li span
+.text-input li .name {
+    text-align: left;
+    margin-bottom: 6px;
+}
+
+.text-input li span.business span {
+    line-height: normal;
+}
+
+.text-input li .input-box {
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    width: 300px;
+    text-align: left;
+}
+
+.text-input li .input-box select {
+    margin-left: 15px;
+    line-height: 35px;
+    height: 35px;
+    display: block;
+    width: 300px;
+}
+
+input:focus, select:focus {
+    border: 1px solid #35d5ff !important;
+    outline: none;
+    -webkit-box-shadow: 0 0 4px #35d5ff;
+    -moz-box-shadow: 0 0 4px #35d5ff;
+    box-shadow: 0 0 4px #35d5ff;
+}
+
+.text-input li span i,
+.text-input li .name i {
+    color: #ff0000;
+    margin-right: 5px;
+}
+
+.text-input li .provision {
+    font-size: 14px;
+    text-indent: 185px;
+    margin-top: 5px;
+}
+
+.text-input li .provision a {
+    color: #009237;
+}
+
+.text-input li .provision input {
+    width: 14px;
+    height: 14px;
+    border-radius: 3px;
+    float: none;
+}
+
+.text-input li .massges-prompt {
+    text-indent: 119px;
+    margin-top: 10px;
+    color: #999;
+}
+
+.text-input li .massges-prompt.hidden {
+    display: none;
+}
+
+.text-input li .massges-prompt a {
+    color: #1faa50;
+}
+
+.input-custom span {
+    /* display: block !important; */
+}
+
+/*- // text-input -*/
+
+.message .text {
+    width: 333px;
+    margin: 25px auto 10px auto;
+    font-size: 14px;
+}
+
+.message .text input {
+    width: 88px;
+    height: 26px;
+    line-height: 26px;
+    margin-left: 14px;
+    float: left;
+}
+
+.message .text img {
+    vertical-align: middle;
+    margin: 2px 9px 0 9px;
+    float: left;
+}
+
+.message .text a {
+    color: #1faa50;
+}
+
+.message .button {
+    text-align: center;
+}
+
+.message .button input {
+    width: 134px;
+    height: 32px;
+    color: #fff;
+    background: #f47a11;
+    border: 0;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.message-text {
+}
+
+.message-text .text-input {
+    width: 426px;
+    margin: 0 auto;
+}
+
+.message-text .text-input li {
+    margin-bottom: 10px;
+    color: #999;
+}
+
+.message-text .text-input li .name {
+    width: 126px;
+}
+
+.message-text .text-input li input.submit {
+    width: 130px;
+    margin-left: 15px;
+}
+
+.message-text .text-input li .forgetword {
+    color: #ff0000;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 10px;
+}
+
+.message-text .text-input li .prompt {
+    color: #333;
+    line-height: 36px;
+}
+
+.message-text .text-input li .prompt a {
+    color: #2aae58;
+}
+
+.message-text .text-input li .prompt input {
+    width: 114px;
+    height: 26px;
+    line-height: 26px;
+}
+
+.message-text .text-input li .prompt img {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 4px 10px 0 10px;
+    float: left;
+}
+
+.business span {
+    margin-top: 10px;
+    width: 90px !important;
+    line-height: 14px;
+    cursor: pointer;
+}
+
+.business span.cur {
+}
+
+.reg-top {
+    width: 1000px;
+    min-height: 46px;
+    height: auto;
+    margin: 0 auto 10px;
+    font-size: 14px;
+}
+
+.reg-top .reg-fr {
+    float: right;
+    line-height: 30px;
+    margin-top: 10px;
+}
+
+.reg-top .reg-login {
+    float: right;
+    width: 138px;
+    height: 30px;
+    line-height: 30px;
+    display: block;
+    background-color: #039236;
+    color: #fff;
+    text-align: center;
+    font-weight: bold;
+}
+
+.reg-top .reg-login:hover {
+    background-color: #007028;
+    text-decoration: none;
+}
+

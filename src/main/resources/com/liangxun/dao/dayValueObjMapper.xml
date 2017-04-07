@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC
+        "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.liangxunwang.unimanager.dao.DayValueObjDao">
+    <resultMap id="dayValue" type="com.liangxunwang.unimanager.model.DayValueObj">
+        <id column="mm_day_id" property="mm_day_id"/>
+        <result column="mm_day_value" property="mm_day_value"/>
+    </resultMap>
+
+    <select id="lists" resultMap="dayValue">
+        SELECT * from mm_day
+    </select>
+
+    <insert id="save" parameterType="com.liangxunwang.unimanager.model.DayValueObj">
+        INSERT INTO mm_day(mm_day_id, mm_day_value)
+        VALUES (#{mm_day_id}, #{mm_day_value})
+    </insert>
+
+    <update id="update" parameterType="com.liangxunwang.unimanager.model.DayValueObj">
+        UPDATE mm_day SET mm_day_value=#{mm_day_value} WHERE mm_day_id=#{mm_day_id}
+    </update>
+
+</mapper>

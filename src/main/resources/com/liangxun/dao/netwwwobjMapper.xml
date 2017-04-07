@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC
+        "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.liangxunwang.unimanager.dao.NetwwwObjDao">
+    <resultMap id="netwwwobj" type="com.liangxunwang.unimanager.model.NetwwwObj">
+        <id column="id" property="id"/>
+        <result column="mm_net_url" property="mm_net_url"/>
+        <result column="mm_net_type" property="mm_net_type"/>
+    </resultMap>
+
+    <select id="lists" resultMap="netwwwobj">
+        SELECT * from mm_net
+        WHERE 1=1
+        <if test="mm_net_type != null and mm_net_type != ''">
+            AND mm_net_type = #{mm_net_type}
+        </if>
+    </select>
+
+    <insert id="save" parameterType="com.liangxunwang.unimanager.model.NetwwwObj">
+        INSERT INTO mm_net(id, mm_ad_url, mm_net_url, mm_net_type)
+        VALUES (#{id}, #{mm_net_url}, #{mm_net_type})
+    </insert>
+
+
+    <delete id="delete" parameterType="String">
+        DELETE FROM mm_net where id = #{id}
+    </delete>
+
+    <select id="findById" parameterType="String" resultMap="netwwwobj">
+        SELECT * FROM mm_net where id=#{id}
+    </select>
+
+    <update id="update" parameterType="com.liangxunwang.unimanager.model.NetwwwObj">
+        UPDATE mm_net SET mm_net_url=#{mm_net_url}
+         WHERE id=#{id}
+    </update>
+</mapper>

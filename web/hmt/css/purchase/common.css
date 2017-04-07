@@ -1,0 +1,540 @@
+﻿@charset "utf-8";
+
+/*--------------------------------------------------
+ *@名称:		common.css
+ *@作者:		Huangpu
+ *@版本:		1.0
+ *@描述:		site level common style
+ *			站点全局样式，可根据项目具体需求修改
+--------------------------------------------------*/
+
+body {
+    font: 12px/1.5 "\5FAE\8F6F\96C5\9ED1", "\5B8B\4F53", Verdana, Arial, Helvetica, sans-serif;
+    background: #fff;
+    color: #333;
+}
+
+a:link, a:visited {
+    text-decoration: none;
+    color: #3e3e3e;
+}
+
+a:hover, a:active, a:focus {
+    text-decoration: underline;
+}
+
+.wrap-1190 {
+    width: 1190px;
+    margin: 0 auto;
+}
+
+/*按钮公用样式及其悬浮效果样式*/
+.but {
+    color: #fff;
+    text-align: center;
+    background-color: #f47a11;
+    border-radius: 3px;
+    border: 0;
+    cursor: pointer;
+}
+
+.but:hover {
+    background-color: #ff4200;
+    text-decoration: none;
+}
+
+/*logobar 顶部LOGO部分*/
+.logobar {
+    height: 119px;
+    background-color: #FFF;
+    overflow: hidden;
+}
+
+.logobar .logo {
+    margin: 37px 0 0 2px;
+    float: left;
+    display: inline;
+}
+
+.logobar .myhn-txt {
+    height: 51px;
+    overflow: hidden;
+    float: left;
+    display: inline;
+    line-height: 51px;
+    margin: 37px 0 0 20px;
+    border-left: #7f7f7f solid 1px;
+    font-size: 24px;
+    font-family: "微软雅黑";
+    padding-left: 17px;
+}
+
+/*nav 导航*/
+.nav {
+    height: 44px;
+    overflow: hidden;
+    background: url(../../images/myhn/common/nav-bg.png) repeat-x;
+}
+
+.nav .backhome {
+    width: 193px;
+    height: 40px;
+    overflow: hidden;
+    margin-top: 4px;
+    background-color: #000;
+    float: left;
+    color: #FFF;
+    text-align: center;
+    line-height: 40px;
+    font-size: 16px;
+    font-family: "微软雅黑";
+}
+
+.nav .backhome:hover {
+    color: #f47a11;
+}
+
+.nav .wanted {
+    width: 102px;
+    height: 44px;
+    overflow: hidden;
+    float: left;
+    display: inline;
+    margin-left: 12px;
+    background: url(../../images/myhn/common/nav-buy-bg.png) no-repeat;
+}
+
+.nav .release-wanted {
+    display: block;
+    width: 102px;
+    height: 40px;
+    line-height: 40px;
+    padding: 4px 0 0 32px;
+    overflow: hidden;
+    background: url(../../images/myhn/common/nav-buy-ico.png) 12px 16px no-repeat;
+    font-family: "微软雅黑";
+    font-size: 14px;
+    color: #FFF;
+}
+
+.nav .release-product {
+    display: block;
+    width: 102px;
+    height: 40px;
+    line-height: 40px;
+    padding: 4px 0 0 32px;
+    overflow: hidden;
+    background: url(../../images/myhn/common/nav-buy-ico-2.png) 12px 16px no-repeat;
+    font-family: "微软雅黑";
+    font-size: 14px;
+    color: #FFF;
+}
+
+.nav .earn-points {
+    text-align: right;
+    width: 102px;
+    height: 40px;
+    line-height: 40px;
+    overflow: hidden;
+    font-family: "微软雅黑";
+    font-size: 14px;
+    color: #FFF;
+    float: right;
+    display: inline;
+    margin: 4px 0 0 0;
+}
+
+.nav .earn-points:hover {
+    color: #f47a11;
+}
+
+.nav .seller {
+    width: 95px;
+    height: 25px;
+    line-height: 25px;
+    overflow: hidden;
+    margin-top: 12px;
+    margin-left: 14px;
+    float: right;
+    display: inline;
+    background: url(../../images/myhn/common/nav-seller-bg.png) no-repeat;
+    text-align: center;
+    color: #eaff00;
+    font-family: "微软雅黑";
+    font-size: 14px;
+}
+
+.nav .seller:hover {
+    color: #f47a11;
+}
+
+.nav .hot {
+    float: right;
+    display: inline;
+}
+
+.nav .hot em {
+    position: relative;
+    margin-top: -1px;
+}
+
+/*side-nav 侧边导航*/
+.side-nav {
+    width: 193px;
+    float: left;
+    display: inline;
+    min-height: 500px;
+    background-color: #FFF;
+    margin-top: 15px;
+}
+
+.side-line {
+    border-right: #CCC solid 1px;
+    overflow: hidden;
+}
+
+.side-nav .side-title {
+    height: 45px;
+    line-height: 45px;
+    background: #009435 url(../../images/myhn/common/side-nav-titleico.png) 22px 14px no-repeat;
+    font-family: "微软雅黑";
+    font-size: 16px;
+    color: #FFF;
+    padding-left: 46px;
+}
+
+.side-nav .side-list {
+}
+
+.side-nav .side-list ul {
+    padding: 5px 0;
+}
+
+.side-nav .side-list h2 {
+    height: 40px;
+    line-height: 40px;
+    border-top: #e5e5e5 solid 1px;
+}
+
+.side-nav .side-list h2 a {
+    display: block;
+    height: 40px;
+    padding-left: 19px;
+    font-family: "微软雅黑";
+    font-size: 14px;
+    text-decoration: none;
+    color: #3e3e3e;
+}
+
+.side-nav .side-list h2 a:hover {
+    color: #f47a11;
+    text-decoration: none;
+    border-left: #f47a11 solid 3px;
+}
+
+.side-nav .side-list h2 a.show {
+    background: #f6f6f6 url(../../images/myhn/common/side-nav-listico1.png) 166px 17px no-repeat;
+    border-left: #f47a11 solid 3px;
+}
+
+.side-nav .side-list h2 a.hide {
+    background: url(../../images/myhn/common/side-nav-listico2.png) 166px 17px no-repeat;
+}
+
+.side-nav .side-list h3 a {
+    display: block;
+    height: 35px;
+    line-height: 35px;
+    padding-left: 22px;
+    overflow: hidden;
+    text-decoration: none;
+    color: #3e3e3e;
+}
+
+.side-nav .side-list h3 a.show {
+    background: url(../../images/myhn/common/side-nav-listico6.png) 169px 16px no-repeat;
+}
+
+.side-nav .side-list h3 a.hide {
+    background: url(../../images/myhn/common/side-nav-listico5.png) 169px 16px no-repeat;
+}
+
+.side-nav .side-list h3 a:hover {
+    background-color: #f47a11;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.side-nav .side-list h3 a.cur {
+    background-color: #f47a11;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.side-nav .side-list ul ul li {
+    height: 34px;
+    line-height: 34px;
+    padding-left: 60px;
+    background: url(../../images/myhn/common/side-nav-listico3.png) 37px 0 no-repeat;
+}
+
+.side-nav .side-list ul ul li a:hover, .side-nav .side-list ul ul li a.cur {
+    color: #f47a11;
+}
+
+.side-nav .side-list ul ul li.ft {
+    background: url(../../images/myhn/common/side-nav-listico4.png) 37px 0 no-repeat;
+}
+
+/*客户服务及投诉*/
+.side-customer {
+}
+
+.side-customer h2 {
+    height: 45px;
+    line-height: 45px;
+    background: #009435 url(../../images/myhn/common/side-nav-telico.png) 22px 15px no-repeat;
+    padding-left: 47px;
+    font-family: "微软雅黑";
+    font-size: 16px;
+    color: #FFF;
+}
+
+.side-customer p {
+    line-height: 24px;
+    padding: 20px 0 20px 5px;
+    overflow: hidden;
+    font-family: "微软雅黑";
+    font-size: 12px;
+}
+
+.side-customer p strong {
+    float: left;
+    font-weight: normal;
+}
+
+.side-customer p a {
+    float: left;
+    background: url(../../images/myhn/common/side-customer-qq.png) no-repeat;
+    width: 76px;
+    height: 23px;
+}
+
+/*分页*/
+.cyd_page {
+    width: 980px;
+    height: 37px;
+    clear: both;
+    overflow: hidden;
+    text-align: right;
+    margin: 0px auto;
+    padding: 4px 0px 50px 0px;
+}
+
+.cyd_page .page-bottom {
+    display: inline-block;
+    zoom: 1;
+    vertical-align: middle;
+    *display: inline;
+}
+
+.cyd_page .page-bottom a {
+    float: left;
+    height: 35px;
+    line-height: 35px;
+    padding: 0 15px;
+    margin: 0px 3px;
+    text-align: center;
+    vertical-align: middle;
+    white-space: nowrap;
+    font-size: 14px;
+    border: 1px #E2E6E9 solid;
+    border-radius: 2px 2px;
+    text-indent: 0px;
+}
+
+.cyd_page span {
+    height: 35px;
+    float: left;
+    line-height: 35px;
+    padding: 0px 15px;
+    text-indent: 0px;
+}
+
+.cyd_page a:hover {
+    background: #f47a11;
+    color: #FFF;
+    text-decoration: none;
+}
+
+.cyd_page .page-op {
+    display: inline-block;
+    zoom: 1;
+    vertical-align: middle;
+    *display: inline;
+}
+
+.cyd_page .page_but1hover {
+    background: #f47a11;
+    color: #FFF;
+    text-decoration: none;
+}
+
+.cyd_page .page_but2 {
+    width: 40px;
+    height: 28px;
+    display: inline-block;
+    line-height: 28px;
+    text-align: center;
+    padding: 0 3px;
+    border-radius: 2px 2px;
+    text-indent: 0px;
+    border: #e5e5e5 solid 1px;
+}
+
+.cyd_page .page_but2:hover {
+    background: #f47a11;
+    color: #fff;
+}
+
+.page_input {
+    width: 40px;
+    height: 28px;
+    display: inline-block;
+    border: 1px #e5e5e5 solid;
+    border-radius: 2px 2px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.iframe-content {
+    width: 980px;
+    overflow: hidden;
+    float: right;
+    margin-top: 15px;
+}
+
+.content {
+    overflow: hidden;
+}
+
+.sada {
+    width: 260px;
+    margin: 18px auto 0 auto;
+}
+
+.sada input {
+    padding: 4px 5px;
+    border: 1px solid #ddd;
+}
+
+.sada button {
+    background: #f47a11;
+    cursor: pointer;
+    color: #fff;
+    border: 0;
+    border-radius: 3px;
+    padding: 7px 10px;
+    width: 105px;
+    margin-left: 10px;
+}
+
+.mode-tc {
+    color: #f00;
+    padding: 20px;
+}
+
+.mode-tc .img {
+    padding: 15px 0;
+}
+
+.mode-tc .bottom {
+    font-weight: bold;
+    text-align: center;
+    font-size: 14px;
+}
+
+/*-usename_boxs-*/
+.fx-w .message {
+    text-align: center;
+}
+
+.fx-w .message h3 {
+    font-weight: bold;
+    font-size: 16px;
+    margin-top: 40px;
+    padding-bottom: 15px;
+}
+
+.fx-w .message .text {
+    text-align: left;
+    color: #f00;
+    padding: 60px 30px 20px 30px;
+}
+
+.fx-w .message .text p {
+    padding: 3px
+}
+
+.usename_boxs {
+    width: 500px;
+    margin: 20px auto 0 auto;
+}
+
+.usename_boxs .name {
+    float: left;
+    width: 130px;
+    text-align: right;
+    padding: 8px 2px;
+}
+
+.usename_boxs input {
+    float: left;
+    padding: 8px 5px;
+    border: 1px solid #ddd;
+    width: 280px;
+}
+
+.usename_boxs select {
+    float: left;
+    border: 1px solid #ddd;
+    width: 160px;
+    padding: 8px 5px;
+}
+
+.usename_boxs button {
+    float: left;
+    background: #f47a11;
+    cursor: pointer;
+    color: #fff;
+    border: 0;
+    border-radius: 3px;
+    padding: 8px 0;
+    width: 160px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.button_boxs button {
+    float: none;
+}
+
+.button_boxs {
+    margin-top: 20px;
+    width: 300px;
+}
+
+.button_boxs button.enter, .button_boxs button.false {
+    width: 80px;
+    font-size: 12px;
+}
+
+.button_boxs button.enter {
+    margin-left: 0px;
+}
+
+.button_boxs button.false {
+    background: #ccc;
+    color: #3e3e3e;
+    margin-left: 40px;
+}

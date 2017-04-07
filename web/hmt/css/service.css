@@ -1,0 +1,442 @@
+﻿@charset "utf-8";
+/* CSS Document */
+.hc-kf-tabs {
+    background: #fff;
+}
+
+.hc-kf-tabs .tabHead {
+    background: #f3f3f4;
+}
+
+.hc-kf-tabs .tabHead a {
+    display: block;
+    text-decoration: none;
+    height: 85px;
+    padding: 15px;
+    padding-right: 7px;
+    border: 1px solid #dadbdd;
+    border-bottom-color: #1fa351;
+    border-right-width: 0;
+}
+
+.hc-kf-tabs .tabHead :last-child a {
+    border-right-width: 1px;
+}
+
+.hc-kf-tabs .tabHead .tabLabel {
+    float: left;
+    display: block;
+    width: 25%;
+    *width: 24.9%;
+}
+
+.hc-kf-tabs .tabHead .current a {
+    height: 81px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    background: #fff;
+    border-color: #1fa351;
+    border-width: 6px 1px 0 1px;
+}
+
+.hc-kf-tabs .tabHead .tabLabel b {
+    font-size: 20px;
+    font-weight: 400;
+    margin-right: 26px;
+}
+
+.hc-kf-tabs .tabHead .tabLabel em {
+    padding: 2px 10px 2px 22px;
+    color: #fff;
+    border-radius: 10px;
+    vertical-align: 1px;
+    background: #1fa351 url(../images/service/hc_kf_tab_tit_success.gif) no-repeat 6px 50%;
+}
+
+.hc-kf-tabs .tabHead .tabLabel em.alert {
+    background-color: #ff4200;
+    background-image: url(../images/service/hc_kf_tab_tit_alert.gif);
+    background-position: 11px 50%;
+}
+
+.hc-kf-tabs .tabHead .tabLabel span {
+    display: block;
+    padding-top: 3px;
+    color: #666;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.hc-kf-tabs .tabBody {
+    border: 1px solid #1fa351;
+    border-top: none;
+}
+
+.hc-kf-tabs .tabBody .tabContent {
+    /*-height:391px;-*/
+}
+
+/*-service tab 01-*/
+.wrapper {
+}
+
+.wrap-tit {
+    line-height: 36px;
+    border-bottom: 1px solid #dadbdd;
+    color: #333;
+}
+
+.wrap-tit-l {
+    float: left;
+    height: 34px;
+    line-height: 34px;
+    padding-left: 2px;
+    padding-right: 12px;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.wrap-tit-r {
+    float: right;
+    padding-right: 10px;
+    background: no-repeat right bottom;
+}
+
+.wrap-tit-r a {
+    color: #555 !important;
+}
+
+.wrap-tit-r a:hover {
+    color: #f47a11;
+    color: #f47a11 !important;
+}
+
+.wrap-inner {
+    padding: 15px 0 0;
+    border: none !important;
+}
+
+.wrap-btm {
+    display: none;
+    background: #d9d9d9;
+}
+
+.wrap-btm-l {
+    float: left;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    background: #d9d9d9;
+    line-height: 1px;
+    font-size: 1px;
+}
+
+.wrap-btm-r {
+    float: right;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    background: #d9d9d9;
+    line-height: 1px;
+    font-size: 1px;
+}
+
+.mainWrap {
+    float: left;
+    display: inline;
+    width: 650px;
+    margin-top: 30px;
+    margin-left: 20px;
+}
+
+.sideWrap {
+    float: right;
+    display: inline;
+    width: 260px;
+    margin-top: 30px;
+    margin-right: 20px;
+}
+
+.hotBuzy {
+    padding: 8px 0;
+}
+
+.hotBuzy li {
+    float: left;
+    display: inline;
+    width: 120px;
+    margin: 12px 5px 32px;
+    text-align: center;
+    font-size: 14px;
+}
+
+.hotBuzy li a {
+    text-decoration: none;
+}
+
+.hotBuzy li a:hover {
+    color: #01792E;
+}
+
+.hotBuzy li span {
+    display: block;
+    margin: 0 auto;
+    width: 66px;
+    height: 66px;
+    line-height: 66px;
+    background: url(../images/service/service_hot_ico1.gif) no-repeat bottom center;
+}
+
+.hotBuzy li a:hover span {
+    background-position: top center;
+}
+
+.hotBuzy li span.pwd {
+    background-image: url(../images/service/service_hot_ico1.gif);
+}
+
+.hotBuzy li span.shop {
+    background-image: url(../images/service/service_hot_ico2.gif);
+}
+
+.hotBuzy li span.flow {
+    background-image: url(../images/service/service_hot_ico3.gif);
+}
+
+.hotBuzy li span.dist {
+    background-image: url(../images/service/service_hot_ico4.gif);
+}
+
+.hotBuzy li span.anti {
+    background-image: url(../images/service/service_hot_ico5.gif);
+}
+
+.hotBuzy li span.adv {
+    background-image: url(../images/service/service_hot_ico6.gif);
+}
+
+.hotBuzy li span.vip {
+    background-image: url(../images/service/service_hot_ico7.gif);
+}
+
+.hotBuzy li span.real {
+    background-image: url(../images/service/service_hot_ico8.gif);
+}
+
+.hotBuzy li span.prd {
+    background-image: url(../images/service/service_hot_ico9.gif);
+}
+
+.hotBuzy li span.mobile {
+    background-image: url(../images/service/service_hot_ico10.gif);
+}
+
+.hotBuzy li em {
+    display: block;
+    padding-top: 3px;
+    line-height: 26px;
+    height: 26px;
+    white-space: nowrap;
+}
+
+.hotBuzy li b {
+    display: block;
+    margin-top: 3px;
+    padding-bottom: 6px;
+    height: 12px;
+    overflow: hidden;
+    background: url(../images/star_5.png) no-repeat top center;
+}
+
+.faq_list {
+    line-height: 30px;
+    margin-top: 0;
+    font-size: 14px;
+}
+
+.faq_list li {
+    color: #333;
+    padding-left: 12px;
+    background: url(../images/service/dot.gif) no-repeat left center;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.faq_list a {
+    color: #333;
+    text-decoration: none;
+}
+
+.faq_list a:hover {
+    color: #f47a11;
+    text-decoration: underline;
+}
+
+.faq_list i {
+    float: right;
+    font-style: normal;
+}
+
+.faq_list b {
+    margin-right: 1px;
+    font-weight: normal;
+}
+
+.faq_list span {
+    margin-left: 3px;
+}
+
+/*-service tab 02-*/
+.service-qq {
+    height: 351px;
+    padding: 20px 66px;
+    background: url(../images/service/service_qq_bg.jpg) no-repeat bottom center;
+}
+
+.service-qq .tit {
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+
+.service-qq .inner {
+    padding-top: 30px;
+}
+
+.service-qq .inner li {
+    float: left;
+    height: 100px;
+    width: 186px;
+    margin-right: 74px;
+    padding: 140px 15px 0;
+    text-align: center;
+    background: url(../images/service/service_qq_ico1.png) no-repeat 50% 26px;
+    font-size: 14px;
+    line-height: 2.2;
+}
+
+.service-qq .inner li.guide {
+    background-image: url(../images/service/service_qq_ico1.png);
+}
+
+.service-qq .inner li.advise {
+    background-image: url(../images/service/service_qq_ico2.png);
+}
+
+.service-qq .inner li.consult {
+    width: 241px;
+    margin-right: 0;
+    background-image: url(../images/service/service_qq_ico3.png);
+}
+
+.service-qq .inner li h4 {
+    margin-bottom: 5px;
+    font-size: 18px;
+    color: #009237;
+}
+
+.service-qq .inner li h4 {
+    margin-bottom: 6px;
+    font-size: 18px;
+    color: #009237;
+}
+
+.service-qq .inner li .btn-qq {
+    display: block;
+    width: 128px;
+    height: 34px;
+    line-height: 34px;
+    margin: 5px auto 0;
+    padding-left: 38px;
+    background: #f47a11 url(../images/service/service_qq_btn.gif) no-repeat left center;
+    color: #fff;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.service-qq .inner li .btn-qq:hover {
+    background: #ff4200 url(../images/service/service_qq_btn.gif) no-repeat left center;
+}
+
+/*-service tab 03-*/
+.service-im {
+    padding: 20px 30px;
+}
+
+.service-im .tit {
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+
+.service-im .inner {
+}
+
+.service-im .sign-in {
+    float: left;
+    width: 706px;
+    height: 217px;
+    overflow: hidden;
+    padding-top: 82px;
+    background: url(../images/service/service_im_sign.jpg) no-repeat;
+    color: #fff;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1.8;
+}
+
+.service-im .sign-in h4 {
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.service-im .sign-in p a {
+    color: #f00;
+    text-decoration: underline;
+}
+
+.service-im .bb-list {
+    float: right;
+    width: 202px;
+}
+
+.service-im .bb-list li {
+    position: relative;
+    padding-left: 47px;
+    margin-bottom: 28px;
+}
+
+.service-im .bb-list li span {
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: url(../images/service/im_avater_off.gif) no-repeat;
+    width: 34px;
+    height: 34px;
+}
+
+.service-im .bb-list a {
+    display: block;
+    width: 155px;
+    height: 34px;
+    line-height: 34px;
+    overflow: hidden;
+    text-align: center;
+    background: url(../images/service/service_im_btn.png) no-repeat left bottom;
+    font-size: 16px;
+    color: #666;
+    text-decoration: none;
+}
+
+.service-im .bb-list .on a {
+    background-position: 0 0;
+    color: #fff;
+}
+
+.service-im .bb-list .on a:hover {
+    background-position: 0 -34px;
+}
+
+.service-im .bb-list .on span {
+    background-image: url(../images/service/im_avater_on.gif);
+}

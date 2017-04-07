@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC
+        "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.liangxunwang.unimanager.dao.HotAreaDao">
+    <resultMap id="hotarea" type="com.liangxunwang.unimanager.model.CountryObj">
+        <id column="id" property="id"/>
+        <result column="areaID" property="areaID"/>
+        <result column="area" property="area"/>
+        <result column="father" property="father"/>
+        <result column="topnum" property="topnum"/>
+    </resultMap>
+
+    <resultMap id="hotarea_vo" type="com.liangxunwang.unimanager.mvc.vo.CountryVO">
+        <id column="id" property="id"/>
+        <result column="areaID" property="areaID"/>
+        <result column="area" property="area"/>
+        <result column="father" property="father"/>
+        <result column="topnum" property="topnum"/>
+
+        <result column="cityName" property="cityName"/>
+    </resultMap>
+
+    <select id="lists" resultMap="hotarea_vo">
+        SELECT sn.*, hata.area as area, hatc.city as cityName from hot_area sn
+        LEFT JOIN hat_area hata ON sn.areaID=hata.areaID
+        LEFT JOIN hat_city hatc ON sn.father=hatc.cityID
+        WHERE  1=1
+        <if test="father != null and father != ''">
+            AND sn.father = #{father}
+        </if>
+    </select>
+
+    <insert id="save" parameterType="com.liangxunwang.unimanager.model.CountryObj">
+        INSERT INTO hot_area(id, areaID ,father,topnum)
+        VALUES (#{id}, #{areaID}, #{father}, #{topnum})
+    </insert>
+
+    <delete id="delete" parameterType="String">
+         delete from hot_area WHERE id = #{id}
+    </delete>
+
+</mapper>

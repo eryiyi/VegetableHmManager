@@ -1,0 +1,214 @@
+﻿@charset "utf-8";
+
+/*--------------------------------------------------
+ *@名称:		common.css
+ *@作者:		Huangpu
+ *@版本:		1.0
+ *@描述:		site level common style
+ *			站点全局样式，可根据项目具体需求修改
+--------------------------------------------------*/
+
+body {
+    font: 12px/1.5 "\5FAE\8F6F\96C5\9ED1", "\5B8B\4F53", Verdana, Arial, Helvetica, sans-serif;
+    background: #fff;
+    color: #333;
+}
+
+a:link, a:visited {
+    text-decoration: none;
+}
+
+a:hover, a:active, a:focus {
+    text-decoration: underline;
+}
+
+.topbar {
+    width: 1000px;
+}
+
+.wrap-1190 {
+    width: 1190px;
+    margin: 0 auto;
+}
+
+.wrap-1000 {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+/*按钮公用样式及其悬浮效果样式*/
+a.but {
+    color: #fff;
+    text-align: center;
+    background-color: #f47a11;
+    border-radius: 3px;
+}
+
+a.but:hover {
+    background-color: #ff4200;
+    text-decoration: none;
+}
+
+/*logobar 顶部LOGO部分*/
+.logobar {
+    height: 119px;
+    background-color: #FFF;
+    overflow: hidden;
+}
+
+.logobar .logo {
+    margin: 37px 0 0 2px;
+    float: left;
+    display: inline;
+}
+
+.logobar .logo-txt {
+    height: 51px;
+    overflow: hidden;
+    float: left;
+    display: inline;
+    line-height: 51px;
+    margin: 37px 0 0 20px;
+    border-left: #7f7f7f solid 1px;
+    font-size: 24px;
+    font-family: "微软雅黑";
+    padding-left: 17px;
+}
+
+.logobar .logo-customer {
+    float: right;
+    margin-top: 60px;
+}
+
+.logobar .logo-customer a {
+    width: 60px;
+    height: 22px;
+    line-height: 22px;
+    float: right;
+}
+
+.logobar .logo-customer span {
+    float: right;
+    margin-right: 5px;
+    line-height: 22px;
+    height: 22px;
+}
+
+/*===logo_search===*/
+.logo_search {
+}
+
+.logo_search {
+    float: right;
+    height: 55px;
+    padding-top: 45px;
+    width: 420px;
+}
+
+.select {
+    float: left;
+    height: 30px;
+    position: absolute;
+    width: 62px;
+}
+
+* + html .select {
+    left: 0;
+    top: 75px;
+}
+
+.select dt {
+    background: url(../../images/cart/common/logo_sec_xl.jpg) no-repeat scroll 45px center #f5f5f5;
+    border: 1px solid #f5f5f5;
+    color: #666;
+    cursor: pointer;
+    float: left;
+    height: 28px;
+    line-height: 28px;
+    overflow: hidden;
+    padding: 0 10px;
+    position: absolute;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 40px;
+    z-index: 99;
+}
+
+.select dt:hover, .select dt.cur {
+    border: 1px solid #f5f5f5;
+    box-shadow: 0 0 3px #ccc;
+}
+
+.select dd {
+    background: none repeat scroll 0 0 #fff;
+    border: 1px solid #f5f5f5;
+    display: none;
+    left: 0;
+    position: absolute;
+    top: 29px;
+    z-index: 9999;
+}
+
+.select dd ul {
+    max-height: 250px;
+    overflow: auto;
+    padding: 0;
+    width: 60px;
+}
+
+.select dd ul li a {
+    display: block;
+    line-height: 28px;
+    padding: 0 8px;
+}
+
+.select dd ul li a:hover {
+    background: none repeat scroll 0 0 #d02e00;
+    color: #fff;
+    text-decoration: none;
+}
+
+.logo_search .logo_cyd_input1 {
+    border: 1px solid #f5f5f5;
+    color: #999;
+    float: left;
+    height: 28px;
+    line-height: 28px;
+    margin-left: 62px;
+    padding: 0 10px;
+    width: 250px;
+}
+
+.logo_search .logo_cyd_but1 {
+    background: url(../../images/cart/common/logo_sec_ico.png) no-repeat scroll 0 -1px;
+    color: #fff;
+    float: left;
+    height: 30px;
+    width: 69px;
+}
+
+.logo_search .logo_cyd_but2 {
+    background: url(../../images/cart/common/logo_sec_ico.png) no-repeat scroll 0 0;
+    color: #fff;
+    float: left;
+    height: 30px;
+    width: 69px;
+}
+
+.logo_search .logo_cyd_but1:hover {
+    background: url(../../images/cart/common/logo_sec_ico.png) no-repeat scroll 0 -1px;
+}
+
+.logo_search .logo_cyd_but2:hover {
+    background: url(../../images/cart/common/logo_sec_ico.png) no-repeat scroll 0 0;
+    color: #eaeaea;
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+

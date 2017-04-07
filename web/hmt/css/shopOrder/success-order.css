@@ -1,0 +1,122 @@
+﻿@charset "utf-8";
+
+.main {
+    min-height: 500px;
+}
+
+.kb {
+    height: 100px;
+    overflow: hidden;
+    clear: both;
+}
+
+/*订单状态*/
+.success-state {
+    padding: 5px 0 30px 15px;
+    height: 99px;
+}
+
+.success-state em {
+    float: left;
+    display: inline;
+}
+
+.success-state span {
+    float: left;
+    display: inline;
+    height: 99px;
+    line-height: 30px;
+    overflow: hidden;
+    padding-left: 20px;
+    font-size: 14px;
+}
+
+/*订单列表*/
+.order-list {
+    overflow: hidden;
+    margin-bottom: 15px;
+}
+
+.order-list .order-title {
+    height: 36px;
+    overflow: hidden;
+    background-color: #f5f5f5;
+    border: #e5e5e5 solid 1px;
+}
+
+.order-list .order-title li {
+    float: left;
+    display: inline;
+    line-height: 36px;
+}
+
+.order-list .order-title li.l1 {
+    width: 110px;
+    text-align: center;
+}
+
+.order-list .order-title li.l2 {
+    width: 200px;
+}
+
+.order-list .order-title li.l3 {
+    width: 235px;
+}
+
+.order-list .order-title li.l4 {
+    width: 450px;
+}
+
+.order-list .order-con {
+    border: #e5e5e5 solid 1px;
+    border-top: 0;
+}
+
+.order-list .order-con .pro-name {
+    padding: 10px;
+}
+
+.order-list .order-con .pro-name p {
+    line-height: 24px;
+}
+
+.order-list .order-con .price {
+    font-size: 18px;
+    color: #f47a11;
+}
+
+.order-list .order-con a.but {
+    display: block;
+    width: 104px;
+    height: 32px;
+    line-height: 32px;
+    color: #fff;
+}
+
+.order-list .order-con a.nolink {
+    background-color: #ccc;
+    color: #000;
+    cursor: auto;
+    text-decoration: none;
+}
+
+.but-block {
+    width: 142px;
+    height: 35px;
+    line-height: 35px;
+    font-size: 16px;
+    display: inline-block;
+    color: #fff !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+

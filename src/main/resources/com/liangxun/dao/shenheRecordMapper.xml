@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC
+        "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.liangxunwang.unimanager.dao.ShenheRecordDao">
+    <resultMap id="shenheRecord" type="com.liangxunwang.unimanager.model.ShenheRecordObj">
+        <id column="mm_record_shenhe_id" property="mm_record_shenhe_id"/>
+        <result column="mm_record_shenhe_type" property="mm_record_shenhe_type"/>
+    </resultMap>
+
+    <select id="lists" resultMap="shenheRecord">
+        SELECT * from mm_record_shenhe
+    </select>
+
+    <insert id="save" parameterType="com.liangxunwang.unimanager.model.ShenheRecordObj">
+        INSERT INTO mm_record_shenhe(mm_record_shenhe_id, mm_record_shenhe_type)
+        VALUES (#{mm_record_shenhe_id}, #{mm_record_shenhe_type})
+    </insert>
+
+    <update id="update" parameterType="com.liangxunwang.unimanager.model.ShenheRecordObj">
+        UPDATE mm_record_shenhe SET mm_record_shenhe_type=#{mm_record_shenhe_type} WHERE mm_record_shenhe_id=#{mm_record_shenhe_id}
+    </update>
+
+</mapper>
